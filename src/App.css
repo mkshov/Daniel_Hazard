@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.slick-dots li button:before {
+  color: white !important;
+}
+button {
+  transition: all 0.5s ease !important;
+  color: #c1a575 !important;
+  background-color: #c1a575;
+  border: 1px solid #c1a575 !important;
+  letter-spacing: 0.2em !important;
+  border-radius: 0 !important;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+}
+button:hover {
+  transition: 0.5s;
+  color: white !important;
+  background-color: #c1a575 !important;
+  /* border: 2px solid #c1a575 !important; */
+  letter-spacing: 0.5em !important;
+}
