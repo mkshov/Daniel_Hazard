@@ -1,18 +1,56 @@
+@font-face {
+  font-family: "Futura PT Light";
+  src: local("Futura PT Light"), url(../public/fonts/FuturaPT-Light.ttf);
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif !important;
+  font-variant-numeric: lining-nums;
+}
+h3 {
+  font-family: "Futura PT Light" !important;
+}
+body {
+  background-color: #f8f8f8 !important;
+}
+img {
+  display: block;
 }
 ::-webkit-scrollbar {
   width: 0;
 }
 .slick-dots li button:before {
+  color: #c1a575 !important;
+}
+.slick-dots li button:hover:before {
   color: white !important;
 }
-button {
+li {
+  list-style-type: none;
+}
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.main-button {
   transition: all 0.5s ease !important;
   color: #c1a575 !important;
   background-color: #c1a575;
   border: 1px solid #c1a575 !important;
+  letter-spacing: 0.2em !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+}
+.main-button:hover {
+  transition: 0.5s;
+  color: white !important;
+  background-color: #c1a575 !important;
+}
+.button-white {
+  transition: all 0.5s ease !important;
+  color: white !important;
+  border: 1px solid white !important;
   letter-spacing: 0.2em !important;
   border-radius: 0 !important;
   font-family: "Montserrat", sans-serif;
@@ -24,10 +62,33 @@ button {
   padding: 10px;
   outline: none;
 }
-button:hover {
+.button-white:hover {
+  transition: 0.5s;
+  background-color: #c1a575 !important;
+  border: 1px solid #c1a575 !important;
+  letter-spacing: 0.5em !important;
+}
+.button-black {
+  color: black !important;
+  border: 1px solid black !important;
+  border-radius: 0 !important;
+}
+.button-black:hover {
   transition: 0.5s;
   color: white !important;
-  background-color: #c1a575 !important;
-  /* border: 2px solid #c1a575 !important; */
-  letter-spacing: 0.5em !important;
+  background-color: black !important;
+  letter-spacing: 0.9 !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px !important;
+  color: #c1a575 !important;
+  /* font-family: auto !important; */
+}
+.slick-next {
+  right: 45px !important;
+}
+.slick-prev {
+  left: 25px !important;
+  z-index: 3;
 }

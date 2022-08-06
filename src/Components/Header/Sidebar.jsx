@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./Header.css";
 
 const Sidebar = (props) => {
+  const navigate = useNavigate();
   const { open, toggleSidebar } = props;
 
   return (
@@ -12,6 +14,7 @@ const Sidebar = (props) => {
           <li
             onClick={() => {
               toggleSidebar();
+              navigate("/about-us");
             }}
           >
             ABOUT US

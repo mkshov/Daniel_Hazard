@@ -21,6 +21,12 @@
 }
 .sections span {
   margin-bottom: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.sections span:hover {
+  color: #c1a575;
+  transition: 0.2s;
 }
 .sections div {
   display: flex;

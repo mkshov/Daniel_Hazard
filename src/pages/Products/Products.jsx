@@ -1,38 +1,40 @@
-import { Button, Collapse, IconButton } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
+import "./Products.css";
 
-import AddIcon from "@mui/icons-material/Add";
-
+import products from "./mockData";
+import { Button, Typography } from "@mui/material";
 const Products = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+  console.log(products);
   return (
-    <div>
-      <h1>MUI</h1>
-      <Button
-        style={{ marginTop: 20 }}
-        size="small"
-        onClick={() => setIsOpen((open) => !open)}
-        endIcon={
-          <IconButton>
-            <AddIcon />
-          </IconButton>
-        }
+    <div style={{ marginBottom: "100px", marginTop: "100px" }}>
+      <div
+        style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >
-        Button
-      </Button>
-      <Collapse fullWidth in={isOpen} style={{ background: "green" }}>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-        </ul>
-      </Collapse>
+        {products.map((item) => (
+          <div key={item.id} style={{ margin: "30px", width: "500px" }}>
+            <div className="product-wrapper">
+              <img
+                className="product-img"
+                style={{ width: "100%", height: "100%" }}
+                src={item.image}
+                alt=""
+              />
+              <div className="middle">
+                <Button className="main-button">hover me!</Button>
+              </div>
+            </div>
+
+            <div className="text">
+              <Typography style={{ fontWeight: "300" }}>
+                {item.title}
+              </Typography>
+              <Typography style={{ fontWeight: "300", letterSpacing: "1px" }}>
+                €{item.price}
+              </Typography>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
