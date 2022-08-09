@@ -312,7 +312,12 @@ const HomePage = () => {
               data-aos-duration="500"
               className="history-text2-container"
             >
-              <Box className="history-text2-inner">
+              <Box
+                className="history-text2-inner"
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-duration="500"
+              >
                 <Typography variant="h4">Hello World!</Typography>
                 <Typography variant="h6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -335,7 +340,7 @@ const HomePage = () => {
         </Box>
 
         {/* info us start */}
-        <Box className="info-us">
+        <Box className="info-us" style={{ overflowX: "hidden" }}>
           <Box
             data-aos="fade-left"
             data-aos-offset="200"
@@ -361,6 +366,7 @@ const HomePage = () => {
             </Box>
           </Box>
           <Box
+            style={{ overflowX: "hidden" }}
             data-aos="zoom-in"
             data-aos-offset="200"
             data-aos-duration="500"
@@ -381,6 +387,7 @@ const HomePage = () => {
             </Box>
           </Box>
           <Box
+            style={{ overflowX: "hidden" }}
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-duration="500"

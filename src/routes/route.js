@@ -1,4 +1,4 @@
-import { AboutUs, NotFoundPage } from "pages";
+import { AboutUs, NotFoundPage, ProductDetails } from "pages";
 import { HomePage, ProductsPage } from "./pages";
 import MainLayout from "layouts/Main";
 
@@ -16,6 +16,14 @@ let routes = [
     element: (
       <MainLayout>
         <ProductsPage />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/products/:id",
+    element: (
+      <MainLayout>
+        <ProductDetails />
       </MainLayout>
     ),
   },

@@ -1,12 +1,15 @@
 import React from "react";
-import "./Products.css";
+import { useNavigate } from "react-router-dom";
 
-import products from "./mockData";
 import { Button, Typography } from "@mui/material";
+
+import "./Products.css";
+import products from "./mockData";
+
 const Products = () => {
-  console.log(products);
+  const navigate = useNavigate();
   return (
-    <div style={{ marginBottom: "100px", marginTop: "100px" }}>
+    <div style={{ marginBottom: "100px", marginTop: "50px" }}>
       <div
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >
@@ -20,7 +23,12 @@ const Products = () => {
                 alt=""
               />
               <div className="middle">
-                <Button className="main-button">hover me!</Button>
+                <Button
+                  onClick={() => navigate(`/products/${item.id}`)}
+                  className="main-button"
+                >
+                  hover me!
+                </Button>
               </div>
             </div>
 

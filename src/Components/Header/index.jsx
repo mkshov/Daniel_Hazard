@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import { useScroll } from "./ScrollHook";
 
 export default function Header() {
+  const { scrollDirection } = useScroll();
   const { t, i18n } = useTranslation();
 
   const navigate = useNavigate();
@@ -49,16 +50,12 @@ export default function Header() {
     setIsOpenShopMenu(false);
   };
 
-  // Show - hide header
-  const { scrollDirection } = useScroll();
-
-  //
-
   return (
     <Box sx={{ flexGrow: 1 }} onMouseLeave={handleCloseShopMenu}>
       <AppBar
         className={clsx("header-active", {
           ["header-hidden"]: scrollDirection === "down",
+          // eslint-disable-next-line
         })}
       >
         <Toolbar className="header">
@@ -72,8 +69,10 @@ export default function Header() {
           </Box>
           <Box className="header-logo">
             <img
-              style={{ width: "165px" }}
-              onClick={() => navigate("/")}
+              onClick={() => {
+                navigate("/");
+                handleCloseSidebar();
+              }}
               onMouseEnter={handleCloseShopMenu}
               src="https://i.ibb.co/LhdTySj/1658673254367.png"
               alt="logo"
@@ -111,7 +110,14 @@ export default function Header() {
           <ul>
             <Box className="header-category-box">
               <Typography variant="h6">SUITS</Typography>
-              <li>Everyday</li>
+              <li
+                onClick={() => {
+                  handleCloseShopMenu();
+                  navigate("/products");
+                }}
+              >
+                Everyday
+              </li>
               <li>Wedding</li>
             </Box>
             <Box className="header-category-box">

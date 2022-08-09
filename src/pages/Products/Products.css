@@ -49,3 +49,10 @@
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
+.custom-indicator {
+  bottom: -160px !important;
+}
+.custom-indicator li {
+  width: 140px !important;
+  height: 140px !important;
+}

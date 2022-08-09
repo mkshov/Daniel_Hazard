@@ -74,7 +74,7 @@
 }
 .slide-2-inner {
   width: 490px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 88%);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -214,9 +214,11 @@
 }
 .img-txt-inner h4 {
   margin-bottom: 50px;
+  font-size: 35px;
 }
 .img-txt-inner p {
   margin-bottom: 15px;
+  font-size: 25px;
 }
 .img-txt-block1 img {
   width: 650px;
@@ -346,6 +348,9 @@ h3 {
   }
   .img-txt-mobile h4 {
     margin-bottom: 20px;
+  }
+  .img-txt-inner p {
+    font-size: 1rem;
   }
   .visable {
     display: none;

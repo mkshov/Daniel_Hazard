@@ -6,6 +6,8 @@ const enTranslations = {
   fallSummer: "Fall Summer 2022/23",
   styleFrames: "Style Frames",
   discoverMore: "DISCOVER MORE",
+  suits: "SUITS",
+  clothing: "CLOTHING",
 };
 
 export default enTranslations;
