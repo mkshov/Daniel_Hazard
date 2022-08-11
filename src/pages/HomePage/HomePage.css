@@ -12,7 +12,7 @@
   opacity: 1;
 }
 .center img {
-  opacity: 0.7;
+  opacity: 0.5;
   transition: all 0.3s ease;
 }
 .slick-active {
@@ -218,7 +218,7 @@
 }
 .img-txt-inner p {
   margin-bottom: 15px;
-  font-size: 25px;
+  font-size: 23px;
 }
 .img-txt-block1 img {
   width: 650px;
@@ -321,7 +321,6 @@ h3 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 60px;
 }
 
 /* Info us End */
@@ -375,6 +374,12 @@ h3 {
   .history-text2-inner button {
     width: 100%;
   }
+  .info-us {
+    padding: 0;
+  }
+  .info-us-blocks {
+    padding: 40px;
+  }
 }
 @media all and (max-width: 700px) {
   .slide-1-inner {
@@ -414,9 +419,5 @@ h3 {
   }
   .img-txt-mobile h4 {
     font-size: 30px;
-  }
-  .info-us {
-    margin-top: 50px;
-    padding: 35px;
   }
 }

@@ -3,7 +3,6 @@ import ReactSlickSlider from "react-slick";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 
 const PreviousBtn = (props) => {
-  console.log(props);
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
@@ -12,8 +11,6 @@ const PreviousBtn = (props) => {
   );
 };
 const NextBtn = (props) => {
-  console.log(props);
-
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
@@ -36,7 +33,6 @@ const settings = {
 
 const Slider = (props) => {
   const { children, ...rest } = props;
-  console.log(rest);
   return (
     <ReactSlickSlider {...settings} {...rest}>
       {children}

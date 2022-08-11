@@ -25,6 +25,7 @@ const HomePage = () => {
     centerMode: true,
     infinite: true,
     focusOnSelect: true,
+    dots: false,
     centerPadding: "60px",
     slidesToShow: 3,
     speed: 500,
@@ -259,17 +260,6 @@ const HomePage = () => {
 
         {/* ----------------------------------- */}
 
-        {/* <Box className="txt-block2">
-          <Box className="txt-block-inner">
-            <Typography variant="h4">FIND YOUR PERFECT LOOK</Typography>
-            <Typography variant="subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              necessitatibus tenetur cupiditate expedita placeat quas distinctio
-              odio.
-            </Typography>
-          </Box>
-        </Box> */}
-
         {/* History us start */}
         <Box className="history-block">
           <Box className="history-block-box1">
@@ -330,6 +320,16 @@ const HomePage = () => {
           </Box>
         </Box>
         {/* History us end */}
+        <Box className="txt-block2">
+          <Box className="txt-block-inner">
+            <Typography variant="h4">FIND YOUR PERFECT LOOK</Typography>
+            <Typography variant="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              necessitatibus tenetur cupiditate expedita placeat quas distinctio
+              odio.
+            </Typography>
+          </Box>
+        </Box>
         <Box className="img-block">
           <Box className="img-block-inner">
             <Typography variant="subtitle2">

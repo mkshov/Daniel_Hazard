@@ -1,0 +1,15 @@
+.not-found {
+  height: 40vh;
+  text-align: center;
+}
+.not-found h2 {
+  font-weight: bold;
+  color: rgb(193, 165, 117);
+  margin-top: 100px;
+}
+.not-found h4 {
+  margin-top: 10px;
+}
+.not-found button {
+  margin-top: 10px;
+}

@@ -1,17 +1,23 @@
 import { useNavigate } from "react-router-dom";
 
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import "./Index.css";
 
 const NotFound = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate(-1);
-  };
   return (
     <>
-      <h1>Not Found 404</h1>
-      <Button onClick={handleClick}>Home</Button>
+      <div className="not-found">
+        <Typography variant="h2">404</Typography>
+        <Typography variant="h4">Look like you're lost</Typography>
+        <Typography variant="h5">
+          the page you are looking for not avaible!
+        </Typography>
+        <Button onClick={() => navigate("/")} className="main-button">
+          Go to Home
+        </Button>
+      </div>
     </>
   );
 };

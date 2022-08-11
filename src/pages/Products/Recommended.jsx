@@ -5,22 +5,35 @@ import { Button, Typography } from "@mui/material";
 
 import "./Products.css";
 import products from "./mockData/mockData";
+import jackets from "./mockData/mockDataJackets";
+import trousers from "./mockData/mockDataTrousers";
 
 const Products = () => {
   const navigate = useNavigate();
-  function randomArray(arr) {
-    const random1 = Math.floor(Math.random() * arr.length);
-    const random2 = Math.floor(Math.random() * arr.length);
-    const random3 = Math.floor(Math.random() * arr.length);
-    return [arr[random1], arr[random2], arr[random3]];
+  function randomArray(arr1, arr2, arr3) {
+    const random1 = Math.floor(Math.random() * arr1.length);
+    const random2 = Math.floor(Math.random() * arr2.length);
+    const random3 = Math.floor(Math.random() * arr3.length);
+    return [arr1[random1], arr2[random2], arr3[random3]];
   }
-  console.log(randomArray(products));
+  const recommended = randomArray(products, jackets, trousers);
+  console.log(recommended);
   return (
-    <div style={{ marginBottom: "100px", marginTop: "50px" }}>
+    <div style={{ marginBottom: "100px", marginTop: "200px" }}>
+      <Typography
+        style={{
+          marginBottom: "70px",
+          fontWeight: "bold",
+          textAlign: "center",
+        }}
+        variant="h2"
+      >
+        Recommended Products
+      </Typography>
       <div
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >
-        {products.map((item) => (
+        {recommended.map((item) => (
           <div key={item.id} style={{ margin: "30px", width: "500px" }}>
             <div className="product-wrapper">
               <img
@@ -31,7 +44,9 @@ const Products = () => {
               />
               <div className="middle">
                 <Button
-                  onClick={() => navigate(`/suits/everyday/${item.id}`)}
+                  onClick={() =>
+                    navigate(`/${item.route}/${item.route2}/${item.id}`)
+                  }
                   className="main-button"
                 >
                   hover me!

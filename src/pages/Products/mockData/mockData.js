@@ -1,6 +1,8 @@
 const products = [
   {
-    id: 1,
+    id: 134672,
+    route: "suits",
+    route2: "everyday",
     title: "AUTS35_2_PUZLAC_S22MA07_M31",
     subTitle: "subTitle",
     description:
@@ -14,7 +16,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 2,
+    id: 25624572,
+    route: "suits",
+    route2: "everyday",
     title: "AUTS659_PUY3_S22MA41_N21",
     subTitle: "subTitle",
     description: "description",
@@ -27,7 +31,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 3,
+    id: 33547454,
+    route: "suits",
+    route2: "everyday",
     title: "AUSS109_PUSZ3_MWA84_D31",
     subTitle: "subTitle",
     description: "description",
@@ -40,7 +46,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 4,
+    id: 9648954,
+    route: "suits",
+    route2: "everyday",
     title: "AUS30_PUZ3_S17WA20_B31",
     subTitle: "subTitle",
     description: "description",
@@ -53,7 +61,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 5,
+    id: 4768355465,
+    route: "suits",
+    route2: "everyday",
     title: "AUS30_PUZ3_S19WA21_G19",
     subTitle: "subTitle",
     description: "description",
@@ -66,7 +76,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 6,
+    id: 34568907656,
+    route: "suits",
+    route2: "everyday",
     title: "AUTS35_PUZ3_APWA02_N24",
     subTitle: "subTitle",
     description: "description",
@@ -79,7 +91,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 7,
+    id: 789786765,
+    route: "suits",
+    route2: "everyday",
     title: "AUTX30_PUZ3_CAWWA02_B31",
     subTitle: "subTitle",
     description: "description",
@@ -92,7 +106,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 8,
+    id: 235467568,
+    route: "suits",
+    route2: "everyday",
     title: "AUTX30_PUZ3_CAWWA02_B31",
     subTitle: "subTitle",
     description: "description",
@@ -105,7 +121,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 9,
+    id: 36854539,
+    route: "suits",
+    route2: "everyday",
     title: "AUTX30_PUZ3_CAWWA02_B31",
     subTitle: "subTitle",
     description: "description",
@@ -118,7 +136,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 10,
+    id: 1254724573570,
+    route: "suits",
+    route2: "everyday",
     title: "AUTX30_PUZ3_CAWWA02_B31",
     subTitle: "subTitle",
     description: "description",

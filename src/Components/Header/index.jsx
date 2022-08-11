@@ -54,8 +54,8 @@ export default function Header() {
     <Box sx={{ flexGrow: 1 }} onMouseLeave={handleCloseShopMenu}>
       <AppBar
         className={clsx("header-active", {
-          ["header-hidden"]: scrollDirection === "down",
           // eslint-disable-next-line
+          ["header-hidden"]: scrollDirection === "down",
         })}
       >
         <Toolbar className="header">
@@ -113,17 +113,38 @@ export default function Header() {
               <li
                 onClick={() => {
                   handleCloseShopMenu();
-                  navigate("/products");
+                  navigate("/suits/everyday");
                 }}
               >
                 Everyday
               </li>
-              <li>Wedding</li>
+              <li
+                onClick={() => {
+                  handleCloseShopMenu();
+                  navigate("/suits/wedding");
+                }}
+              >
+                Wedding
+              </li>
             </Box>
             <Box className="header-category-box">
               <Typography variant="h6">CLOTHING</Typography>
-              <li>Shirts</li>
-              <li>Trousers</li>
+              <li
+                onClick={() => {
+                  handleCloseShopMenu();
+                  navigate("/clothing/jackets");
+                }}
+              >
+                Jackets
+              </li>
+              <li
+                onClick={() => {
+                  handleCloseShopMenu();
+                  navigate("/clothing/trousers");
+                }}
+              >
+                Trousers
+              </li>
             </Box>
             <Box className="header-category-img">
               <img

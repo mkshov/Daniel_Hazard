@@ -4,23 +4,17 @@ import { useNavigate } from "react-router-dom";
 import { Button, Typography } from "@mui/material";
 
 import "./Products.css";
-import products from "./mockData/mockData";
+import trousers from "./mockData/mockDataTrousers";
 
-const Products = () => {
+const Trousers = () => {
   const navigate = useNavigate();
-  function randomArray(arr) {
-    const random1 = Math.floor(Math.random() * arr.length);
-    const random2 = Math.floor(Math.random() * arr.length);
-    const random3 = Math.floor(Math.random() * arr.length);
-    return [arr[random1], arr[random2], arr[random3]];
-  }
-  console.log(randomArray(products));
+  console.log(trousers);
   return (
     <div style={{ marginBottom: "100px", marginTop: "50px" }}>
       <div
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >
-        {products.map((item) => (
+        {trousers.map((item) => (
           <div key={item.id} style={{ margin: "30px", width: "500px" }}>
             <div className="product-wrapper">
               <img
@@ -31,7 +25,7 @@ const Products = () => {
               />
               <div className="middle">
                 <Button
-                  onClick={() => navigate(`/suits/everyday/${item.id}`)}
+                  onClick={() => navigate(`/clothing/trousers/${item.id}`)}
                   className="main-button"
                 >
                   hover me!
@@ -54,4 +48,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Trousers;
