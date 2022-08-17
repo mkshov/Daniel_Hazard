@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -84,9 +85,8 @@ const HomePage = () => {
             />
             <Box className="slide-2-overlay">
               <Box className="slide-2-inner">
-                <Typography variant="h3">New Collection</Typography>
-                <Typography variant="h5">Fall Summer 2022/23</Typography>
-                <Typography variant="h4">Style Frames</Typography>
+                <Typography variant="h3">{t("newCollection")}</Typography>
+                <Typography variant="h5">{t("fallSummer")}</Typography>
                 <Button
                   className="main-button"
                   variant="outlined"
@@ -118,11 +118,9 @@ const HomePage = () => {
         </Box>
         <Box className="txt-block1">
           <Box className="txt-block-inner">
-            <Typography variant="h4">FIND YOUR PERFECT LOOK</Typography>
-            <Typography variant="subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              necessitatibus tenetur cupiditate expedita placeat quas distinctio
-              odio.
+            <Typography variant="h4">{t("findYourPerfectLook")}</Typography>
+            <Typography variant="h6">
+              {t("findYourPerfectLookChild")}
             </Typography>
           </Box>
         </Box>
@@ -134,7 +132,7 @@ const HomePage = () => {
               alt=""
             />
             <div className="middle">
-              <Button className="main-button">hover me!</Button>
+              <Button className="main-button">{t("discoverMore")}</Button>
             </div>
           </Box>
           <Box className="img-wrapper">
@@ -144,7 +142,7 @@ const HomePage = () => {
               alt=""
             />
             <div className="middle">
-              <Button className="main-button">hover me!</Button>
+              <Button className="main-button">{t("discoverMore")}</Button>
             </div>
           </Box>
           <Box className="img-wrapper">
@@ -154,7 +152,7 @@ const HomePage = () => {
               alt=""
             />
             <div className="middle">
-              <Button className="main-button">hover me!</Button>
+              <Button className="main-button">{t("discoverMore")}</Button>
             </div>
           </Box>
         </Box>
@@ -163,19 +161,12 @@ const HomePage = () => {
 
         <Box className="img-txt-block1">
           <Box className="img-txt-mobile">
-            <Typography variant="h4">Conscious garments</Typography>
+            <Typography variant="h4">{t("consciousGarments")}</Typography>
           </Box>
           <Box className="img-txt-inner visable">
-            <Typography variant="h4">Conscious garments</Typography>
-            <Typography>
-              We have a wide range of garments, spanning from ancient mill
-              producers Vitale Barberis Canonico and William Thomson to new
-              vegan garment alternatives.
-            </Typography>
-            <Typography>
-              55% of our garment collection comes from natural fibers such as
-              honestly sourced cotton, linen, wool, cashmere and silk.
-            </Typography>
+            <Typography variant="h4">{t("consciousGarments")}</Typography>
+            <Typography>{t("consciousGarmentsChild1")}</Typography>
+            <Typography>{t("consciousGarmentsChild2")}</Typography>
           </Box>
 
           <Box>
@@ -185,15 +176,8 @@ const HomePage = () => {
             />
           </Box>
           <Box className="img-txt-mobile">
-            <Typography>
-              We have a wide range of garments, spanning from ancient mill
-              producers Vitale Barberis Canonico and William Thomson to new
-              vegan garment alternatives.
-            </Typography>
-            <Typography>
-              55% of our garment collection comes from natural fibers such as
-              honestly sourced cotton, linen, wool, cashmere and silk.
-            </Typography>
+            <Typography>{t("consciousGarmentsChild1")}</Typography>
+            <Typography>{t("consciousGarmentsChild2")}</Typography>
           </Box>
         </Box>
 
@@ -205,16 +189,9 @@ const HomePage = () => {
             />
           </Box>
           <Box className="img-txt-inner">
-            <Typography variant="h4">Conscious garments</Typography>
-            <Typography>
-              We have a wide range of garments, spanning from ancient mill
-              producers Vitale Barberis Canonico and William Thomson to new
-              vegan garment alternatives.
-            </Typography>
-            <Typography>
-              55% of our garment collection comes from natural fibers such as
-              honestly sourced cotton, linen, wool, cashmere and silk.
-            </Typography>
+            <Typography variant="h4">{t("consciousGarments")}</Typography>
+            <Typography>{t("consciousGarmentsChild1")}</Typography>
+            <Typography>{t("consciousGarmentsChild2")}</Typography>
           </Box>
         </Box>
         <div>
@@ -284,7 +261,7 @@ const HomePage = () => {
                 data-aos-duration="500"
                 className="history-img-title"
               >
-                <Typography variant="h3">OUR STORY</Typography>
+                <Typography variant="h3">{t("ourStory")}</Typography>
               </Box>
               <Box
                 data-aos="fade-left"
@@ -308,13 +285,9 @@ const HomePage = () => {
                 data-aos-offset="200"
                 data-aos-duration="500"
               >
-                <Typography variant="h4">Hello World!</Typography>
-                <Typography variant="h6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Autem, a! Non ipsum voluptates eius perferendis ipsam.
-                  Reprehenderit reiciendis quas laborum.
-                </Typography>
-                <Button className="button-black">Hello</Button>
+                <Typography variant="h4">Daniel Hazard</Typography>
+                <Typography variant="h6">{t("history")}</Typography>
+                <Button className="button-black">{t("discoverMore")}</Button>
               </Box>
             </Box>
           </Box>
@@ -322,22 +295,18 @@ const HomePage = () => {
         {/* History us end */}
         <Box className="txt-block2">
           <Box className="txt-block-inner">
-            <Typography variant="h4">FIND YOUR PERFECT LOOK</Typography>
-            <Typography variant="subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              necessitatibus tenetur cupiditate expedita placeat quas distinctio
-              odio.
-            </Typography>
+            <Typography variant="h3">{t("ourAchievements")}</Typography>
+            <Typography variant="h6">{t("reviews")}</Typography>
           </Box>
         </Box>
-        <Box className="img-block">
+        {/* <Box className="img-block">
           <Box className="img-block-inner">
             <Typography variant="subtitle2">
               Free shipping, Discount applied in cart
             </Typography>
             <Button className="button-white">hover me!</Button>
           </Box>
-        </Box>
+        </Box> */}
 
         {/* info us start */}
         <Box className="info-us" style={{ overflowX: "hidden" }}>
@@ -361,7 +330,7 @@ const HomePage = () => {
                 }}
                 variant="h4"
               >
-                OVER 1.000 SUITS IN STOCK
+                {t("overSuitsInStock")}
               </Typography>
             </Box>
           </Box>
@@ -409,6 +378,15 @@ const HomePage = () => {
           </Box>
         </Box>
         {/* Info us end */}
+        <Box sx={{ textAlign: "center" }}>
+          <Link href="#" onClick={() => navigate("/")}>
+            <Button sx={{ textAlign: "center", color: "#c1a575" }}>
+              <KeyboardDoubleArrowUpIcon
+                sx={{ fontSize: "50px", color: "#c1a575" }}
+              />
+            </Button>
+          </Link>
+        </Box>
       </Box>
     </Box>
   );

@@ -15,3 +15,4 @@ export const Jackets = lazy(() => import("../pages/Products/Jackets"));
 export const Trousers = lazy(() => import("../pages/Products/Trousers"));
 export const Recommended = lazy(() => import("../pages/Products/Recommended"));
 export const AboutUs = lazy(() => import("../pages/AboutUs/AbotUs"));
+export const ContactsUs = lazy(() => import("../pages/ContactsUs/ContactsUs"));

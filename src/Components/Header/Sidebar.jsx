@@ -9,7 +9,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import { List, ListItemButton } from "@mui/material";
+import { Link, List, ListItemButton } from "@mui/material";
 
 const Sidebar = (props) => {
   const navigate = useNavigate();
@@ -36,28 +36,23 @@ const Sidebar = (props) => {
         <div className={open ? "sidebar sidebar--open" : "sidebar"}>
           <div className="sidebar-container">
             <List>
-              <ListItemButton
-                onClick={() => {
-                  toggleSidebar();
-                }}
-              >
-                <ListItemText primary="SHOWROOMS & SHOPS" />
-              </ListItemButton>
               <ListItemButton onClick={handleClick2}>
                 <ListItemText primary="CLOTHING" />
                 {openList2 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
               <Collapse in={openList2} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton
-                    onClick={() => {
-                      toggleSidebar();
-                      navigate("/clothing/jackets");
-                    }}
-                    sx={{ pl: 4 }}
-                  >
-                    <ListItemText primary="Jackets" />
-                  </ListItemButton>
+                  <Link href="#">
+                    <ListItemButton
+                      onClick={() => {
+                        toggleSidebar();
+                        navigate("/clothing/jackets");
+                      }}
+                      sx={{ pl: 4 }}
+                    >
+                      <ListItemText primary="Jackets" />
+                    </ListItemButton>
+                  </Link>
                 </List>
                 <List component="div" disablePadding>
                   <ListItemButton
@@ -77,6 +72,14 @@ const Sidebar = (props) => {
                 }}
               >
                 <ListItemText primary="COLLECTIONS" />
+              </ListItemButton>
+              <ListItemButton
+                onClick={() => {
+                  toggleSidebar();
+                  navigate("/about-us");
+                }}
+              >
+                <ListItemText primary="ABOUT US" />
               </ListItemButton>
               <ListItemButton onClick={handleClick}>
                 <ListItemText primary="SUITS" />
@@ -106,14 +109,17 @@ const Sidebar = (props) => {
                   </ListItemButton>
                 </List>
               </Collapse>
-              <ListItemButton
+              <Link
+                href="#"
                 onClick={() => {
                   toggleSidebar();
-                  navigate("/about-us");
+                  navigate("/contacts-us");
                 }}
               >
-                <ListItemText primary="ABOUT US" />
-              </ListItemButton>
+                <ListItemButton>
+                  <ListItemText primary="CONTACTS US" />
+                </ListItemButton>
+              </Link>
             </List>
           </div>
         </div>

@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Hamburger from "hamburger-react";
-import { Collapse } from "@mui/material";
+import { Collapse, Link } from "@mui/material";
 
 import "./Header.css";
 import { Sidebar } from "Components";
@@ -60,6 +60,7 @@ export default function Header() {
       >
         <Toolbar className="header">
           <Box
+            className="hamburger"
             onClick={() => {
               toggleSidebar();
               handleCloseShopMenu();
@@ -67,25 +68,32 @@ export default function Header() {
           >
             <Hamburger toggled={openSidebar} direction="right" size={30} />
           </Box>
+
           <Box className="header-logo">
-            <img
+            <Link
               onClick={() => {
                 navigate("/");
                 handleCloseSidebar();
               }}
-              onMouseEnter={handleCloseShopMenu}
-              src="https://i.ibb.co/LhdTySj/1658673254367.png"
-              alt="logo"
-            />
+              href="#"
+            >
+              <img
+                onMouseEnter={handleCloseShopMenu}
+                src="https://i.ibb.co/LhdTySj/1658673254367.png"
+                alt="logo"
+              />
+            </Link>
           </Box>
           <Box className="header-routes holder">
-            <Typography
-              sx={{ textTransform: "uppercase", cursor: "pointer" }}
-              onClick={handleLangChange}
-              onMouseEnter={handleCloseShopMenu}
-            >
-              {currentLang}
-            </Typography>
+            <Box>
+              <Typography
+                sx={{ textTransform: "uppercase", cursor: "pointer" }}
+                onClick={handleLangChange}
+                onMouseEnter={handleCloseShopMenu}
+              >
+                {currentLang}
+              </Typography>
+            </Box>
             <Box>
               <Typography
                 className="header-route hover-underline-animation"

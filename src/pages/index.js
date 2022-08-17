@@ -8,3 +8,4 @@ export { default as JacketDetails } from "./Products/Details/JacketDetails";
 export { default as Trousers } from "./Products/Trousers";
 export { default as TrousersDetails } from "./Products/Details/TrousersDetails";
 export { default as Recommended } from "./Products/Recommended";
+export { default as ContactsUs } from "./ContactsUs/ContactsUs";

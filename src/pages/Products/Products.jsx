@@ -1,49 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Button, Typography } from "@mui/material";
+import { Button, Tab, Tabs, Typography } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 
 import "./Products.css";
 import products from "./mockData/mockData";
-
 const Products = () => {
   const navigate = useNavigate();
-  function randomArray(arr) {
-    const random1 = Math.floor(Math.random() * arr.length);
-    const random2 = Math.floor(Math.random() * arr.length);
-    const random3 = Math.floor(Math.random() * arr.length);
-    return [arr[random1], arr[random2], arr[random3]];
+
+  // const random = Math.floor(Math.random() * 99999);
+  // const LowToHigh = products?.sort((a, b) => (a.price > b.price ? 1 : -1));
+  // console.log("LowToHigh: ", LowToHigh);
+  // const HighToLow = products?.sort((a, b) => (a.price > b.price ? -1 : 1));
+  // console.log("HighToLow: ", HighToLow);
+
+  const [sortPrice, setSortPrice] = useState(true);
+
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  function handleChangeLow() {
+    setSortPrice(true);
   }
-  console.log(randomArray(products));
+  function handleChangeHigh() {
+    setSortPrice(false);
+  }
+
+  if (sortPrice) {
+    products?.sort((a, b) => (a.price > b.price ? 1 : -1));
+  } else {
+    products?.sort((a, b) => (a.price > b.price ? -1 : 1));
+  }
   return (
-    <div style={{ marginBottom: "100px", marginTop: "50px" }}>
-      <div
-        style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
-      >
+    <div>
+      <Tabs value={value} onChange={handleChange} centered>
+        <Tab label="Low to High" onClick={handleChangeLow} />
+        <Tab label="High to Low" onClick={handleChangeHigh} />
+      </Tabs>
+      <div className="card-container">
         {products.map((item) => (
-          <div key={item.id} style={{ margin: "30px", width: "500px" }}>
+          <div className="card" key={item.id}>
             <div className="product-wrapper">
-              <img
-                className="product-img"
-                style={{ width: "100%", height: "100%" }}
-                src={item.image}
-                alt=""
-              />
+              <img className="product-img" src={item.image} alt="" />
               <div className="middle">
                 <Button
                   onClick={() => navigate(`/suits/everyday/${item.id}`)}
                   className="main-button"
                 >
-                  hover me!
+                  <SearchIcon />
                 </Button>
               </div>
             </div>
 
             <div className="text">
-              <Typography style={{ fontWeight: "300" }}>
-                {item.title}
-              </Typography>
-              <Typography style={{ fontWeight: "300", letterSpacing: "1px" }}>
+              <Typography sx={{ fontWeight: "300" }}>{item.title}</Typography>
+              <Typography sx={{ fontWeight: "300", letterSpacing: "2px" }}>
                 €{item.price}
               </Typography>
             </div>

@@ -1,5 +1,6 @@
 import {
   AboutUs,
+  ContactsUs,
   JacketDetails,
   Jackets,
   NotFoundPage,
@@ -10,6 +11,7 @@ import {
 } from "pages";
 import { HomePage, ProductsPage } from "./pages";
 import MainLayout from "layouts/Main";
+import WithOutFooter from "layouts/Main/WithOutFooter";
 
 let routes = [
   {
@@ -77,6 +79,14 @@ let routes = [
     ),
   },
   {
+    path: "/contacts-us",
+    element: (
+      <WithOutFooter>
+        <ContactsUs />
+      </WithOutFooter>
+    ),
+  },
+  {
     path: "/recommended",
     element: (
       <MainLayout>
@@ -87,9 +97,9 @@ let routes = [
   {
     path: "*",
     element: (
-      <MainLayout>
+      <WithOutFooter>
         <NotFoundPage />
-      </MainLayout>
+      </WithOutFooter>
     ),
   },
 ];

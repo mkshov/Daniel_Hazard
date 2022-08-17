@@ -8,12 +8,17 @@
   font-family: "Futura PT Light", sans-serif !important;
   font-variant-numeric: lining-nums;
 }
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
 h3 {
   font-family: "Futura PT Light" !important;
 }
-body {
-  background-color: #fbfbfb !important;
-}
+
 img {
   display: block;
 }
@@ -137,6 +142,14 @@ ul {
 }
 .css-13eg511-MuiButtonBase-root-MuiListItemButton-root:hover {
   text-decoration: none;
+  background-color: #c1a575 !important;
+}
+
+/* item navigation */
+.css-1sr0y0p-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: black !important;
+}
+.css-1aquho2-MuiTabs-indicator {
   background-color: #c1a575 !important;
 }
 

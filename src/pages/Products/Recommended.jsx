@@ -10,14 +10,14 @@ import trousers from "./mockData/mockDataTrousers";
 
 const Products = () => {
   const navigate = useNavigate();
-  function randomArray(arr1, arr2, arr3) {
+  function randomArray(arr1, arr2, arr3, arr4, arr5) {
     const random1 = Math.floor(Math.random() * arr1.length);
     const random2 = Math.floor(Math.random() * arr2.length);
     const random3 = Math.floor(Math.random() * arr3.length);
+
     return [arr1[random1], arr2[random2], arr3[random3]];
   }
   const recommended = randomArray(products, jackets, trousers);
-  console.log(recommended);
   return (
     <div style={{ marginBottom: "100px", marginTop: "200px" }}>
       <Typography
@@ -26,7 +26,7 @@ const Products = () => {
           fontWeight: "bold",
           textAlign: "center",
         }}
-        variant="h2"
+        variant="h4"
       >
         Recommended Products
       </Typography>
@@ -34,14 +34,9 @@ const Products = () => {
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >
         {recommended.map((item) => (
-          <div key={item.id} style={{ margin: "30px", width: "500px" }}>
+          <div key={item.id} style={{ margin: "30px", width: "300px" }}>
             <div className="product-wrapper">
-              <img
-                className="product-img"
-                style={{ width: "100%", height: "100%" }}
-                src={item.image}
-                alt=""
-              />
+              <img className="product-img" src={item.image} alt={item.title} />
               <div className="middle">
                 <Button
                   onClick={() =>
@@ -55,10 +50,8 @@ const Products = () => {
             </div>
 
             <div className="text">
-              <Typography style={{ fontWeight: "300" }}>
-                {item.title}
-              </Typography>
-              <Typography style={{ fontWeight: "300", letterSpacing: "1px" }}>
+              <Typography sx={{ fontWeight: "300" }}>{item.title}</Typography>
+              <Typography sx={{ fontWeight: "300", letterSpacing: "1px" }}>
                 €{item.price}
               </Typography>
             </div>

@@ -5,6 +5,16 @@
   font-size: 16px;
   padding: 10px;
 }
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+.card {
+  margin: 30px;
+  width: 500px;
+}
 .middle {
   transition: 0.5s ease;
   opacity: 0;
@@ -53,7 +63,6 @@
 /* Product details  */
 .product {
   margin-top: 50px;
-  height: 220vh;
 }
 .product-container {
   display: flex;

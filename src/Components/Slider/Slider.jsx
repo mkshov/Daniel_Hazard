@@ -27,8 +27,8 @@ const settings = {
   nextArrow: <NextBtn />,
   speed: 500,
   slidesToShow: 1,
-  // autoplay: true,
-  autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 5000,
 };
 
 const Slider = (props) => {

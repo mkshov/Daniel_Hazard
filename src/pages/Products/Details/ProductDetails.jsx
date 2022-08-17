@@ -28,10 +28,13 @@ const NextBtn = (props) => {
     </div>
   );
 };
+
 const ProductDetails = () => {
   const { id } = useParams();
   const product = products.find((item) => +item.id === +id);
   const [expanded, setExpanded] = useState(false);
+  const random = Math.floor(Math.random() * 999999);
+
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
@@ -63,7 +66,7 @@ const ProductDetails = () => {
       <div className="product-container">
         <Slider className="product-slider" {...settings}>
           {data.map((item) => (
-            <div key={product}>
+            <div key={random}>
               <img className="product-slider-img" src={item} alt="" />
             </div>
           ))}
