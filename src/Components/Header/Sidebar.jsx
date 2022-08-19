@@ -28,10 +28,10 @@ const Sidebar = (props) => {
   return (
     <>
       <div
-        className={clsx("header-active", {
-          // eslint-disable-next-line
-          ["header-hidden"]: scrollDirection === "down",
-        })}
+      // className={clsx("header-active", {
+      //   // eslint-disable-next-line
+      //   ["header-hidden"]: scrollDirection === "down",
+      // })}
       >
         <div className={open ? "sidebar sidebar--open" : "sidebar"}>
           <div className="sidebar-container">

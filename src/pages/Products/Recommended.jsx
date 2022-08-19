@@ -22,7 +22,6 @@ const Products = () => {
     <div style={{ marginBottom: "100px", marginTop: "200px" }}>
       <Typography
         style={{
-          marginBottom: "70px",
           fontWeight: "bold",
           textAlign: "center",
         }}
@@ -30,6 +29,11 @@ const Products = () => {
       >
         Recommended Products
       </Typography>
+      <img
+        style={{ margin: "0 auto", width: "300px", marginTop: "20px" }}
+        src="https://i.shgcdn.com/b1dfc452-0cb3-40a2-9fa1-4cfdcbfe5f13/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+        alt=""
+      />
       <div
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >

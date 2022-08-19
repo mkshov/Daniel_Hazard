@@ -4,3 +4,5 @@ export { default as Sidebar } from "./Header/Sidebar";
 export { default as BackdropLoader } from "./Loaders/BackdropLoader";
 export { default as Slider } from "./Slider/Slider";
 export { default as Select } from "./SelectBox/Select";
+export { default as MyAccordion } from "./MyAccordion/MyAccordion";
+export { default as ProductInfo } from "./ProductInfo/ProductInfo";

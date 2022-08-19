@@ -87,10 +87,19 @@
 .product-info {
   width: 40%;
 }
+
 .product-info3 {
   width: 100%;
-  background-color: rgba(193, 165, 117, 0.22);
+  /* background-color: rgba(193, 165, 117, 0.22); */
   margin-top: 40px;
+  /* padding: 25px; */
+}
+.product-info3 p {
+  font-size: 18px;
+}
+.product-info3 h6 {
+  font-size: 22px;
+  font-weight: bold;
 }
 .custom-indicator {
   /* bottom: -150px !important; */

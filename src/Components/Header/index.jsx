@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import clsx from "clsx";
 
@@ -49,16 +49,32 @@ export default function Header() {
   const handleCloseShopMenu = () => {
     setIsOpenShopMenu(false);
   };
+  const [navHeight, setNavHeight] = useState("height-active");
+  const [navImage, setNavImage] = useState("image-active");
+  const listenScrollEvent = () => {
+    window.scrollY > 50
+      ? setNavHeight("header")
+      : setNavHeight("height-active");
+    window.scrollY > 50 ? setNavImage("image") : setNavImage("image-active");
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+  console.log(navImage);
 
   return (
     <Box sx={{ flexGrow: 1 }} onMouseLeave={handleCloseShopMenu}>
       <AppBar
-        className={clsx("header-active", {
-          // eslint-disable-next-line
-          ["header-hidden"]: scrollDirection === "down",
-        })}
+      // className={clsx("header-active", {
+      //   // eslint-disable-next-line
+      //   ["header-hidden"]: scrollDirection === "down",
+      // })}
       >
-        <Toolbar className="header">
+        <Toolbar className={navHeight}>
           <Box
             className="hamburger"
             onClick={() => {
@@ -78,6 +94,7 @@ export default function Header() {
               href="#"
             >
               <img
+                className={navImage}
                 onMouseEnter={handleCloseShopMenu}
                 src="https://i.ibb.co/LhdTySj/1658673254367.png"
                 alt="logo"
