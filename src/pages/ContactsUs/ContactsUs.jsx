@@ -9,7 +9,7 @@ import { Typography } from "@mui/material";
 const ContactsUs = () => {
   return (
     <div>
-      <div className="contacts-background"></div>
+      <div className="contacts-background" />
       <div className="contacts">
         <div className="contacts-container">
           <div className="contacts-header">

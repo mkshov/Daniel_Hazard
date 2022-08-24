@@ -1,13 +1,22 @@
-import { Suspense } from "react";
-import { useRoutes } from "react-router-dom";
+import { Suspense, useEffect } from "react";
+import { useLocation, useRoutes } from "react-router-dom";
+import { CssBaseline } from "@mui/material";
 
 import { BackdropLoader } from "./Components";
 import mainRoutes from "./routes/route";
 import "./App.css";
-import { CssBaseline } from "@mui/material";
+
+export function useScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+}
 
 function App() {
   let routes = useRoutes(mainRoutes);
+  useScrollToTop();
 
   return (
     <>

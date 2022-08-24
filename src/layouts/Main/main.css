@@ -2,6 +2,20 @@
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  /* position: relative; */
+  position: relative;
   margin-top: 80px;
+}
+.scroll-top {
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: 0.5s !important;
+  color: white !important;
+  background-color: #c1a575 !important;
+}
+.scroll-top-active {
+  opacity: 1;
+  /* visibility: visible; */
+  transition: 0.5s !important;
+  color: white !important;
+  background-color: #c1a575 !important;
 }

@@ -1,11 +1,11 @@
 import {
   AboutUs,
+  SpringSummer,
   ContactsUs,
   JacketDetails,
   Jackets,
   NotFoundPage,
   ProductDetails,
-  Recommended,
   Trousers,
   TrousersDetails,
 } from "pages";
@@ -87,11 +87,11 @@ let routes = [
     ),
   },
   {
-    path: "/recommended",
+    path: "/collections-spring-summer-2022",
     element: (
-      <MainLayout>
-        <Recommended />
-      </MainLayout>
+      <WithOutFooter>
+        <SpringSummer />
+      </WithOutFooter>
     ),
   },
   {

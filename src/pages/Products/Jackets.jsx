@@ -12,11 +12,6 @@ const Jackets = () => {
   console.log(jackets);
   return (
     <div className="card-container">
-      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
-        <div style={{ width: "50%", height: "5vh" }}>
-          <Select />
-        </div>
-      </div>
       {jackets.map((item) => (
         <div className="card" key={item.id}>
           <div className="product-wrapper">

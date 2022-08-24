@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import clsx from "clsx";
+// import clsx from "clsx";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Hamburger from "hamburger-react";
-import { Collapse, Link } from "@mui/material";
+import { Collapse } from "@mui/material";
 
 import "./Header.css";
 import { Sidebar } from "Components";
 
 import { useTranslation } from "react-i18next";
-import { useScroll } from "./ScrollHook";
+// import { useScroll } from "./ScrollHook";
 
 export default function Header() {
-  const { scrollDirection } = useScroll();
+  // const { scrollDirection } = useScroll();
   const { t, i18n } = useTranslation();
 
   const navigate = useNavigate();
@@ -64,7 +64,6 @@ export default function Header() {
       window.removeEventListener("scroll", listenScrollEvent);
     };
   }, []);
-  console.log(navImage);
 
   return (
     <Box sx={{ flexGrow: 1 }} onMouseLeave={handleCloseShopMenu}>
@@ -86,20 +85,16 @@ export default function Header() {
           </Box>
 
           <Box className="header-logo">
-            <Link
+            <img
               onClick={() => {
                 navigate("/");
                 handleCloseSidebar();
               }}
-              href="#"
-            >
-              <img
-                className={navImage}
-                onMouseEnter={handleCloseShopMenu}
-                src="https://i.ibb.co/LhdTySj/1658673254367.png"
-                alt="logo"
-              />
-            </Link>
+              className={navImage}
+              onMouseEnter={handleCloseShopMenu}
+              src="https://i.ibb.co/LhdTySj/1658673254367.png"
+              alt="logo"
+            />
           </Box>
           <Box className="header-routes holder">
             <Box>

@@ -7,10 +7,16 @@
   padding: 0;
   font-family: "Futura PT Light", sans-serif !important;
   font-variant-numeric: lining-nums;
+  user-select: auto;
 }
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* tegs */
 a {
   color: black !important;
   text-decoration: none !important;
@@ -18,23 +24,40 @@ a {
 h3 {
   font-family: "Futura PT Light" !important;
 }
-
+li {
+  list-style-type: none;
+}
 img {
   display: block;
-}
-::-webkit-scrollbar {
-  width: 0;
-}
-.slick-dots li button:before {
-  color: #c1a575 !important;
 }
 li {
   font-size: 17px;
   margin-bottom: 10px;
 }
-ul {
-  margin-left: 20px;
+
+/* tegs end */
+
+.slick-dots li button:before {
+  color: #c1a575 !important;
 }
+
+/* displays */
+
+.disp-f {
+  display: flex;
+}
+.d-flex-j-content-c {
+  display: flex;
+  justify-content: center;
+}
+.f-start {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/*  */
+
 .main-button {
   transition: all 0.5s ease !important;
   color: #c1a575 !important;

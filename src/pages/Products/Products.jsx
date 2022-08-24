@@ -6,39 +6,29 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import "./Products.css";
 import products from "./mockData/mockData";
+
 const Products = () => {
   const navigate = useNavigate();
 
-  // const random = Math.floor(Math.random() * 99999);
-  // const LowToHigh = products?.sort((a, b) => (a.price > b.price ? 1 : -1));
-  // console.log("LowToHigh: ", LowToHigh);
-  // const HighToLow = products?.sort((a, b) => (a.price > b.price ? -1 : 1));
-  // console.log("HighToLow: ", HighToLow);
+  const categoryLocalStorage = localStorage.getItem("__dh:category");
 
-  const [sortPrice, setSortPrice] = useState(true);
-
-  const [value, setValue] = React.useState(0);
+  const [sortPrice, setSortPrice] = useState(categoryLocalStorage || "asc");
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    localStorage.setItem("__dh:category", newValue);
+    setSortPrice(newValue);
   };
-  function handleChangeLow() {
-    setSortPrice(true);
-  }
-  function handleChangeHigh() {
-    setSortPrice(false);
-  }
 
-  if (sortPrice) {
+  if (sortPrice === "asc") {
     products?.sort((a, b) => (a.price > b.price ? 1 : -1));
-  } else {
+  } else if (sortPrice === "desc") {
     products?.sort((a, b) => (a.price > b.price ? -1 : 1));
   }
   return (
     <div>
-      <Tabs value={value} onChange={handleChange} centered>
-        <Tab label="Low to High" onClick={handleChangeLow} />
-        <Tab label="High to Low" onClick={handleChangeHigh} />
+      <Tabs value={sortPrice} onChange={handleChange} centered>
+        <Tab label="Low to High" value="asc" />
+        <Tab label="High to Low" value="desc" />
       </Tabs>
       <div className="card-container">
         {products.map((item) => (

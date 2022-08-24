@@ -1,28 +1,32 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import clsx from "clsx";
+// import clsx from "clsx";
 
 import "./Header.css";
-import { useScroll } from "./ScrollHook";
+// import { useScroll } from "./ScrollHook";
 
 import ListItemText from "@mui/material/ListItemText";
 import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import { Link, List, ListItemButton } from "@mui/material";
+import { List, ListItemButton } from "@mui/material";
 
 const Sidebar = (props) => {
   const navigate = useNavigate();
   const { open, toggleSidebar } = props;
-  const { scrollDirection } = useScroll();
+  // const { scrollDirection } = useScroll();
   const [openList1, setOpenList1] = useState(false);
   const [openList2, setOpenList2] = useState(false);
+  const [openList3, setOpenList3] = useState(false);
 
   const handleClick = () => {
     setOpenList1(!openList1);
   };
   const handleClick2 = () => {
     setOpenList2(!openList2);
+  };
+  const handleClick3 = () => {
+    setOpenList3(!openList3);
   };
 
   return (
@@ -42,17 +46,15 @@ const Sidebar = (props) => {
               </ListItemButton>
               <Collapse in={openList2} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <Link href="#">
-                    <ListItemButton
-                      onClick={() => {
-                        toggleSidebar();
-                        navigate("/clothing/jackets");
-                      }}
-                      sx={{ pl: 4 }}
-                    >
-                      <ListItemText primary="Jackets" />
-                    </ListItemButton>
-                  </Link>
+                  <ListItemButton
+                    onClick={() => {
+                      toggleSidebar();
+                      navigate("/clothing/jackets");
+                    }}
+                    sx={{ pl: 4 }}
+                  >
+                    <ListItemText primary="Jackets" />
+                  </ListItemButton>
                 </List>
                 <List component="div" disablePadding>
                   <ListItemButton
@@ -66,13 +68,34 @@ const Sidebar = (props) => {
                   </ListItemButton>
                 </List>
               </Collapse>
-              <ListItemButton
-                onClick={() => {
-                  toggleSidebar();
-                }}
-              >
+              <ListItemButton onClick={handleClick3}>
                 <ListItemText primary="COLLECTIONS" />
+                {openList3 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
+              <Collapse in={openList3} timeout="auto" unmountOnExit>
+                <List component="div" disablePadding>
+                  <ListItemButton
+                    onClick={() => {
+                      toggleSidebar();
+                      navigate("/collections-spring-summer-2022");
+                    }}
+                    sx={{ pl: 4 }}
+                  >
+                    <ListItemText primary="SPRING SUMMER/2022" />
+                  </ListItemButton>
+                </List>
+                <List component="div" disablePadding>
+                  <ListItemButton
+                    onClick={() => {
+                      toggleSidebar();
+                      navigate("/clothing/trousers");
+                    }}
+                    sx={{ pl: 4 }}
+                  >
+                    <ListItemText primary="Trousers" />
+                  </ListItemButton>
+                </List>
+              </Collapse>
               <ListItemButton
                 onClick={() => {
                   toggleSidebar();
@@ -109,17 +132,14 @@ const Sidebar = (props) => {
                   </ListItemButton>
                 </List>
               </Collapse>
-              <Link
-                href="#"
+              <ListItemButton
                 onClick={() => {
                   toggleSidebar();
                   navigate("/contacts-us");
                 }}
               >
-                <ListItemButton>
-                  <ListItemText primary="CONTACTS US" />
-                </ListItemButton>
-              </Link>
+                <ListItemText primary="CONTACTS US" />
+              </ListItemButton>
             </List>
           </div>
         </div>

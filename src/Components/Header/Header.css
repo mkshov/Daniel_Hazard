@@ -80,13 +80,9 @@
   color: black;
   height: 100vh;
   width: 400px;
-  transform: translateY(-110%);
-  transition: all 0.9s;
+  transform: translateX(-100%);
+  transition: all 0.5s;
   z-index: 99;
-}
-
-.sidebar-container {
-  margin-top: 95px;
 }
 
 .holder:hover .block {
@@ -94,7 +90,7 @@
 }
 
 .sidebar--open {
-  transform: translateY(-10%);
+  transform: translateY(0);
 }
 
 .backdrop {
@@ -171,6 +167,5 @@
 @media all and (max-width: 450px) {
   .sidebar {
     width: 100%;
-    border-radius: 20px;
   }
 }

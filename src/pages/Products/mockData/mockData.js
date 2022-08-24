@@ -8,6 +8,7 @@ const products = [
     description:
       "This suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit. ",
     price: 1200,
+    price2: 1490,
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_01_1600x.jpg?v=1643447214",
     image2:
@@ -24,6 +25,7 @@ const products = [
     description:
       "This suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit.",
     price: 1500,
+    price2: 1690,
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS659-PUY3_S22MA41_N21_01_800x.jpg?v=1643358471",
     image2:
@@ -40,6 +42,7 @@ const products = [
     description:
       "This suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit.",
     price: 1220,
+    price2: 1489,
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUSS109-PUSZ3_MWA84_D31_01_800x.jpg?v=1632412570",
     image2:
@@ -56,6 +59,7 @@ const products = [
     description:
       "This suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit.",
     price: 1600,
+    price2: 1955,
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S17WA20_B31_01_800x.jpg?v=1624368457",
     image2:
@@ -73,6 +77,7 @@ const products = [
     description:
       "This suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit.",
     price: 900,
+    price2: 1440,
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA06_A31_01_800x.jpg?v=1624368494",
     image2:
@@ -89,6 +94,7 @@ const products = [
     description:
       "This suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit.",
     price: 2400,
+    price2: 3550,
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA26_B21_01_800x.jpg?v=1624368527",
     image2:
@@ -105,6 +111,7 @@ const products = [
     description:
       "This suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit.",
     price: 3200,
+    price2: 4590,
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S19WA21_G19_01_800x.jpg?v=1624368564",
     image2:
@@ -121,6 +128,7 @@ const products = [
     description:
       "This suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit.",
     price: 2240,
+    price2: 2540,
     name: "a",
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX30_PUZ3_CAWWA02_B31_01_800x.jpg?v=1624368662",
@@ -138,6 +146,7 @@ const products = [
     description:
       "This suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit.",
     price: 1235,
+    price2: 1650,
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX35_PUZ3_S8LA05_V21_01_800x.jpg?v=1624368700",
     image2:
@@ -155,6 +164,7 @@ const products = [
     description:
       "descripThis suit’s vibrant forest green pairs perfectly with the color palettes of both Spring and Summer. Match it with a white shirt and colorful tie for a formal yet cheerful look, or, pair the suit with darker colors for a style that is cool and collected. This suit is finished with a classic notch-lapel collar and two-button closure, paired with 36’’ inseam, un-hemmed trousers. Tailored from our finest poly/rayon blend, this stylish yet comfortable suit can come in either a modern or slim fit.tion",
     price: 1225,
+    price2: 1460,
     image:
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX35_PUZ3_SPLA01_B22_01_800x.jpg?v=1624368737",
     image2:

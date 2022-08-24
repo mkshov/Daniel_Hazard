@@ -9,3 +9,4 @@ export { default as Trousers } from "./Products/Trousers";
 export { default as TrousersDetails } from "./Products/Details/TrousersDetails";
 export { default as Recommended } from "./Products/Recommended";
 export { default as ContactsUs } from "./ContactsUs/ContactsUs";
+export { default as SpringSummer } from "./Collections/SpirngSummer";

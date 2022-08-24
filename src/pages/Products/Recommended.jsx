@@ -19,26 +19,15 @@ const Products = () => {
   }
   const recommended = randomArray(products, jackets, trousers);
   return (
-    <div style={{ marginBottom: "100px", marginTop: "200px" }}>
-      <Typography
-        style={{
-          fontWeight: "bold",
-          textAlign: "center",
-        }}
-        variant="h4"
-      >
-        Recommended Products
-      </Typography>
+    <div className="recommended">
+      <Typography variant="h4">Recommended Products</Typography>
       <img
-        style={{ margin: "0 auto", width: "300px", marginTop: "20px" }}
         src="https://i.shgcdn.com/b1dfc452-0cb3-40a2-9fa1-4cfdcbfe5f13/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
         alt=""
       />
-      <div
-        style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
-      >
+      <div className="recommended-container">
         {recommended.map((item) => (
-          <div key={item.id} style={{ margin: "30px", width: "300px" }}>
+          <div key={item.id} className="recommended-block">
             <div className="product-wrapper">
               <img className="product-img" src={item.image} alt={item.title} />
               <div className="middle">

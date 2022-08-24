@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import jackets from "../mockData/mockDataJackets";
-
-import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
-import Slider from "react-slick";
-
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Recommended } from "pages";
+
+import Slider from "react-slick";
+import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+
+import Typography from "@mui/material/Typography";
+import { Drawer, MyAccordion, ProductInfo } from "Components";
 
 const PreviousBtn = (props) => {
   const { className, onClick } = props;
@@ -28,14 +25,14 @@ const NextBtn = (props) => {
     </div>
   );
 };
+
 const JacketDetails = () => {
-  const [expanded, setExpanded] = useState(false);
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
   const { id } = useParams();
   const jacket = jackets.find((item) => +item.id === +id);
+  const random = Math.floor(Math.random() * 999999);
+
   const data = [jacket.image, jacket.image2, jacket.image3];
+  console.log("data: ", data);
   const settings = {
     dots: true,
     prevArrow: <PreviousBtn />,
@@ -63,17 +60,12 @@ const JacketDetails = () => {
       <div className="product-container">
         <Slider className="product-slider" {...settings}>
           {data.map((item) => (
-            <div key={jacket.id}>
+            <div key={random}>
               <img className="product-slider-img" src={item} alt="" />
             </div>
           ))}
         </Slider>
-        {/* <div className="product-tag">
-          <img
-            src="https://i.ibb.co/hXV983K/Picsart-22-08-09-16-01-36-695.jpg"
-            alt="tag"
-          />
-        </div> */}
+
         <div className="product-info">
           <div className="product-info2">
             <Typography
@@ -82,16 +74,45 @@ const JacketDetails = () => {
             >
               {jacket.title}
             </Typography>
-            <Typography sx={{ marginTop: "10px" }} variant="h5">
-              €{jacket.price}
+            <div className="product-info2-2">
+              <Typography
+                sx={{
+                  marginTop: "10px",
+                  marginRight: "20px",
+                  textDecoration: "line-through",
+                  color: "gray",
+                }}
+                variant="h5"
+              >
+                €{jacket.price2}
+              </Typography>
+              <Typography sx={{ marginTop: "10px" }} variant="h5">
+                €{jacket.price}
+              </Typography>
+            </div>
+            <Typography
+              variant="h6"
+              sx={{ marginTop: "10px", marginBottom: "20px" }}
+            >
+              An upgraded classic suit designed for comfort and convenience.
             </Typography>
+            <ul>
+              <li>6-Way Stretch Fabric</li>
+              <li>Wrinkle Resistant</li>
+              <li>Stain Resistant</li>
+              <li>Odor Resistant</li>
+            </ul>
           </div>
           <div className="product-info3">
-            <Typography variant="h6">{jacket.subTitle}</Typography>
-            <Typography>{jacket.description}</Typography>
+            <MyAccordion />
+            <Typography sx={{ marginTop: "50px" }}>
+              {jacket.description}
+            </Typography>
+            <Drawer />
           </div>
         </div>
       </div>
+      <ProductInfo />
       <Recommended />
     </div>
   );
