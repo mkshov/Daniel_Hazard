@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
-import { Box, Button, Link, Typography } from "@mui/material";
-import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
+import { Box, Button, Typography } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -335,7 +334,7 @@ const HomePage = () => {
             </Box>
           </Box>
           <Box
-            style={{ overflowX: "hidden" }}
+            // style={{ overflowX: "hidden" }}
             data-aos="zoom-in"
             data-aos-offset="200"
             data-aos-duration="500"
@@ -356,7 +355,7 @@ const HomePage = () => {
             </Box>
           </Box>
           <Box
-            style={{ overflowX: "hidden" }}
+            // style={{ overflowX: "hidden" }}
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-duration="500"
@@ -378,15 +377,6 @@ const HomePage = () => {
           </Box>
         </Box>
         {/* Info us end */}
-        <Box sx={{ textAlign: "center" }}>
-          <Link href="#" onClick={() => navigate("/")}>
-            <Button sx={{ textAlign: "center", color: "#c1a575" }}>
-              <KeyboardDoubleArrowUpIcon
-                sx={{ fontSize: "50px", color: "#c1a575" }}
-              />
-            </Button>
-          </Link>
-        </Box>
       </Box>
     </Box>
   );

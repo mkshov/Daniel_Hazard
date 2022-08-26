@@ -8,8 +8,11 @@ import {
   ProductDetails,
   Trousers,
   TrousersDetails,
+  Spring,
+  Summer,
+  HomePage,
+  ProductsPage,
 } from "pages";
-import { HomePage, ProductsPage } from "./pages";
 import MainLayout from "layouts/Main";
 import WithOutFooter from "layouts/Main/WithOutFooter";
 
@@ -92,6 +95,22 @@ let routes = [
       <WithOutFooter>
         <SpringSummer />
       </WithOutFooter>
+    ),
+  },
+  {
+    path: "/collections-spring-summer-2022/spring",
+    element: (
+      <MainLayout>
+        <Spring />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/collections-spring-summer-2022/summer",
+    element: (
+      <MainLayout>
+        <Summer />
+      </MainLayout>
     ),
   },
   {

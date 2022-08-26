@@ -31,7 +31,7 @@ const JacketDetails = () => {
   const jacket = jackets.find((item) => +item.id === +id);
   const random = Math.floor(Math.random() * 999999);
 
-  const data = [jacket.image, jacket.image2, jacket.image3];
+  const data = [jacket?.image, jacket?.image2, jacket?.image3];
   console.log("data: ", data);
   const settings = {
     dots: true,

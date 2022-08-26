@@ -333,3 +333,8 @@
     width: 100%;
   }
 }
+@media all and (max-width: 405px) {
+  .sg-ctn .measure-pic0 {
+    width: 200px;
+  }
+}

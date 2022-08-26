@@ -17,5 +17,11 @@ export const Recommended = lazy(() => import("../pages/Products/Recommended"));
 export const AboutUs = lazy(() => import("../pages/AboutUs/AbotUs"));
 export const ContactsUs = lazy(() => import("../pages/ContactsUs/ContactsUs"));
 export const SpringSummer = lazy(() =>
-  import("../pages/Collections/SpirngSummer")
+  import("../pages/Collections/SpringSummer/SpirngSummer")
+);
+export const Spring = lazy(() =>
+  import("../pages/Collections/SpringSummer/Spring")
+);
+export const Summer = lazy(() =>
+  import("../pages/Collections/SpringSummer/Summer")
 );

@@ -49,8 +49,10 @@ export default function Header() {
   const handleCloseShopMenu = () => {
     setIsOpenShopMenu(false);
   };
+
   const [navHeight, setNavHeight] = useState("height-active");
   const [navImage, setNavImage] = useState("image-active");
+
   const listenScrollEvent = () => {
     window.scrollY > 50
       ? setNavHeight("header")
@@ -64,6 +66,15 @@ export default function Header() {
       window.removeEventListener("scroll", listenScrollEvent);
     };
   }, []);
+
+  useEffect(() => {
+    if (openSidebar) {
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [openSidebar]);
 
   return (
     <Box sx={{ flexGrow: 1 }} onMouseLeave={handleCloseShopMenu}>
