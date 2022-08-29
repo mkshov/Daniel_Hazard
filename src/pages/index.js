@@ -12,3 +12,6 @@ export { default as ContactsUs } from "./ContactsUs/ContactsUs";
 export { default as SpringSummer } from "./Collections/SpringSummer/SpirngSummer";
 export { default as Spring } from "./Collections/SpringSummer/Spring";
 export { default as Summer } from "./Collections/SpringSummer/Summer";
+export { default as AutumnWinter } from "./Collections/AutumnWinter/AutumnWinter";
+export { default as Autumn } from "./Collections/AutumnWinter/Autumn";
+export { default as Winter } from "./Collections/AutumnWinter/Winter";

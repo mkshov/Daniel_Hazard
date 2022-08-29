@@ -1,16 +1,15 @@
 import React from "react";
 import "./ContactsUs.css";
 // eslint-disable-next-line
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import LoadingButton from "@mui/lab/LoadingButton";
-import { Alert, TextField, Typography } from "@mui/material";
+import { TextField, Typography } from "@mui/material";
 
 const ContactsUs = () => {
   const [state, handleSubmit] = useForm("xlevdlev");
-  console.log("state: ", state);
   return (
     <div>
       <div className="contacts-background" />

@@ -36,6 +36,7 @@ export default function TemporaryDrawer() {
               fontWeight: "bold",
               textAlign: "end",
               padding: "20px 50px",
+              cursor: "pointer",
             }}
           >
             Close

@@ -25,3 +25,12 @@ export const Spring = lazy(() =>
 export const Summer = lazy(() =>
   import("../pages/Collections/SpringSummer/Summer")
 );
+export const AutumnWinter = lazy(() =>
+  import("../pages/Collections/AutumnWinter/AutumnWinter")
+);
+export const Autumn = lazy(() =>
+  import("../pages/Collections/AutumnWinter/Autumn")
+);
+export const Winter = lazy(() =>
+  import("../pages/Collections/AutumnWinter/Winter")
+);

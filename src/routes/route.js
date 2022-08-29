@@ -12,6 +12,9 @@ import {
   Summer,
   HomePage,
   ProductsPage,
+  AutumnWinter,
+  Autumn,
+  Winter,
 } from "pages";
 import MainLayout from "layouts/Main";
 import WithOutFooter from "layouts/Main/WithOutFooter";
@@ -97,6 +100,7 @@ let routes = [
       </WithOutFooter>
     ),
   },
+
   {
     path: "/collections-spring-summer-2022/spring",
     element: (
@@ -110,6 +114,30 @@ let routes = [
     element: (
       <MainLayout>
         <Summer />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/collections-autumn-winter-2022-23",
+    element: (
+      <WithOutFooter>
+        <AutumnWinter />
+      </WithOutFooter>
+    ),
+  },
+  {
+    path: "/collections-autumn-winter-2022-23/autumn",
+    element: (
+      <MainLayout>
+        <Autumn />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/collections-autumn-winter-2022-23/winter",
+    element: (
+      <MainLayout>
+        <Winter />
       </MainLayout>
     ),
   },

@@ -62,11 +62,11 @@ const HomePage = () => {
             <Box className="slide-1-overlay">
               <Box className="slide-1-inner">
                 <Typography variant="h3">{t("newCollection")}</Typography>
-                <Typography variant="h5">{t("fallSummer")}</Typography>
+                <Typography variant="h5">{t("springSummer")}</Typography>
                 <Typography variant="h4">{t("styleFrames")}</Typography>
                 <Button
                   className="main-button"
-                  onClick={() => navigate(`/products`)}
+                  onClick={() => navigate(`/collections-spring-summer-2022`)}
                   variant="outlined"
                   color="inherit"
                 >
@@ -85,13 +85,14 @@ const HomePage = () => {
             <Box className="slide-2-overlay">
               <Box className="slide-2-inner">
                 <Typography variant="h3">{t("newCollection")}</Typography>
-                <Typography variant="h5">{t("fallSummer")}</Typography>
+                <Typography variant="h5">{t("autumnWinter")}</Typography>
                 <Button
+                  onClick={() => navigate(`/collections-autumn-winter-2022-23`)}
                   className="main-button"
                   variant="outlined"
                   color="inherit"
                 >
-                  DISCOVER MORE
+                  {t("discoverMore")}
                 </Button>
               </Box>
             </Box>
@@ -102,16 +103,16 @@ const HomePage = () => {
       <Box>
         <Box className="slide-1-inner-adaptive">
           <Box className="slide-1-inner-adaptive-box">
-            <Typography variant="h3">New Collection</Typography>
-            <Typography variant="h5">Fall Summer 2022/23</Typography>
-            <Typography variant="h4">Style Frames</Typography>
+            <Typography variant="h3">{t("newCollection")}</Typography>
+            <Typography variant="h5">{t("springSummer")}</Typography>
+            <Typography variant="h4">{t("styleFrames")}</Typography>
             <Button
               className="main-button"
               onClick={() => navigate(`/products`)}
               variant="outlined"
               color="inherit"
             >
-              DISCOVER MORE
+              {t("discoverMore")}
             </Button>
           </Box>
         </Box>
@@ -140,7 +141,10 @@ const HomePage = () => {
               src="https://cdn.shopify.com/s/files/1/1383/8317/products/beigesuit_9_800x.jpg?v=1614944367"
               alt=""
             />
-            <div className="middle">
+            <div
+              className="middle"
+              onClick={() => navigate("/suits/everyday/256324324572")}
+            >
               <Button className="main-button">{t("discoverMore")}</Button>
             </div>
           </Box>
@@ -160,12 +164,12 @@ const HomePage = () => {
 
         <Box className="img-txt-block1">
           <Box className="img-txt-mobile">
-            <Typography variant="h4">{t("consciousGarments")}</Typography>
+            <Typography variant="h4">{t("excellentQuality")}</Typography>
           </Box>
           <Box className="img-txt-inner visable">
-            <Typography variant="h4">{t("consciousGarments")}</Typography>
-            <Typography>{t("consciousGarmentsChild1")}</Typography>
-            <Typography>{t("consciousGarmentsChild2")}</Typography>
+            <Typography variant="h4">{t("excellentQuality")}</Typography>
+            <Typography>{t("excellentQualityChild1")}</Typography>
+            <Typography>{t("excellentQualityChild2")}</Typography>
           </Box>
 
           <Box>
@@ -175,8 +179,8 @@ const HomePage = () => {
             />
           </Box>
           <Box className="img-txt-mobile">
-            <Typography>{t("consciousGarmentsChild1")}</Typography>
-            <Typography>{t("consciousGarmentsChild2")}</Typography>
+            <Typography>{t("excellentQualityChild1")}</Typography>
+            <Typography>{t("excellentQualityChild2")}</Typography>
           </Box>
         </Box>
 
@@ -188,9 +192,9 @@ const HomePage = () => {
             />
           </Box>
           <Box className="img-txt-inner">
-            <Typography variant="h4">{t("consciousGarments")}</Typography>
-            <Typography>{t("consciousGarmentsChild1")}</Typography>
-            <Typography>{t("consciousGarmentsChild2")}</Typography>
+            <Typography variant="h4">{t("newModels")}</Typography>
+            <Typography>{t("newModelsChild1")}</Typography>
+            <Typography>{t("newModelsChild2")}</Typography>
           </Box>
         </Box>
         <div>
@@ -241,16 +245,8 @@ const HomePage = () => {
           <Box className="history-block-box1">
             <Box className="history-text1">
               <Box data-aos="fade-right" className="history-text1-inner">
-                <Typography variant="h4">Lorem, ipsum dolor.</Typography>
-                <Typography variant="h6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-                  aliquid unde aut temporibus, blanditiis incidunt ducimus
-                  sapiente quibusdam impedit qui saepe facere delectus tempore
-                  provident sit distinctio sunt sint libero cupiditate adipisci
-                  nostrum. Similique ipsum optio error magnam repellat illo
-                  dolorem iure eligendi unde velit cum, possimus, mollitia
-                  accusamus porro.
-                </Typography>
+                <Typography variant="h4">{t("brandHistory")}</Typography>
+                <Typography variant="h6">{t("ourStoryChild1")}</Typography>
               </Box>
             </Box>
             <Box className="history-img" style={{ overflowX: "hidden" }}>
@@ -285,7 +281,7 @@ const HomePage = () => {
                 data-aos-duration="500"
               >
                 <Typography variant="h4">Daniel Hazard</Typography>
-                <Typography variant="h6">{t("history")}</Typography>
+                <Typography variant="h6">{t("ourStoryChild2")}</Typography>
                 <Button className="button-black">{t("discoverMore")}</Button>
               </Box>
             </Box>
@@ -350,7 +346,7 @@ const HomePage = () => {
                 sx={{ color: "#c1a575", fontWeight: "300", fontSize: "30px" }}
                 variant="h4"
               >
-                5-STAR GOOGLE RATING
+                {t("starGoogleRating")}
               </Typography>
             </Box>
           </Box>
@@ -371,7 +367,7 @@ const HomePage = () => {
                 sx={{ color: "#c1a575", fontWeight: "300", fontSize: "30px" }}
                 variant="h4"
               >
-                OVER 40 YERS IN BUSINESS
+                {t("over40YearsInBusiness")}
               </Typography>
             </Box>
           </Box>

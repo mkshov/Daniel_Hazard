@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 30px;
   align-items: center;
   color: #c1a575;
 }
@@ -35,6 +36,7 @@
 }
 .sp-img {
   width: 200px !important;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 .sp-sm-container {

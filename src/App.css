@@ -23,10 +23,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
   background-color: #c1a575;
 }
-
+.css-hyum1k-MuiToolbar-root {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
 /* tegs */
 a {
   color: black !important;

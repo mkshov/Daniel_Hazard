@@ -3,26 +3,35 @@ const itTranslations = {
   wedding: "NOZZE",
   showrooms: "SHOWROOMS",
   newCollection: "Nuova collezione",
-  fallSummer: "Autunno Estate 2022/23",
+  springSummer: "Primavera Estate 2022",
+  autumnWinter: "Autunno Inverno 2022/23",
   styleFrames: "Cornici di stile",
   discoverMore: "SCOPRI DI PIÙ",
   findYourPerfectLook: "TROVA IL TUO LOOK PERFETTO",
   findYourPerfectLookChild:
-    "Per oltre 30 anni, abbiamo vestito i nostri clienti con abiti da tutti i giorni e abiti da sposa progettati per distinguersi. Acquista la nostra vasta selezione di raffinati abiti da uomo e dai il meglio di te ad ognuno",
-  consciousGarments: "Capi consapevoli",
-  consciousGarmentsChild1:
-    "Abbiamo una vasta gamma di capi, che spaziano dagli antichi produttori di mulini Vitale Barberis Canonico e William Thomson alle nuove alternative di abbigliamento vegano.",
-  consciousGarmentsChild2:
-    "Il 55% della nostra collezione di capi proviene da fibre naturali come cotone, lino, lana, cashmere e seta di provenienza onesta.",
-  history:
-    "In passato come oggi, tre generazioni dal 1990, forgia eleganza e artigianalità esclusive. Espressione senza compromessi di una qualità assoluta, una cultura unica basata su know-how, personalizzazione prematura e fascino.",
+    "Per oltre 40 anni, abbiamo vestito i nostri clienti con abiti da tutti i giorni e abiti da sposa progettati per distinguersi. Acquista la nostra vasta selezione di raffinati abiti da uomo e dai il meglio di te ad ognuno",
+  excellentQuality: "Qualità Eccellente",
+  excellentQualityChild1:
+    "La fabbrica di abiti da uomo classici pubblica collezioni più volte all'anno. Offriamo una vasta gamma di modelli. Se stai cercando fornitori affidabili di abbigliamento maschile, siamo felici di discutere i termini della cooperazione.",
+  excellentQualityChild2:
+    "La nostra produzione di abbigliamento maschile dispone di tutte le moderne tecnologie per la realizzazione di abiti da uomo di alta qualità. Tutti i prodotti hanno un'ottima composizione del tessuto e sono presentati solo nelle tonalità reali.",
+  newModels: "Nuovi Modelli",
+  newModelsChild1:
+    "Noi, come produttori di abiti classici da uomo, siamo interessati ad avere solo i modelli più moderni nel tuo negozio.",
+  newModelsChild2:
+    "Nella produzione utilizziamo le più moderne tecnologie e macchine, che ci consentono di essere competitivi sul mercato. Ci siamo affermati come un fornitore affidabile di prodotti di alta qualità.",
   ourStory: "La nostra storia",
+  brandHistory: "STORIA DEL MARCHIO",
+  ourStoryChild1:
+    "Riesci a immaginare che una persona una vecchia macchina da cucire farà miracoli? Quindi ecco, devi crederci! Daniel Hazard è nato in queste circostanze. Con il passare del tempo, la fabbrica iniziò gradualmente ad espandersi. Gli impianti di produzione sono stati dotati di attrezzature moderne e ad alta tecnologia, che consentono di migliorare la qualità dei prodotti, mantenendo un'elevata competitività e creando modelli che soddisfano le ultime tendenze della moda.",
+  ourStoryChild2:
+    "Ha iniziato il suo percorso nel 1979. Daniel Hazard cerca di entrare nel mercato dell'abbigliamento maschile prodotti di qualità e persone che indossano un abito o cappotto, sentirsi sicuri e a proprio agio",
   ourAchievements: "I nostri successi",
   reviews:
     "Nel corso degli anni abbiamo accumulato moltissimi acquirenti da diversi paesi e molti feedback positivi.",
   overSuitsInStock: "OLTRE 1.000 ABITI IN MAGAZZINO",
-  startGoogleRating: "VALUTAZIONE GOOGLE A 5 STELLE",
-  over40YearsInBusiness: "OLTRE 30 ANNI DI ATTIVITA'",
+  starGoogleRating: "VALUTAZIONE GOOGLE A 5 STELLE",
+  over40YearsInBusiness: "OLTRE 40 ANNI DI ATTIVITA'",
 };
 
 export default itTranslations;

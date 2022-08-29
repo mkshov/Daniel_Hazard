@@ -164,7 +164,7 @@
   transition: 0.3s;
   opacity: 1;
   display: block;
-  width: 100%;
+  width: 101%;
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
@@ -214,7 +214,7 @@
 }
 .img-txt-inner h4 {
   margin-bottom: 50px;
-  font-size: 35px;
+  font-size: 50px;
 }
 .img-txt-inner p {
   margin-bottom: 15px;
@@ -346,11 +346,15 @@ h3 {
     display: block;
     text-align: center;
   }
+  .img-txt-mobile p {
+    font-size: 24px;
+  }
   .img-txt-mobile h4 {
     margin-bottom: 20px;
+    font-size: 50px;
   }
   .img-txt-inner p {
-    font-size: 1rem;
+    font-size: 25px;
   }
   .visable {
     display: none;

@@ -81,18 +81,18 @@ const Sidebar = (props) => {
                     }}
                     sx={{ pl: 4 }}
                   >
-                    <ListItemText primary="SPRING SUMMER/2022" />
+                    <ListItemText primary="Spring Summer/2022" />
                   </ListItemButton>
                 </List>
                 <List component="div" disablePadding>
                   <ListItemButton
                     onClick={() => {
                       toggleSidebar();
-                      navigate("/clothing/trousers");
+                      navigate("/collections-autumn-winter-2022-23");
                     }}
                     sx={{ pl: 4 }}
                   >
-                    <ListItemText primary="Trousers" />
+                    <ListItemText primary="Autumn Winter/2022-23" />
                   </ListItemButton>
                 </List>
               </Collapse>
