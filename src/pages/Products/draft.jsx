@@ -24,7 +24,6 @@ const Draft = (props) => {
   };
 
   const handleLinkDetails = (id) => () => {
-    // navigate(`/suits/everyday/${item.id}`)
     navigate(`${link}${id}`);
   };
 

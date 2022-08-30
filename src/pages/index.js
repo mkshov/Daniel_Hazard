@@ -1,8 +1,10 @@
 export { default as HomePage } from "./HomePage/HomePage";
 export { default as NotFoundPage } from "./NotFound";
 export { default as AboutUs } from "./AboutUs/AbotUs";
-export { default as ProductsPage } from "./Products/Products";
-export { default as ProductDetails } from "./Products/Details/ProductDetails";
+export { default as Suits } from "./Products/Suits";
+export { default as SuitsDetails } from "./Products/Details/SuitsDetails";
+export { default as Wedding } from "./Products/Wedding";
+export { default as WeddingDetails } from "./Products/Details/WeddingDetails";
 export { default as Jackets } from "./Products/Jackets";
 export { default as JacketDetails } from "./Products/Details/JacketDetails";
 export { default as Trousers } from "./Products/Trousers";

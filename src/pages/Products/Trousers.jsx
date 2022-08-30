@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Products.css";
-import trousers from "./mockData/mockDataTrousers";
+import trousers from "./mockData/TrousersData";
 import Draft from "./draft";
 
 const Trousers = () => {

@@ -1,9 +1,13 @@
 import { lazy } from "react";
 
 export const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
-export const ProductsPage = lazy(() => import("../pages/Products/Products"));
-export const ProductDetails = lazy(() =>
-  import("../pages/Products/Details/ProductDetails")
+export const Suits = lazy(() => import("../pages/Products/Suits"));
+export const SuitsDetails = lazy(() =>
+  import("../pages/Products/Details/SuitsDetails")
+);
+export const Wedding = lazy(() => import("../pages/Products/Wedding"));
+export const WeddingDetails = lazy(() =>
+  import("../pages/Products/Details/WeddingDetails")
 );
 export const JacketDetails = lazy(() =>
   import("../pages/Products/Details/JacketDetails")

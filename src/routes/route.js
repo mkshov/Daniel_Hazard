@@ -5,19 +5,20 @@ import {
   JacketDetails,
   Jackets,
   NotFoundPage,
-  ProductDetails,
   Trousers,
   TrousersDetails,
   Spring,
   Summer,
   HomePage,
-  ProductsPage,
   AutumnWinter,
   Autumn,
   Winter,
+  WeddingDetails,
+  Wedding,
 } from "pages";
 import MainLayout from "layouts/Main";
 import WithOutFooter from "layouts/Main/WithOutFooter";
+import { Suits, SuitsDetails } from "./pages";
 
 let routes = [
   {
@@ -32,7 +33,7 @@ let routes = [
     path: "/suits/everyday",
     element: (
       <MainLayout>
-        <ProductsPage />
+        <Suits />
       </MainLayout>
     ),
   },
@@ -40,7 +41,23 @@ let routes = [
     path: "/suits/everyday/:id",
     element: (
       <MainLayout>
-        <ProductDetails />
+        <SuitsDetails />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/suits/wedding",
+    element: (
+      <MainLayout>
+        <Wedding />
+      </MainLayout>
+    ),
+  },
+  {
+    path: "/suits/wedding/:id",
+    element: (
+      <MainLayout>
+        <WeddingDetails />
       </MainLayout>
     ),
   },

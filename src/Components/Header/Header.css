@@ -37,7 +37,7 @@
   width: 165px;
 }
 .height-active {
-  transition: 0.3s;
+  transition: 0.2s;
   color: #c1a575;
   height: 80px;
 }
@@ -48,7 +48,7 @@
 }
 .header-logo img {
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
   margin-left: 65px;
   width: 165px;
 }
@@ -107,7 +107,7 @@
   transform: translateX(-100%);
   transition: all 0.5s;
   z-index: 99;
-  margin-top: -50px;
+  margin-top: -38px;
 }
 
 .holder:hover .block {
@@ -136,7 +136,7 @@
   display: block;
 }
 .header-category {
-  background-color: #f7f7f7;
+  background-color: #fefefe;
   border-top: 1px solid #0000001a;
 }
 .header-category ul {

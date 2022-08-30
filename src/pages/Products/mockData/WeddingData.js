@@ -1,8 +1,8 @@
-const products = [
+const wedding = [
   {
-    id: 7654633,
+    id: 76542633,
     route: "suits",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUTS35_2_PUZLAC_S22MA07_M31",
     subTitle: "subTitle",
     description:
@@ -17,9 +17,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
   },
   {
-    id: 256324324572,
+    id: 256224324572,
     route: "suits",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUTS659_PUY3_S22MA41_N21",
     subTitle: "subTitle",
     description:
@@ -34,9 +34,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS659-PUY3_S22MA41_N21_03_1600x.jpg?v=1643358471",
   },
   {
-    id: 33547454,
+    id: 335472454,
     route: "suits",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUSS109_PUSZ3_MWA84_D31",
     subTitle: "subTitle",
     description:
@@ -51,9 +51,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUSS109-PUSZ3_MWA84_D31_03_1000x.jpg?v=1632412569",
   },
   {
-    id: 78476,
+    id: 784276,
     route: "suits",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUS30_PUZ3_S17WA20_B31",
     subTitle: "subTitle",
     description:
@@ -68,10 +68,10 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S17WA20_B31_03_1000x.jpg?v=1624368457",
   },
   {
-    id: 4768355465,
+    id: 47683255465,
     route: "suits",
     name: "b",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUS30_PUZ3_S19WA21_G19",
     subTitle: "subTitle",
     description:
@@ -86,9 +86,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA06_A31_03_1000x.jpg?v=1624368494",
   },
   {
-    id: 33454568907656,
+    id: 334545268907656,
     route: "suits",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUTS35_PUZ3_APWA02_N24",
     subTitle: "subTitle",
     description:
@@ -103,9 +103,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA26_B21_03_1000x.jpg?v=1624368527",
   },
   {
-    id: 789786765,
+    id: 7897826765,
     route: "suits",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUTX30_PUZ3_CAWWA02_B31",
     subTitle: "subTitle",
     description:
@@ -120,9 +120,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S19WA21_G19_03_1000x.jpg?v=1624368564",
   },
   {
-    id: 235467568,
+    id: 2354675268,
     route: "suits",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUTX30_PUZ3_CAWWA02_B31",
     subTitle: "subTitle",
     description:
@@ -138,9 +138,9 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX30_PUZ3_CAWWA02_B31_03_1000x.jpg?v=1624368662",
   },
   {
-    id: 9324554671345,
+    id: 93245542671345,
     route: "suits",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUTX30_PUZ3_CAWWA02_B31",
     subTitle: "subTitle",
     description:
@@ -155,10 +155,10 @@ const products = [
       "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX35_PUZ3_S8LA05_V21_03_1000x.jpg?v=1624368700",
   },
   {
-    id: 10723456809,
+    id: 107234526809,
     route: "suits",
     name: "c",
-    route2: "everyday",
+    route2: "wedding",
     title: "AUTX30_PUZ3_CAWWA02_B31",
     subTitle: "subTitle",
     description:
@@ -174,4 +174,4 @@ const products = [
   },
 ];
 
-export default products;
+export default wedding;

@@ -28,7 +28,7 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 7000,
 };
 
 const Slider = (props) => {

@@ -37,12 +37,12 @@
 
 @media all and (max-width: 640px) {
   .info-component-container {
-    width: 60%;
+    width: 100%;
     flex-wrap: wrap;
   }
   .info-component-inner {
     width: 105px;
-    margin-bottom: 40px;
+    margin: 40px;
   }
   .info-component {
     display: flex;

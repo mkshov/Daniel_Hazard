@@ -125,6 +125,7 @@ const Sidebar = (props) => {
                   <ListItemButton
                     onClick={() => {
                       toggleSidebar();
+                      navigate("/suits/wedding");
                     }}
                     sx={{ pl: 4 }}
                   >

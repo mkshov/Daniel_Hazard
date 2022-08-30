@@ -1,6 +1,6 @@
 import React from "react";
 
-import jackets from "./mockData/mockDataJackets";
+import jackets from "./mockData/JacketsData";
 import Draft from "./draft";
 
 const Jackets = () => {

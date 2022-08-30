@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import products from "../mockData/mockData";
 import { Recommended } from "pages";
 
 import Slider from "react-slick";
@@ -26,12 +25,18 @@ const NextBtn = (props) => {
   );
 };
 
-const ProductDetails = () => {
+const Details = (props) => {
+  const { productDetails } = props;
   const { id } = useParams();
-  const product = products.find((item) => +item.id === +id);
+  const currentProduct = productDetails.find((item) => +item.id === +id);
   const random = Math.floor(Math.random() * 999999);
 
-  const data = [product.image, product.image2, product.image3];
+  const data = [
+    currentProduct?.image,
+    currentProduct?.image2,
+    currentProduct?.image3,
+  ];
+  console.log("data: ", data);
   const settings = {
     dots: true,
     prevArrow: <PreviousBtn />,
@@ -71,7 +76,7 @@ const ProductDetails = () => {
               sx={{ fontSize: { xs: "20px", sm: "25px" }, color: "#c1a575" }}
               variant="h5"
             >
-              {product.title}
+              {currentProduct.title}
             </Typography>
             <div className="product-info2-2">
               <Typography
@@ -83,10 +88,10 @@ const ProductDetails = () => {
                 }}
                 variant="h5"
               >
-                €{product.price2}
+                €{currentProduct.price2}
               </Typography>
               <Typography sx={{ marginTop: "10px" }} variant="h5">
-                €{product.price}
+                €{currentProduct.price}
               </Typography>
             </div>
             <Typography
@@ -105,7 +110,7 @@ const ProductDetails = () => {
           <div className="product-info3">
             <MyAccordion />
             <Typography sx={{ marginTop: "50px" }}>
-              {product.description}
+              {currentProduct.description}
             </Typography>
             <Drawer />
           </div>
@@ -117,4 +122,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default Details;

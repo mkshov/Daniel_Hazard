@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { Button, Typography } from "@mui/material";
 
 import "./Products.css";
-import products from "./mockData/mockData";
-import jackets from "./mockData/mockDataJackets";
-import trousers from "./mockData/mockDataTrousers";
+import products from "./mockData/SuitsData";
+import jackets from "./mockData/JacketsData";
+import trousers from "./mockData/TrousersData";
 
 const Products = () => {
   const navigate = useNavigate();

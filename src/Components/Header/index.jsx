@@ -25,13 +25,9 @@ export default function Header() {
   const [openSidebar, setOpenSidebar] = useState(false);
   const [isOpenShopMenu, setIsOpenShopMenu] = useState(false);
   const languageLocalStorage = localStorage.getItem("__dh:lang");
-  const [currentLang, setCurrentLang] = useState(languageLocalStorage);
-  console.log("currentLang: ", currentLang);
-  useEffect(() => {
-    if (languageLocalStorage === null) {
-      localStorage.setItem("__dh:lang", "en");
-    }
-  });
+
+  const [currentLang, setCurrentLang] = useState(languageLocalStorage || "en");
+
   const handleLangChange = (e) => {
     if (currentLang === "en") {
       setCurrentLang("it");
@@ -137,6 +133,10 @@ export default function Header() {
           </Box>
           <div className="border2"></div>
           <Box
+            onClick={() => {
+              handleLangChange();
+              localStorageLang();
+            }}
             sx={{ width: "50px", display: "flex", justifyContent: "center" }}
           >
             <Typography
@@ -145,10 +145,6 @@ export default function Header() {
                 cursor: "pointer",
                 fontSize: "20px",
                 fontWeight: "bold",
-              }}
-              onClick={() => {
-                handleLangChange();
-                localStorageLang();
               }}
               onMouseEnter={handleCloseShopMenu}
             >

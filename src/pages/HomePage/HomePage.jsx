@@ -60,11 +60,23 @@ const HomePage = () => {
               src="https://i.ibb.co/9bqj0SD/Picsart-22-07-20-13-44-44-292.jpg"
             />
             <Box className="slide-1-overlay">
-              <Box className="slide-1-inner">
-                <Typography variant="h3">{t("newCollection")}</Typography>
-                <Typography variant="h5">{t("springSummer")}</Typography>
-                <Typography variant="h4">{t("styleFrames")}</Typography>
+              <Box
+                data-aos="fade-center"
+                data-aos-offset="200"
+                data-aos-duration="500"
+                className="slide-1-inner"
+              >
+                <Typography data-aos="fade-left" variant="h3">
+                  {t("newCollection")}
+                </Typography>
+                <Typography data-aos="fade-left" variant="h5">
+                  {t("springSummer")}
+                </Typography>
+                <Typography data-aos="fade-right" variant="h4">
+                  {t("styleFrames")}
+                </Typography>
                 <Button
+                  data-aos="fade-right"
                   className="main-button"
                   onClick={() => navigate(`/collections-spring-summer-2022`)}
                   variant="outlined"
@@ -108,7 +120,7 @@ const HomePage = () => {
             <Typography variant="h4">{t("styleFrames")}</Typography>
             <Button
               className="main-button"
-              onClick={() => navigate(`/products`)}
+              onClick={() => navigate(`/collections-spring-summer-2022`)}
               variant="outlined"
               color="inherit"
             >
@@ -282,7 +294,12 @@ const HomePage = () => {
               >
                 <Typography variant="h4">Daniel Hazard</Typography>
                 <Typography variant="h6">{t("ourStoryChild2")}</Typography>
-                <Button className="button-black">{t("discoverMore")}</Button>
+                <Button
+                  onClick={() => navigate("/about-us")}
+                  className="button-black"
+                >
+                  {t("discoverMore")}
+                </Button>
               </Box>
             </Box>
           </Box>
