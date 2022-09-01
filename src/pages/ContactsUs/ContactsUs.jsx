@@ -10,6 +10,9 @@ import { TextField, Typography } from "@mui/material";
 
 const ContactsUs = () => {
   const [state, handleSubmit] = useForm("xlevdlev");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <div>
       <div className="contacts-background" />
@@ -36,13 +39,17 @@ const ContactsUs = () => {
             <div className="contacts-blocks">
               <EmailIcon sx={{ fontSize: "60px" }} />
               <Typography variant="h4">Email</Typography>
-              <Typography variant="h6">danielhazard.info@gmail.com</Typography>
+              <Typography variant="h6">
+                danielhazard.info
+                <br />
+                @gmail.com
+              </Typography>
             </div>
           </div>
         </div>
       </div>
       <div className="contacts-form">
-        <form onSubmit={handleSubmit} className="contacts-form-inputs">
+        <form onSubmit={() => handleSubmit()} className="contacts-form-inputs">
           <Typography variant="h4" sx={{ color: "#c1a575" }}>
             Would you like to get in touch with us?
           </Typography>
@@ -85,9 +92,7 @@ const ContactsUs = () => {
               variant="outlined"
               placeholder="Your Message"
             />
-            {/* <Button className="main-button" type="submit">
-              Send
-            </Button> */}
+
             <LoadingButton
               sx={{ marginTop: "20px", height: "50px" }}
               className="main-button"

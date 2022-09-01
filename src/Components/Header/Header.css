@@ -107,7 +107,7 @@
   transform: translateX(-100%);
   transition: all 0.5s;
   z-index: 99;
-  margin-top: -38px;
+  margin-top: -50px;
 }
 
 .holder:hover .block {
@@ -136,7 +136,7 @@
   display: block;
 }
 .header-category {
-  background-color: #fefefe;
+  background-color: #fffffff8;
   border-top: 1px solid #0000001a;
 }
 .header-category ul {
