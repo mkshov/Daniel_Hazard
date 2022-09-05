@@ -131,6 +131,10 @@ li {
   z-index: 3;
 } */
 
+.css-1cs2cxq-MuiInputBase-root-MuiOutlinedInput-root {
+  font-size: 24px !important;
+}
+
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
   display: flex;

@@ -2,7 +2,7 @@ import { Suspense, useEffect } from "react";
 import { useLocation, useRoutes } from "react-router-dom";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 
-import { BackdropLoader } from "./Components";
+import { BackdropLoader, Footer, Header } from "./Components";
 import mainRoutes from "./routes/route";
 import "./App.css";
 
@@ -29,7 +29,9 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <Header />
         <Suspense fallback={<BackdropLoader />}>{routes}</Suspense>
+        <Footer />
       </ThemeProvider>
     </>
   );

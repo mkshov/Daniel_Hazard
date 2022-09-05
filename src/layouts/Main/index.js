@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 import { Fab } from "@mui/material";
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
-import { Footer, Header } from "Components";
 import "./main.css";
 
 const MainLayout = (props) => {
@@ -22,7 +21,7 @@ const MainLayout = (props) => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="content-wrap">{props.children}</div>
       <Fab
         className={scrollTop}
@@ -34,7 +33,7 @@ const MainLayout = (props) => {
         <KeyboardDoubleArrowUpIcon />
       </Fab>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

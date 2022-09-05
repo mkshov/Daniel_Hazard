@@ -149,8 +149,11 @@
 }
 
 .header-category-box {
-  width: 15%;
+  width: 100px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header-category-box h6 {
   font-weight: bold;
@@ -159,6 +162,8 @@
   margin-top: 10px;
   transition: 0.1s;
   cursor: pointer;
+  font-size: 19px;
+  display: inline;
 }
 .header-category-box li:hover {
   font-weight: bold;

@@ -1,18 +1,40 @@
-import React from "react";
-import "./ContactsUs.css";
-// eslint-disable-next-line
-import { useForm } from "@formspree/react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
+
+import { Alert, TextField, Typography } from "@mui/material";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import LoadingButton from "@mui/lab/LoadingButton";
-import { TextField, Typography } from "@mui/material";
+
+import "./ContactsUs.css";
 
 const ContactsUs = () => {
-  const [state, handleSubmit] = useForm("xlevdlev");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+  const [success, setSuccess] = useState(false);
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ffkn9jj",
+        "template_9e9tkig",
+        formRef.current,
+        "b7MhDtuBxTDx_R8H9"
+      )
+      .then((result) => {
+        console.log(result.text);
+        setSuccess(true);
+      })
+      .catch((error) => {
+        console.log(error.text);
+        alert("FAILED...", error);
+      });
+
+    e.target.reset();
+  };
+
   return (
     <div>
       <div className="contacts-background" />
@@ -49,7 +71,11 @@ const ContactsUs = () => {
         </div>
       </div>
       <div className="contacts-form">
-        <form onSubmit={() => handleSubmit()} className="contacts-form-inputs">
+        <form
+          ref={formRef}
+          onSubmit={sendEmail}
+          className="contacts-form-inputs"
+        >
           <Typography variant="h4" sx={{ color: "#c1a575" }}>
             Would you like to get in touch with us?
           </Typography>
@@ -61,8 +87,8 @@ const ContactsUs = () => {
             </Typography>
             <TextField
               required
-              id="name"
-              name="name"
+              name="from_name"
+              type="text"
               color="secondary"
               variant="outlined"
               placeholder="Name"
@@ -72,8 +98,7 @@ const ContactsUs = () => {
             </Typography>
             <TextField
               required
-              id="email"
-              name="email"
+              name="from_email"
               color="secondary"
               variant="outlined"
               placeholder="Email"
@@ -86,18 +111,26 @@ const ContactsUs = () => {
               required
               multiline
               name="message"
-              id="message"
               rows={4}
               color="secondary"
               variant="outlined"
               placeholder="Your Message"
             />
-
+            {success && (
+              <Alert
+                sx={{ marginTop: "20px" }}
+                variant="outlined"
+                severity="success"
+              >
+                This is a success alert — check it out!
+              </Alert>
+            )}
             <LoadingButton
               sx={{ marginTop: "20px", height: "50px" }}
               className="main-button"
               type="submit"
-              loading={state.submitting}
+              value="Send Message"
+              // loading={state.submitting}
             >
               Send
             </LoadingButton>

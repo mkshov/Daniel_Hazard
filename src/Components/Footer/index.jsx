@@ -2,34 +2,54 @@ import React from "react";
 import "./Footer.css";
 
 import { Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const handleClickFooterNavigate = (path) => () => {
+    navigate(path);
+  };
   return (
     // <div className="footer">
     <div className="footer-container">
       <section className="sections">
         <Typography variant="h6">DANIEL HAZARD</Typography>
         <div>
-          <Typography variant="subtitle">Showrooms&Shops</Typography>
-          <Typography variant="subtitle">Timeless</Typography>
-          <Typography variant="subtitle">Contacts</Typography>
+          <Typography
+            onClick={handleClickFooterNavigate("/about-us")}
+            variant="subtitle"
+          >
+            {t("aboutUsFooter")}
+          </Typography>
+          <Typography
+            onClick={handleClickFooterNavigate("/contacts-us")}
+            variant="subtitle"
+          >
+            {t("contactsUsFooter")}
+          </Typography>
         </div>
       </section>
       <section className="sections">
-        <Typography variant="h6">COLLECTIONS</Typography>
+        <Typography variant="h6">{t("collections")}</Typography>
         <div>
-          <Typography variant="subtitle">Fall/Winter 2022/23</Typography>
-          <Typography variant="subtitle">Spring/Summer 2022</Typography>
-        </div>
-      </section>
-      <section className="sections">
-        <Typography variant="h6">CLIENTS</Typography>
-        <div>
-          <Typography variant="subtitle">Newsletter</Typography>
-          <Typography variant="subtitle">Privacy Policy</Typography>
-          <Typography variant="subtitle">Cookie Policy</Typography>
-          <Typography variant="subtitle">Legal Notes</Typography>
-          <Typography variant="subtitle">Term & Conditions</Typography>
+          <Typography
+            onClick={handleClickFooterNavigate(
+              "/collections-spring-summer-2022"
+            )}
+            variant="subtitle"
+          >
+            {t("springSummer")}
+          </Typography>
+          <Typography
+            onClick={handleClickFooterNavigate(
+              "/collections-autumn-winter-2022-23"
+            )}
+            variant="subtitle"
+          >
+            {t("autumnWinter")}
+          </Typography>
         </div>
       </section>
       <section className="sections">

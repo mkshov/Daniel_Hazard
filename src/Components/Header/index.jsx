@@ -16,7 +16,7 @@ import { Sidebar } from "Components";
 import { useTranslation } from "react-i18next";
 // import { useScroll } from "./ScrollHook";
 
-export default function Header() {
+export default function Header(props) {
   // const { scrollDirection } = useScroll();
   const { i18n } = useTranslation();
 
@@ -24,6 +24,7 @@ export default function Header() {
 
   const [openSidebar, setOpenSidebar] = useState(false);
   const [isOpenShopMenu, setIsOpenShopMenu] = useState(false);
+  console.log("isOpenShopMenu: ", isOpenShopMenu);
   const languageLocalStorage = localStorage.getItem("__dh:lang");
 
   const [currentLang, setCurrentLang] = useState(languageLocalStorage || "en");
@@ -55,8 +56,6 @@ export default function Header() {
     setIsOpenShopMenu(false);
   };
 
-  const localStorageLang = () => {};
-
   const [navHeight, setNavHeight] = useState("height-active");
   const [navImage, setNavImage] = useState("image-active");
 
@@ -82,6 +81,11 @@ export default function Header() {
       document.body.style.overflow = "unset";
     };
   }, [openSidebar]);
+
+  const handleClickNavigate = (path) => (e) => {
+    setIsOpenShopMenu(false);
+    navigate(path);
+  };
 
   return (
     <Box sx={{ flexGrow: 1 }} onMouseLeave={handleCloseShopMenu}>
@@ -133,10 +137,7 @@ export default function Header() {
           </Box>
           <div className="border2"></div>
           <Box
-            onClick={() => {
-              handleLangChange();
-              localStorageLang();
-            }}
+            onClick={handleLangChange}
             sx={{ width: "50px", display: "flex", justifyContent: "center" }}
           >
             <Typography
@@ -156,42 +157,19 @@ export default function Header() {
           <ul>
             <Box className="header-category-box">
               <Typography variant="h6">SUITS</Typography>
-              <li
-                onClick={() => {
-                  handleCloseShopMenu();
-                  navigate("/suits/everyday");
-                }}
-              >
-                Everyday
-              </li>
-              <li
-                onClick={() => {
-                  handleCloseShopMenu();
-                  navigate("/suits/wedding");
-                }}
-              >
-                Wedding
-              </li>
+              <li onClick={handleClickNavigate("/suits/everyday")}>Everyday</li>
+              <li onClick={handleClickNavigate("/suits/wedding")}>Wedding</li>
             </Box>
             <Box className="header-category-box">
               <Typography variant="h6">CLOTHING</Typography>
-              <li
-                onClick={() => {
-                  handleCloseShopMenu();
-                  navigate("/clothing/jackets");
-                }}
-              >
+              <li onClick={handleClickNavigate("/clothing/jackets")}>
                 Jackets
               </li>
-              <li
-                onClick={() => {
-                  handleCloseShopMenu();
-                  navigate("/clothing/trousers");
-                }}
-              >
+              <li onClick={handleClickNavigate("/clothing/trousers")}>
                 Trousers
               </li>
             </Box>
+
             <Box className="header-category-img">
               <img
                 src="https://cdn.shopify.com/s/files/1/1383/8317/files/DSC8997-Edit_2000x.jpg?v=1646392533"

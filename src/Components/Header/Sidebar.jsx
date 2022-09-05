@@ -10,8 +10,11 @@ import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import { List, ListItemButton } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const Sidebar = (props) => {
+  const { t } = useTranslation();
+
   const navigate = useNavigate();
   const { open, toggleSidebar } = props;
   // const { scrollDirection } = useScroll();
@@ -41,7 +44,7 @@ const Sidebar = (props) => {
           <div className="sidebar-container">
             <List>
               <ListItemButton onClick={handleClick2}>
-                <ListItemText primary="CLOTHING" />
+                <ListItemText primary={t("clothing")} />
                 {openList2 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
               <Collapse in={openList2} timeout="auto" unmountOnExit>
@@ -53,7 +56,7 @@ const Sidebar = (props) => {
                     }}
                     sx={{ pl: 4 }}
                   >
-                    <ListItemText primary="Jackets" />
+                    <ListItemText primary={t("jackets")} />
                   </ListItemButton>
                 </List>
                 <List component="div" disablePadding>
@@ -64,12 +67,12 @@ const Sidebar = (props) => {
                     }}
                     sx={{ pl: 4 }}
                   >
-                    <ListItemText primary="Trousers" />
+                    <ListItemText primary={t("trousers")} />
                   </ListItemButton>
                 </List>
               </Collapse>
               <ListItemButton onClick={handleClick3}>
-                <ListItemText primary="COLLECTIONS" />
+                <ListItemText primary={t("collections")} />
                 {openList3 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
               <Collapse in={openList3} timeout="auto" unmountOnExit>
@@ -81,7 +84,7 @@ const Sidebar = (props) => {
                     }}
                     sx={{ pl: 4 }}
                   >
-                    <ListItemText primary="Spring Summer/2022" />
+                    <ListItemText primary={t("springSummer")} />
                   </ListItemButton>
                 </List>
                 <List component="div" disablePadding>
@@ -92,7 +95,7 @@ const Sidebar = (props) => {
                     }}
                     sx={{ pl: 4 }}
                   >
-                    <ListItemText primary="Autumn Winter/2022-23" />
+                    <ListItemText primary={t("autumnWinter")} />
                   </ListItemButton>
                 </List>
               </Collapse>
@@ -102,10 +105,10 @@ const Sidebar = (props) => {
                   navigate("/about-us");
                 }}
               >
-                <ListItemText primary="ABOUT US" />
+                <ListItemText primary={t("aboutUs")} />
               </ListItemButton>
               <ListItemButton onClick={handleClick}>
-                <ListItemText primary="SUITS" />
+                <ListItemText primary={t("suits")} />
                 {/* <Typography variant="h5">CATEGORY</Typography> */}
                 {openList1 ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
@@ -118,7 +121,7 @@ const Sidebar = (props) => {
                     }}
                     sx={{ pl: 4 }}
                   >
-                    <ListItemText primary="Everyday" />
+                    <ListItemText primary={t("everyday")} />
                   </ListItemButton>
                 </List>
                 <List component="div" disablePadding>
@@ -129,7 +132,7 @@ const Sidebar = (props) => {
                     }}
                     sx={{ pl: 4 }}
                   >
-                    <ListItemText primary="Wedding" />
+                    <ListItemText primary={t("wedding")} />
                   </ListItemButton>
                 </List>
               </Collapse>
@@ -139,7 +142,7 @@ const Sidebar = (props) => {
                   navigate("/contacts-us");
                 }}
               >
-                <ListItemText primary="CONTACTS US" />
+                <ListItemText primary={t("contactsUs")} />
               </ListItemButton>
             </List>
           </div>
