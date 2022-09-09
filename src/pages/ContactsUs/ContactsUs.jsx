@@ -2,14 +2,14 @@ import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 
 import { Alert, TextField, Typography } from "@mui/material";
-import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import LoadingButton from "@mui/lab/LoadingButton";
 
 import "./ContactsUs.css";
+import { useTranslation } from "react-i18next";
 
 const ContactsUs = () => {
+  const { t } = useTranslation();
   const [success, setSuccess] = useState(false);
   const formRef = useRef();
 
@@ -41,31 +41,14 @@ const ContactsUs = () => {
       <div className="contacts">
         <div className="contacts-container">
           <div className="contacts-header">
-            <Typography variant="h2">CONTACTS US</Typography>
-            <Typography variant="h6">
-              Sample text. Click to select the text box. Click again or double
-              click to start editing the text.
-            </Typography>
+            <Typography variant="h2">{t("contactsUs")}</Typography>
+            <Typography variant="h6">{t("contactsUsText")}</Typography>
           </div>
           <div className="contacts-info">
             <div className="contacts-blocks">
-              <LocationOnIcon sx={{ fontSize: "60px" }} />
-              <Typography variant="h4">Adress</Typography>
-              <Typography variant="h6">27 13 Lowe Haven</Typography>
-            </div>
-            <div className="contacts-blocks">
-              <PhoneIphoneIcon sx={{ fontSize: "60px" }} />
-              <Typography variant="h4">Phone</Typography>
-              <Typography variant="h6">0755969400</Typography>
-            </div>
-            <div className="contacts-blocks">
               <EmailIcon sx={{ fontSize: "60px" }} />
               <Typography variant="h4">Email</Typography>
-              <Typography variant="h6">
-                danielhazard.info
-                <br />
-                @gmail.com
-              </Typography>
+              <Typography variant="h6">danielhazard.info@gmail.com</Typography>
             </div>
           </div>
         </div>
@@ -77,13 +60,13 @@ const ContactsUs = () => {
           className="contacts-form-inputs"
         >
           <Typography variant="h4" sx={{ color: "#c1a575" }}>
-            Would you like to get in touch with us?
+            {t("contactsUsText2")}
           </Typography>
-          <Typography variant="h5">Please use the form below. </Typography>
-          <Typography variant="h5">All fields are required.</Typography>
+          <Typography variant="h5">{t("contactsUsText3")} </Typography>
+          <Typography variant="h5">{t("contactsUsText4")}</Typography>
           <div className="contacts-form-inputs-inner">
             <Typography sx={{ marginTop: "40px" }} variant="h6">
-              Name
+              {t("contactsUsText5")}
             </Typography>
             <TextField
               required
@@ -91,7 +74,7 @@ const ContactsUs = () => {
               type="text"
               color="secondary"
               variant="outlined"
-              placeholder="Name"
+              placeholder={t("contactsUsText5")}
             />
             <Typography sx={{ marginTop: "20px" }} variant="h6">
               Email
@@ -105,7 +88,7 @@ const ContactsUs = () => {
               type="email"
             />
             <Typography sx={{ marginTop: "20px" }} variant="h6">
-              Message
+              {t("contactsUsText6")}
             </Typography>
             <TextField
               required
@@ -114,7 +97,7 @@ const ContactsUs = () => {
               rows={4}
               color="secondary"
               variant="outlined"
-              placeholder="Your Message"
+              placeholder={t("contactsUsText7")}
             />
             {success && (
               <Alert
@@ -122,17 +105,21 @@ const ContactsUs = () => {
                 variant="outlined"
                 severity="success"
               >
-                This is a success alert — check it out!
+                {t("aboutUsAlert")}
               </Alert>
             )}
             <LoadingButton
-              sx={{ marginTop: "20px", height: "50px" }}
+              sx={{
+                marginTop: "20px",
+                height: "50px",
+                textTransform: "uppercase",
+              }}
               className="main-button"
               type="submit"
               value="Send Message"
               // loading={state.submitting}
             >
-              Send
+              {t("contactsUsButton")}
             </LoadingButton>
           </div>
         </form>

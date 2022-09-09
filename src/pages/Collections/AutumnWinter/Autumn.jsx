@@ -2,8 +2,10 @@ import React from "react";
 
 import { Button, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Autumn = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const autumn = [
     {
@@ -55,7 +57,9 @@ const Autumn = () => {
   return (
     <div>
       <div className="sp-sm-txt2">
-        <Typography variant="h4">AUTUMN</Typography>
+        <Typography sx={{ textTransform: "uppercase" }} variant="h4">
+          {t("autumn")}
+        </Typography>
         <img
           className="sp-img"
           src="https://i.shgcdn.com/b1dfc452-0cb3-40a2-9fa1-4cfdcbfe5f13/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
@@ -78,9 +82,10 @@ const Autumn = () => {
             onClick={() =>
               navigate("/collections-autumn-winter-2022-23/winter")
             }
+            sx={{ textTransform: "uppercase" }}
             className="main-button"
           >
-            WINTER
+            {t("winter")}
           </Button>
         </div>
       </div>

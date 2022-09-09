@@ -1,6 +1,8 @@
 const itTranslations = {
   contactsUsFooter: "Contatti",
   aboutUsFooter: "Chi Siamo",
+  followUsFooter: "Seguirci",
+  ourProductsFooter: "I nostri prodotti",
   clothing: "ABBIGLIAMENTO",
   jackets: "Giacca",
   trousers: "Pantalone",
@@ -53,6 +55,79 @@ const itTranslations = {
     "Per i nostri prodotti selezioniamo con cura tessuti e accessori per il cucito in Italia, Turchia e Cina.",
   aboutUs7: "Utilizziamo le più moderne tecnologie nella nostra produzione",
   aboutUs8: "Supervisori esperti monitorano la qualità dei nostri prodotti",
+  spring: "Primavera ",
+  summer: "Estate",
+  autumn: "Autunno",
+  winter: "Inverno",
+  contactsUsText:
+    "Scrivici a questa email, e cercheremo di rispondere a voi durante il giorno.",
+  contactsUsText2: "Vuole mettersi in contatto con noi?",
+  contactsUsText3: "Si prega di utilizzare il modulo sottostante.",
+  contactsUsText4: "Tutti i campi sono obbligatori.",
+  contactsUsText5: "Nome",
+  contactsUsText6: "Messaggio",
+  contactsUsText7: "Il tuo messaggio",
+  contactsUsAlert: "Il tuo messaggio è stato inviato con successo!",
+  contactsUsButton: "Inviare",
+  lowToHigh: "Da basso ad alto",
+  highToLow: "Da alto a basso",
+  details1:
+    "Un vestito classico aggiornato progettato per comfort e convenienza.",
+  details2: "Gamma di grandi dimensioni",
+  details3: "Materiale di qualità",
+  details4: "Camminare comodamente",
+  details5: "Si adatta bene alla figura",
+  detailsSizeFit: "FORMATO & MISURA",
+  detailsSizeFitChild1:
+    'Si consiglia di utilizzare il pulsante "Tabella di formato" per controllare il vostro formato.',
+  detailsSizeFitChild2: "Fit: Individuale-tra standard e forma-montaggio fit.",
+  detailsSizeFitChild3:
+    "La lunghezza della tuta è ottimizzata per la maggior parte delle persone.",
+  detailsSizeFitChild4:
+    "I nostri abiti possono essere realizzati con una corretta esperienza in mente. Si prega di utilizzare un sarto che è sicuro di poter lavorare con i nostri materiali e la costruzione.",
+  detailsMaterialCare: "MATERIALI & CURA",
+  detailsMaterialCareChild1: "76% Lana, 20% Viscosa, 4% Lycra",
+  detailsMaterialCareChild2: "Lavare a secco solo",
+  detailsMaterialCareChild3:
+    "Ferro solo se necessario, utilizzare più cool impostazione possibile",
+  sizeChart: "Tabella di Formato",
+  close: "Vicino",
+  sizeGuide: "GUIDA ALLE TAGLIE",
+  euroSize: "Euro Formato",
+  chest: "PETTO",
+  chestChild:
+    "Mentre in piedi con le braccia rilassate al tuo fianco, avvolgere un metro a nastro flessibile intorno al petto nel suo punto più grande Il metro a nastro dovrebbe passare attraverso l'ascella e rimanere parallelo al pavimento durante la misurazione",
+  waist: "GIROVITA",
+  waistChild:
+    "Mentre stai in una posizione rilassata, misura intorno alla tua vita naturale, mantenendo il metro a nastro parallelo al pavimento .",
+  hip: "HIP",
+  hipChild:
+    "Mentre stai in una posizione rilassata, misura intorno alla parte più ampia dei fianchi, mantenendo il metro a nastro parallelo al pavimento .",
+  thigh: "COSCIA",
+  thighChild:
+    "Stando in posizione rilassata, misurare intorno alla coscia appena sotto il cavallo, mantenendo il metro a nastro parallelo al pavimento .",
+  inseam: "INTERNO GAMBA",
+  inseamChild:
+    "Stando in posizione rilassata, misura la lunghezza totale all'interno della gamba, dal cavallo alla caviglia .",
+  sleeve: "MANICA",
+  sleeveChild:
+    "Stando in piedi con le braccia rilassate al tuo fianco, posiziona un'estremità di un metro a nastro flessibile all'apice della spalla . Misurare il braccio, sopra la punta del gomito, e finire all'osso del polso .",
+  theModern: "L'abito Dell'uomo Moderno",
+  theModernChild1:
+    "Daniel Hazard è un marchio creato appositamente per le persone attive. La tuta si adatta perfettamente figura",
+  theModernChild2:
+    "e non limita i movimenti, il che ti permette di sentirti sicuro tutto il giorno.",
+  careIcon1: "NON FARLO",
+  careIconChild1: "LAVARE",
+  careIcon2: "NON FARLO",
+  careIconChild2: "SBIANCARE",
+  careIcon3: "NON FARLO",
+  careIconChild3: "ASCIUGARE IN ASCIUGATRICE",
+  careIcon4: "FERRO A BASSO",
+  careIconChild4: "TEMPERATURA",
+  careIcon5: "PULIZIA DELICATA",
+  careIconChild5: "CON PCE",
+  recommendedProducts: "Prodotti Consigliati",
 };
 
 export default itTranslations;

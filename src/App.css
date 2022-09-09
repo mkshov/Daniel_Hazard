@@ -44,7 +44,7 @@ img {
   display: block;
 }
 li {
-  font-size: 17px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -83,6 +83,7 @@ li {
 }
 .main-button:hover {
   transition: 0.2s;
+  letter-spacing: 0.2em !important;
   color: white !important;
   background-color: #c1a575 !important;
 }

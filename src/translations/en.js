@@ -1,6 +1,8 @@
 const enTranslations = {
   contactsUsFooter: "Contacts Us",
   aboutUsFooter: "About Us",
+  followUsFooter: "Follow Us",
+  ourProductsFooter: "Our Products",
   clothing: "CLOTHING",
   jackets: "Jackets",
   trousers: "Trousers",
@@ -53,6 +55,78 @@ const enTranslations = {
     "For our products, we carefully select fabrics and sewing accessories in Italy, Turkey and China.",
   aboutUs7: "We use the most modern technologies in our production",
   aboutUs8: "Experienced supervisors monitor the quality of our products",
+  spring: "Spring",
+  summer: "Summer",
+  autumn: "Autumn",
+  winter: "Winter",
+  contactsUsText:
+    "Write to us at this email, and we will try to respond to you during the day.",
+  contactsUsText2: "Would you like to get in touch with us?",
+  contactsUsText3: "Please use the form below.",
+  contactsUsText4: "All fields are required.",
+  contactsUsText5: "Name",
+  contactsUsText6: "Message",
+  contactsUsText7: "Your Message",
+  contactsUsAlert: "Your message has been sent successfully!",
+  contactsUsButton: "Send",
+  lowToHigh: "Low To High",
+  highToLow: "High To Low",
+  details1: "An upgraded classic suit designed for comfort and convenience.",
+  details2: "Large Size Range",
+  details3: "Quality Material",
+  details4: "Walking Comfortably",
+  details5: "Fits the figure well",
+  detailsSizeFit: "SIZE & FIT",
+  detailsSizeFitChild1:
+    'We recommend using the "Size Chart" button to check your size.',
+  detailsSizeFitChild2:
+    "Fit: Individual - between standard and form-fitting fit.",
+  detailsSizeFitChild3: "The length of the suit is optimized for most people.",
+  detailsSizeFitChild4:
+    "Our suits can be made with proper experience in mind. Please use a tailor who is confident that he can work with our materials and construction.",
+  detailsMaterialCare: "MATERIALS & CARE",
+  detailsMaterialCareChild1: "76% Wool, 20% viscose, 4% Lycra",
+  detailsMaterialCareChild2: "Dry clean only",
+  detailsMaterialCareChild3:
+    "Iron only if necessary, use coolest setting possible",
+  sizeChart: "Size Chart",
+  close: "Close",
+  sizeGuide: "SIZE GUIDE",
+  euroSize: "Euro Size",
+  chest: "CHEST",
+  chestChild:
+    "While standing with your arms relaxed at your side , wrap a flexible tape measure around your chest at its largest point The tape measure should go through your armpit and stay parallel with the floor while taking the measurement",
+  waist: "WAIST",
+  waistChild:
+    "While standing in a relaxed position , measure around your natural waistline , while keeping the tape measure parallel to the floor .",
+  hip: "HIP",
+  hipChild:
+    "While standing in a relaxed position , measure around your fullest part of your hips , while keeping the tape measure parallel to the floor .",
+  thigh: "THIGH",
+  thighChild:
+    "While standing in a relaxed position , measure around your thigh just below the crotch , while keeping the tape measure parallel to the floor .",
+  inseam: "INSEAM",
+  inseamChild:
+    "While standing in a relaxed position , measure the total length the inside of your leg , from crotch to ankle .",
+  sleeve: "SLEEVE",
+  sleeveChild:
+    "While standing with your arms relaxed at your side , place one end of a flexible tape measure at the peak of your shoulder . Measure down the arm , over the point of your elbow , and finish at the wrist bone .",
+  theModern: "The Modern Man's Suit",
+  theModernChild1:
+    "Daniel Hazard is a brand created specifically for active people. The suit fits perfectly figure",
+  theModernChild2:
+    "and does not constrain movements, which allows you to feel confident all day.",
+  careIcon1: "DO NOT",
+  careIconChild1: "WASH",
+  careIcon2: "DO NOT",
+  careIconChild2: "BLEACH",
+  careIcon3: "DO NOT",
+  careIconChild3: "TUMBLE DRY",
+  careIcon4: "IRON AT LOW",
+  careIconChild4: "TEMPERATURE",
+  careIcon5: "GENTLE CLEANING",
+  careIconChild5: "WITH PCE",
+  recommendedProducts: "Recommended Products",
 };
 
 export default enTranslations;

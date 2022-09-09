@@ -5,10 +5,12 @@ import { Button, Tab, Tabs, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
 import "./Products.css";
+import { useTranslation } from "react-i18next";
 
 const Draft = (props) => {
+  const { t } = useTranslation();
+
   const { nameProduct, products, link } = props;
-  console.log("props: ", props);
 
   const categoryKey = `__dh:category-${nameProduct}`;
 
@@ -36,14 +38,19 @@ const Draft = (props) => {
   return (
     <div>
       <Tabs value={sortPrice} onChange={handleChange} centered>
-        <Tab label="Low to High" value="asc" />
-        <Tab label="High to Low" value="desc" />
+        <Tab label={t("lowToHigh")} value="asc" />
+        <Tab label={t("highToLow")} value="desc" />
       </Tabs>
       <div className="card-container">
         {products.map((item) => (
           <div className="card" key={item.id}>
             <div className="product-wrapper">
-              <img className="product-img" src={item.image} alt="" />
+              <img
+                className="product-img"
+                onClick={handleLinkDetails(item.id)}
+                src={item.image}
+                alt=""
+              />
               <div className="middle">
                 <Button
                   onClick={handleLinkDetails(item.id)}

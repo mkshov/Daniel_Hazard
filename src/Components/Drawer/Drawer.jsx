@@ -3,8 +3,11 @@ import "./Drawer.css";
 
 import Drawer from "@mui/material/Drawer";
 import { Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export default function TemporaryDrawer() {
+  const { t } = useTranslation();
+
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -39,11 +42,11 @@ export default function TemporaryDrawer() {
               cursor: "pointer",
             }}
           >
-            Close
+            {t("close")}
           </Typography>
           <div className="sg-ctn">
             <div className="sg-ctn2 j-sg-ctn">
-              <div className="sg-title">SIZE GUIDE</div>
+              <div className="sg-title">{t("sizeGuide")}</div>
               <div className="sg-close iconfont">&#xe655;</div>
               <div className="sg-table-wrap">
                 <div
@@ -65,37 +68,37 @@ export default function TemporaryDrawer() {
                           <div className="measure-wrap">
                             <span>A</span>
                           </div>
-                          CHEST(CM)
+                          {t("chest")}(CM)
                         </td>
                         <td className="border-right">
                           <div className="measure-wrap">
                             <span>B</span>
                           </div>
-                          WAIST(CM)
+                          {t("waist")}(CM)
                         </td>
                         <td className="border-right">
                           <div className="measure-wrap">
                             <span>C</span>
                           </div>
-                          HIP(CM)
+                          {t("hip")}(CM)
                         </td>
                         <td className="border-right">
                           <div className="measure-wrap">
                             <span>D</span>
                           </div>
-                          THIGH(CM)
+                          {t("thigh")}(CM)
                         </td>
                         <td className="border-right">
                           <div className="measure-wrap">
                             <span>E</span>
                           </div>
-                          INSEAM(CM)
+                          {t("inseam")}(CM)
                         </td>
                         <td className="border-right">
                           <div className="measure-wrap">
                             <span>F</span>
                           </div>
-                          SLEEVE(CM)
+                          {t("sleeve")}(CM)
                         </td>
                       </tr>
                       <tr className="cm-inch">
@@ -195,65 +198,44 @@ export default function TemporaryDrawer() {
                   <div className="measure-pic-guide">
                     <div className="measure-wrap">
                       <h6>
-                        <span>A</span>CHEST
+                        <span>A</span>
+                        {t("chest")}
                       </h6>
-                      <p>
-                        While standing with your arms relaxed at your side ,
-                        wrap a flexible tape measure around your chest at its
-                        largest point The tape measure should go through your
-                        armpit and stay parallel with the floor while taking the
-                        measurement .
-                      </p>
+                      <p>{t("chestChild")}</p>
                     </div>
                     <div className="measure-wrap">
                       <h6>
-                        <span>B</span> WAIST
+                        <span>B</span> {t("waist")}
                       </h6>
-                      <p>
-                        While standing in a relaxed position , measure around
-                        your natural waistline , while keeping the tape measure
-                        parallel to the floor .
-                      </p>
+                      <p>{t("waistChild")}</p>
                     </div>
                     <div className="measure-wrap">
                       <h6>
-                        <span>C</span>HIP
+                        <span>C</span>
+                        {t("hip")}
                       </h6>
-                      <p>
-                        While standing in a relaxed position , measure around
-                        your fullest part of your hips , while keeping the tape
-                        measure parallel to the floor .
-                      </p>
+                      <p>{t("hipChild")}</p>
                     </div>
                     <div className="measure-wrap">
                       <h6>
-                        <span>D</span>THIGH
+                        <span>D</span>
+                        {t("thigh")}
                       </h6>
-                      <p>
-                        While standing in a relaxed position , measure around
-                        your thigh just below the crotch , while keeping the
-                        tape measure parallel to the floor .
-                      </p>
+                      <p>{t("thighChild")}</p>
                     </div>
                     <div className="measure-wrap">
                       <h6>
-                        <span>E</span>INSEAM
+                        <span>E</span>
+                        {t("inseam")}
                       </h6>
-                      <p>
-                        While standing in a relaxed position , measure the total
-                        length the inside of your leg , from crotch to ankle .
-                      </p>
+                      <p>{t("inseamChild")}</p>
                     </div>
                     <div className="measure-wrap">
                       <h6>
-                        <span>F</span>SLEEVE
+                        <span>F</span>
+                        {t("sleeve")}
                       </h6>
-                      <p>
-                        While standing with your arms relaxed at your side ,
-                        place one end of a flexible tape measure at the peak of
-                        your shoulder . Measure down the arm , over the point of
-                        your elbow , and finish at the wrist bone .
-                      </p>
+                      <p>{t("sleeveChild")}</p>
                     </div>
                   </div>
                 </div>
@@ -278,7 +260,7 @@ export default function TemporaryDrawer() {
             }}
             onClick={toggleDrawer(anchor, true)}
           >
-            Size Chart
+            {t("sizeChart")}
           </Typography>
           <Drawer
             anchor={anchor}

@@ -2,8 +2,11 @@ import React from "react";
 
 import { Button, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Summer = () => {
+  const { t } = useTranslation();
+
   const navigate = useNavigate();
 
   const summer = [
@@ -56,7 +59,7 @@ const Summer = () => {
   return (
     <div>
       <div className="sp-sm-txt2">
-        <Typography variant="h4">SUMMER</Typography>
+        <Typography variant="h4">{t("summer")}</Typography>
         <img
           className="sp-img"
           src="https://i.shgcdn.com/b1dfc452-0cb3-40a2-9fa1-4cfdcbfe5f13/-/format/auto/-/preview/3000x3000/-/quality/lighter/"

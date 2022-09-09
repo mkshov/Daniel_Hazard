@@ -32,6 +32,37 @@ const Footer = () => {
         </div>
       </section>
       <section className="sections">
+        <Typography sx={{ textTransform: "uppercase" }} variant="h6">
+          {t("ourProductsFooter")}
+        </Typography>
+        <div>
+          <Typography
+            onClick={handleClickFooterNavigate("/suits/everyday")}
+            variant="subtitle"
+          >
+            {t("everyday")}
+          </Typography>
+          <Typography
+            onClick={handleClickFooterNavigate("/suits/wedding")}
+            variant="subtitle"
+          >
+            {t("wedding")}
+          </Typography>
+          <Typography
+            onClick={handleClickFooterNavigate("/clothing/jackets")}
+            variant="subtitle"
+          >
+            {t("jackets")}
+          </Typography>
+          <Typography
+            onClick={handleClickFooterNavigate("/clothing/trousers")}
+            variant="subtitle"
+          >
+            {t("trousers")}
+          </Typography>
+        </div>
+      </section>
+      <section className="sections">
         <Typography variant="h6">{t("collections")}</Typography>
         <div>
           <Typography
@@ -53,7 +84,9 @@ const Footer = () => {
         </div>
       </section>
       <section className="sections">
-        <Typography variant="h6">FOLLOW US</Typography>
+        <Typography sx={{ textTransform: "uppercase" }} variant="h6">
+          {t("followUsFooter")}
+        </Typography>
         <div>
           <Typography variant="subtitle">Facebook</Typography>
           <Typography variant="subtitle">Twitter</Typography>

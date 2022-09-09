@@ -4,8 +4,10 @@ import { useNavigate } from "react-router-dom";
 import "../../Collections/Collections.css";
 
 import { CardActionArea, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const AutumnWinter = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   // const [clickCount, setClickCount] = useState(0);
   // function changeCount() {
@@ -18,7 +20,7 @@ const AutumnWinter = () => {
     <div className="spring-summer">
       <div>
         <div className="sp-sm-txt">
-          <Typography variant="h4">AUTUMN - WINTER 2022/23</Typography>
+          <Typography variant="h4">{t("autumnWinter")}</Typography>
           <img
             src="https://i.shgcdn.com/b1dfc452-0cb3-40a2-9fa1-4cfdcbfe5f13/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
             alt=""
@@ -29,7 +31,7 @@ const AutumnWinter = () => {
           sx={{ textAlign: "center", padding: "40px" }}
           variant="h4"
         >
-          AUTUMN
+          {t("autumn")}
         </Typography>
         <div className="sp-sm-container">
           <div className="product-wrapper2 sp-sm-inner">
@@ -49,7 +51,7 @@ const AutumnWinter = () => {
                   sx={{ cursor: "pointer", fontWeight: "bold", color: "white" }}
                   variant="h3"
                 >
-                  Autumn 2022
+                  {t("autumn")} 2022
                 </Typography>
               </div>
             </CardActionArea>
@@ -59,7 +61,7 @@ const AutumnWinter = () => {
             sx={{ textAlign: "center", padding: "40px" }}
             variant="h4"
           >
-            WINTER
+            {t("winter")}
           </Typography>
           <div className="product-wrapper2 sp-sm-inner">
             <CardActionArea
@@ -74,10 +76,15 @@ const AutumnWinter = () => {
               />
               <div className="middle2">
                 <Typography
-                  sx={{ cursor: "pointer", fontWeight: "bold", color: "white" }}
+                  sx={{
+                    cursor: "pointer",
+                    fontWeight: "bold",
+                    color: "white",
+                    textTransform: "uppercase",
+                  }}
                   variant="h3"
                 >
-                  Winter 2023
+                  {t("winter")} 2023
                 </Typography>
               </div>
             </CardActionArea>

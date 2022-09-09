@@ -19,12 +19,12 @@ import { useTranslation } from "react-i18next";
 export default function Header(props) {
   // const { scrollDirection } = useScroll();
   const { i18n } = useTranslation();
-
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const [openSidebar, setOpenSidebar] = useState(false);
   const [isOpenShopMenu, setIsOpenShopMenu] = useState(false);
-  console.log("isOpenShopMenu: ", isOpenShopMenu);
+  // console.log("isOpenShopMenu: ", isOpenShopMenu);
   const languageLocalStorage = localStorage.getItem("__dh:lang");
 
   const [currentLang, setCurrentLang] = useState(languageLocalStorage || "en");
@@ -60,10 +60,10 @@ export default function Header(props) {
   const [navImage, setNavImage] = useState("image-active");
 
   const listenScrollEvent = () => {
-    window.scrollY > 50
+    window.scrollY > 200
       ? setNavHeight("header")
       : setNavHeight("height-active");
-    window.scrollY > 50 ? setNavImage("image") : setNavImage("image-active");
+    window.scrollY > 200 ? setNavImage("image") : setNavImage("image-active");
   };
 
   useEffect(() => {
@@ -156,17 +156,21 @@ export default function Header(props) {
         <Collapse className="header-category" in={isOpenShopMenu}>
           <ul>
             <Box className="header-category-box">
-              <Typography variant="h6">SUITS</Typography>
-              <li onClick={handleClickNavigate("/suits/everyday")}>Everyday</li>
-              <li onClick={handleClickNavigate("/suits/wedding")}>Wedding</li>
+              <Typography variant="h6">{t("suits")}</Typography>
+              <li onClick={handleClickNavigate("/suits/everyday")}>
+                {t("everyday")}
+              </li>
+              <li onClick={handleClickNavigate("/suits/wedding")}>
+                {t("wedding")}
+              </li>
             </Box>
             <Box className="header-category-box">
-              <Typography variant="h6">CLOTHING</Typography>
+              <Typography variant="h6">{t("clothing")}</Typography>
               <li onClick={handleClickNavigate("/clothing/jackets")}>
-                Jackets
+                {t("jackets")}
               </li>
               <li onClick={handleClickNavigate("/clothing/trousers")}>
-                Trousers
+                {t("trousers")}
               </li>
             </Box>
 

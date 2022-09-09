@@ -4,8 +4,10 @@ import { useNavigate } from "react-router-dom";
 import "../../Collections/Collections.css";
 
 import { CardActionArea, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const SpringSummer = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   // const [clickCount, setClickCount] = useState(0);
   // function changeCount() {
@@ -18,7 +20,9 @@ const SpringSummer = () => {
     <div className="spring-summer">
       <div>
         <div className="sp-sm-txt">
-          <Typography variant="h4">SPRING - SUMMER 2022</Typography>
+          <Typography sx={{ textTransform: "uppercase" }} variant="h4">
+            {t("springSummer")}
+          </Typography>
           <img
             src="https://i.shgcdn.com/b1dfc452-0cb3-40a2-9fa1-4cfdcbfe5f13/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
             alt=""
@@ -29,7 +33,7 @@ const SpringSummer = () => {
           sx={{ textAlign: "center", padding: "40px" }}
           variant="h4"
         >
-          SPRING
+          {t("spring")}
         </Typography>
         <div className="sp-sm-container">
           <div className="product-wrapper2 sp-sm-inner">
@@ -47,7 +51,7 @@ const SpringSummer = () => {
                   sx={{ cursor: "pointer", fontWeight: "bold", color: "white" }}
                   variant="h3"
                 >
-                  Spring 2022
+                  {t("spring")} 2022
                 </Typography>
               </div>
             </CardActionArea>
@@ -57,7 +61,7 @@ const SpringSummer = () => {
             sx={{ textAlign: "center", padding: "40px" }}
             variant="h4"
           >
-            SUMMER
+            {t("summer")}
           </Typography>
           <div className="product-wrapper2 sp-sm-inner">
             <CardActionArea
@@ -73,7 +77,7 @@ const SpringSummer = () => {
                   sx={{ cursor: "pointer", fontWeight: "bold", color: "white" }}
                   variant="h3"
                 >
-                  Summer 2022
+                  {t("summer")} 2022
                 </Typography>
               </div>
             </CardActionArea>

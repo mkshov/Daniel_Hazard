@@ -7,6 +7,7 @@ import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 
 import Typography from "@mui/material/Typography";
 import { Drawer, MyAccordion, ProductInfo } from "Components";
+import { useTranslation } from "react-i18next";
 
 const PreviousBtn = (props) => {
   const { className, onClick } = props;
@@ -29,14 +30,17 @@ const Details = (props) => {
   const { productDetails } = props;
   const { id } = useParams();
   const currentProduct = productDetails.find((item) => +item.id === +id);
+  // console.log("currentProduct: ", currentProduct);
   const random = Math.floor(Math.random() * 999999);
+
+  const { i18n, t } = useTranslation();
 
   const data = [
     currentProduct?.image,
     currentProduct?.image2,
     currentProduct?.image3,
   ];
-  console.log("data: ", data);
+
   const settings = {
     dots: true,
     prevArrow: <PreviousBtn />,
@@ -98,19 +102,19 @@ const Details = (props) => {
               variant="h6"
               sx={{ marginTop: "10px", marginBottom: "20px" }}
             >
-              An upgraded classic suit designed for comfort and convenience.
+              {t("details1")}
             </Typography>
             <ul>
-              <li>6-Way Stretch Fabric</li>
-              <li>Wrinkle Resistant</li>
-              <li>Stain Resistant</li>
-              <li>Odor Resistant</li>
+              <li>{t("details2")}</li>
+              <li>{t("details3")}</li>
+              <li>{t("details4")}</li>
+              <li>{t("details5")}</li>
             </ul>
           </div>
           <div className="product-info3">
             <MyAccordion />
-            <Typography sx={{ marginTop: "50px" }}>
-              {currentProduct.description}
+            <Typography variant="h6" sx={{ marginTop: "50px" }}>
+              {currentProduct[`description_${i18n.language}`]}
             </Typography>
             <Drawer />
           </div>

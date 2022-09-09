@@ -21,11 +21,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 17%;
 }
 .info-component-inner img {
-  width: 45px;
-  height: 45px;
+  width: 75px;
+  height: 75px;
 }
 .info-component-inner span {
   font-weight: bold;
