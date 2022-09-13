@@ -11,12 +11,9 @@ const suits = [
       "Single-breasted suit with 3 buttons, 2 patch pockets, 1 small boat pocket, half lining, double topstitching, shirt sleeves, side slits. Solid brown color with a refined blend of linen, wool and silk fibers, entirely cut and sewn by hand by our master tailors. It is a versatile dress ideal for creating a look for both work and leisure without compromising on elegance.",
     price: 1200,
     price2: 1490,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_01_1600x.jpg?v=1643447214",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_02_1600x.jpg?v=1643447213",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS35_2_PUZ3LAC_S22MA07_M31_03_1600x.jpg?v=1643447212",
+    image: "/assets/products/everyday/7654633_1.jpg",
+    image2: "/assets/products/everyday/7654633_2.jpg",
+    image3: "/assets/products/everyday/7654633_3.jpg",
   },
   {
     id: 256324324572,
@@ -30,12 +27,9 @@ const suits = [
       "Double-breasted suit with 6 buttons, 2 patch pockets, 1 small boat pocket, half lining, double topstitching, shirt sleeves, side slits. Solid beige color with a refined blend of linen and wool fibers, entirely cut and sewn by hand by our master tailors. It is a versatile dress ideal for creating a not very formal look without compromising on elegance. 2 pleats trousers with buttons and waistband, side buckles, extended strap without belt loops, 1 front pocket and 2 back pockets.",
     price: 3100,
     price2: 3600,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS659-PUY3_S22MA41_N21_01_800x.jpg?v=1643358471",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS659-PUY3_S22MA41_N21_02_1600x.jpg?v=1643358472",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS659-PUY3_S22MA41_N21_03_1600x.jpg?v=1643358471",
+    image: "/assets/products/everyday/256324324572_1.jpg",
+    image2: "/assets/products/everyday/256324324572_2.jpg",
+    image3: "/assets/products/everyday/256324324572_3.jpg",
   },
 
   {
@@ -50,12 +44,9 @@ const suits = [
       "Suit: Suit single breasted 3 buttons, 2 straight pockets with flaps, 1 pocket barchetta style, sleeves manica camicia, 2 vents, fully lined. Blue striped tone on tone hand cut and sawn by our master tailors. A refined suit in a light wool to wear for business or formal vents. Trouser: Trousers flat front with button's fly, 1 front pocket and 2 back pockets.",
     price: 1600,
     price2: 1955,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S17WA20_B31_01_800x.jpg?v=1624368457",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S17WA20_B31_02_1000x.jpg?v=1624368457",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S17WA20_B31_03_1000x.jpg?v=1624368457",
+    image: "/assets/products/everyday/78476_1.jpg",
+    image2: "/assets/products/everyday/78476_2.jpg",
+    image3: "/assets/products/everyday/78476_3.jpg",
   },
   {
     id: 4768355465,
@@ -69,12 +60,9 @@ const suits = [
       "Suit: Suit single breasted 3 buttons, 2 straight pockets with flaps, 1 pocket barchetta style, sleeves manica camicia, 2 vents, fully lined. Blue pied de poule and sugar blue entirely hand cut and sawn by our master tailors. A refined suit in wool to wear for business or formal events. Trouser: Tousers flat front with button's fly, 1 front pocket and 2 back pockets. Care and maintenance: Dry clean.",
     price: 900,
     price2: 1440,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA06_A31_01_800x.jpg?v=1624368494",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA06_A31_02_1000x.jpg?v=1624368494",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA06_A31_03_1000x.jpg?v=1624368494",
+    image: "/assets/products/everyday/4768355465_1.jpg",
+    image2: "/assets/products/everyday/4768355465_2.jpg",
+    image3: "/assets/products/everyday/4768355465_3.jpg",
   },
   {
     id: 33454568907656,
@@ -88,12 +76,9 @@ const suits = [
       "Suit: Suit single breasted 3 buttons, 2 straight pockets with flaps, 1 chest pocket barchetta style, sleeves manica camicia, 2 vents, fully lined. Solid royal blue entirely hand cut and sawn by our master tailors. A refined suit in wool to wear for business or formal events. Trouser: Trousers flat front with button's fly, 1 front pocket and 2 back pockets.",
     price: 2400,
     price2: 3550,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA26_B21_01_800x.jpg?v=1624368527",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA26_B21_02_1000x.jpg?v=1624368527",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA26_B21_03_1000x.jpg?v=1624368527",
+    image: "/assets/products/everyday/33454568907656_1.jpg",
+    image2: "/assets/products/everyday/33454568907656_2.jpg",
+    image3: "/assets/products/everyday/33454568907656_3.jpg",
   },
   {
     id: 789786765,
@@ -107,12 +92,9 @@ const suits = [
       "Suit: Suit single breasted 3 buttons, 2 straight pockets with flaps, 1 pocket barchetta style, sleeves manica camicia, 2 vents, fully lined. Solid gray entirely hand cut and sawn by our master tailors. A refined suit in wool to wear for business or formal events. Trouser: Trousers flat front with button's fly, 1 front pocket and 2 back pockets.",
     price: 3200,
     price2: 4590,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S19WA21_G19_01_800x.jpg?v=1624368564",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S19WA21_G19_02_1600x.jpg?v=1624368564",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S19WA21_G19_03_1000x.jpg?v=1624368564",
+    image: "/assets/products/everyday/789786765_1.jpg",
+    image2: "/assets/products/everyday/789786765_2.jpg",
+    image3: "/assets/products/everyday/789786765_3.jpg",
   },
   {
     id: 235467568,
@@ -126,12 +108,9 @@ const suits = [
       "Suit: Unconstructed suit, single breasted, 3 buttons, 2 straight pockets with flaps, 1 pocket barchetta style, sleeves manica camicia, 2 vents. Blue with red stripes, entirely hand cut and sawn by our master tailors. A refined suit in light wool to wear for business or formal events. Trouser: Trousers flat front with button's fly, 1 front pocket and 2 back pockets.",
     price: 2240,
     price2: 2540,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX30_PUZ3_CAWWA02_B31_01_800x.jpg?v=1624368662",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX30_PUZ3_CAWWA02_B31_02_1600x.jpg?v=1624368662",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX30_PUZ3_CAWWA02_B31_03_1000x.jpg?v=1624368662",
+    image: "/assets/products/everyday/235467568_1.jpg",
+    image2: "/assets/products/everyday/235467568_2.jpg",
+    image3: "/assets/products/everyday/235467568_3.jpg",
   },
   {
     id: 9324554671345,
@@ -145,12 +124,9 @@ const suits = [
       "Suit: Unconstructed suit, single breasted, 3 buttons, 2 straight pockets with flaps, 1 pocket barchetta style, sleeves manica camicia, 2 vents. Solid brown entirely hand cut and sawn by our master tailors. A refined suit in wool to wear for business or formal events. Trouser: Trousers flat front with button's fly, 1 front pocket, 2 back pockets. Care and maintenance: Dry clean.",
     price: 1235,
     price2: 1650,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX35_PUZ3_S8LA05_V21_01_800x.jpg?v=1624368700",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX35_PUZ3_S8LA05_V21_02_1000x.jpg?v=1624368700",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX35_PUZ3_S8LA05_V21_03_1000x.jpg?v=1624368700",
+    image: "/assets/products/everyday/9324554671345_1.jpg",
+    image2: "/assets/products/everyday/9324554671345_2.jpg",
+    image3: "/assets/products/everyday/9324554671345_3.jpg",
   },
 ];
 

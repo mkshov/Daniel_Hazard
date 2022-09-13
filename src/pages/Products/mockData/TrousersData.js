@@ -11,13 +11,11 @@ const trousers = [
       "Cotton and linen twill trousers with 2 solid white pleats entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal to complete a casual look with attention to the smallest details and that can stand out for its class and refinement. ",
     price: 1500,
     price2: 2200,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUY3_S22MA45_W11_01_1600x.jpg?v=1643303963",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUY3_S22MA45_W11_02_1000x.jpg?v=1643303963",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUY3_S22MA45_W11_03_1000x.jpg?v=1643303963",
+    image: "/assets/products/trousers/143645635_1.jpg",
+    image2: "/assets/products/trousers/143645635_2.jpg",
+    image3: "/assets/products/trousers/143645635_3.jpg",
   },
+
   {
     id: 234635642,
     route: "clothing",
@@ -30,12 +28,9 @@ const trousers = [
       "Plain light gray pleated wool trousers entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal for completing both formal and leisure outfits with style and elegance. Seam pockets, buttons and waistband , 1 front pocket and 2 back pockets.",
     price: 890,
     price2: 1200,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPWA01_G12_01_1600x.jpg?v=1644337719",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPWA01_G12_02_1000x.jpg?v=1644337719",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPWA01_G12_03_1000x.jpg?v=1644337720",
+    image: "/assets/products/trousers/234635642_1.jpg",
+    image2: "/assets/products/trousers/234635642_2.jpg",
+    image3: "/assets/products/trousers/234635642_3.jpg",
   },
   {
     id: 235634563,
@@ -49,12 +44,9 @@ const trousers = [
       "Plain beige pleated cotton trousers entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal for completing a casual look with attention to detail and which can stand out for its class and refinement. Stitched pockets, buttons and waistband, 1 front pocket and 2 back pockets.",
     price: 1250,
     price2: 1400,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPCA01_N12_01_1600x.jpg?v=1644337590",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPCA01_N12_02_1000x.jpg?v=1644337591",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPCA01_N12_03_1000x.jpg?v=1644337591",
+    image: "/assets/products/trousers/235634563_1.jpg",
+    image2: "/assets/products/trousers/235634563_2.jpg",
+    image3: "/assets/products/trousers/235634563_3.jpg",
   },
   {
     id: 256456344,
@@ -63,17 +55,14 @@ const trousers = [
     title: "AUS30_PFD343_S17WA20_B31",
     subTitle: "subTitle",
     description_it:
-      "Pantalone in puro lino senza pieghe in pattern Principe di Galles marrone interamente tagliato e cucito a mano a Casalnuovo, dai nostri maestri artigiani. Questo capo è ideale per completare un look casual, ma allo stesso tempo impeccabile e moderno. Tasche cucite, bottoni e cintura, 1 tasca frontale e 2 tasche posteriori.",
+      "Pantalone in lana grigia interamente tagliato e cucito a mano a Casalnuovo, dai nostri maestri artigiani. Questo capo è ideale per completare un outfit formale e occasionale con stile ed eleganza. Tasche con cuciture, bottoni e cintura, 1 tasca sul davanti e 2 tasche posteriori.",
     description_en:
-      "Trousers in pure linen without pleats in Prince of Wales pattern brown entirely cut and sewn by hand in Casalnuovo, by our master craftsmen. This garment is ideal for completing a casual look, but at the same time impeccable and modern. Stitched pockets, buttons and waistband, 1 front pocket and 2 back pockets.",
+      "Gray wool trousers entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal for completing a formal and occasional outfit with style and elegance. Seam pockets, buttons and waistband, 1 pocket on the front and 2 rear pockets.",
     price: 1800,
     price2: 2000,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_S7LA08_M21_01_1600x.jpg?v=1644337378",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_S7LA08_M21_02_1000x.jpg?v=1644337379",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_S7LA08_M21_03_1000x.jpg?v=1644337378",
+    image: "/assets/products/trousers/256456344_1.jpg",
+    image2: "/assets/products/trousers/256456344_2.jpg",
+    image3: "/assets/products/trousers/256456344_3.jpg",
   },
   {
     id: 53456345,
@@ -87,12 +76,9 @@ const trousers = [
       "Trousers in blue wool canvas entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal for completing a formal and occasional outfit with style and elegance. Seam pockets, buttons and waistband, 1 pocket on the front and 2 back pockets.",
     price: 1240,
     price2: 1300,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPWA01_B21_01_1600x.jpg?v=1644337644",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPWA01_B21_02_1000x.jpg?v=1644337642",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPWA01_B21_03_1000x.jpg?v=1644337643",
+    image: "/assets/products/trousers/53456345_1.jpg",
+    image2: "/assets/products/trousers/53456345_2.jpg",
+    image3: "/assets/products/trousers/53456345_3.jpg",
   },
   {
     id: 624562423,
@@ -106,12 +92,9 @@ const trousers = [
       "Gray wool trousers entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal for completing a formal and occasional outfit with style and elegance. Seam pockets, buttons and waistband, 1 pocket on the front and 2 rear pockets.",
     price: 1100,
     price2: 1340,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPWA01_G21_01_1600x.jpg?v=1644337778",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPWA01_G21_02_1000x.jpg?v=1644337779",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3_SPWA01_G21_03_1000x.jpg?v=1644337778",
+    image: "/assets/products/trousers/624562423_1.jpg",
+    image2: "/assets/products/trousers/624562423_2.jpg",
+    image3: "/assets/products/trousers/624562423_3.jpg",
   },
   {
     id: 72346236534,
@@ -125,12 +108,9 @@ const trousers = [
       "Blue pleated cotton and elastane trousers entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal for completing a casual look with attention to the smallest details and which can stand out for its class and refinement. Seam pockets, buttons and waistband, 1 front pocket and 2 back pockets with frogs",
     price: 1390,
     price2: 1450,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_B11_01_1600x.jpg?v=1639392992",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_B11_02_1000x.jpg?v=1639392993",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_B11_03_1000x.jpg?v=1639392993",
+    image: "/assets/products/trousers/72346236534_1.jpg",
+    image2: "/assets/products/trousers/72346236534_2.jpg",
+    image3: "/assets/products/trousers/72346236534_3.jpg",
   },
   {
     id: 23462356238,
@@ -144,12 +124,9 @@ const trousers = [
       "Without pences solid burgundy color entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal for completing a casual look with attention to the smallest details and which can stand out for its class and refinement Seam pockets, buttons and waistband, 1 front pocket with flap, 2 back pockets with frogs.",
     price: 1800,
     price2: 1990,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_R31_01_1600x.jpg?v=1639394936",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_R31_02_1600x.jpg?v=1639394937",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_R31_03_1000x.jpg?v=1639394935",
+    image: "/assets/products/trousers/23462356238_1.jpg",
+    image2: "/assets/products/trousers/23462356238_2.jpg",
+    image3: "/assets/products/trousers/23462356238_3.jpg",
   },
   {
     id: 92346235423,
@@ -163,12 +140,9 @@ const trousers = [
       "Without pleats in dove gray solid color entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal for completing a casual look with attention to the smallest details and which can stand out for its class and refinement Seam pockets, buttons and waistband, 1 front pocket with flap, 2 back pockets with frogs.",
     price: 1300,
     price2: 1450,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_N11_01_1600x.jpg?v=1639394604",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_N11_02_1000x.jpg?v=1639394605",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_N11_03_1000x.jpg?v=1639394604",
+    image: "/assets/products/trousers/92346235423_1.jpg",
+    image2: "/assets/products/trousers/92346235423_2.jpg",
+    image3: "/assets/products/trousers/92346235423_3.jpg",
   },
   {
     id: 23462463510,
@@ -182,12 +156,9 @@ const trousers = [
       "Without pleats in solid beige entirely cut and hand-sewn in Casalnuovo, by our master craftsmen. This garment is ideal for completing a casual look with attention to the smallest details and which can stand out for its class and refinement Seam pockets, buttons and waistband, 1 front pocket with flap, 2 back pockets with frogs.",
     price: 850,
     price2: 1150,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_W11_01_1600x.jpg?v=1639395383",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_W11_02_1000x.jpg?v=1639395383",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/PUZ3-P_LPMA296_W11_03_1000x.jpg?v=1639395383",
+    image: "/assets/products/trousers/23462463510_1.jpg",
+    image2: "/assets/products/trousers/23462463510_2.jpg",
+    image3: "/assets/products/trousers/23462463510_3.jpg",
   },
 ];
 

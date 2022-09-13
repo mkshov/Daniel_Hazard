@@ -8,7 +8,7 @@ import "./HomePage.css";
 import { useNavigate } from "react-router-dom";
 import { Slider } from "Components";
 
-import Heritage from "assets/images/heritage.jpg";
+import heritage from "assets/homepage/heritage.jpg";
 import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
@@ -275,7 +275,7 @@ const HomePage = () => {
                 data-aos-offset="200"
                 data-aos-duration="500"
               >
-                <img src={Heritage} alt="" />
+                <img src={heritage} alt="" />
               </Box>
             </Box>
           </Box>

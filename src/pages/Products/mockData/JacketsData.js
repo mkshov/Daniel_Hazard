@@ -11,12 +11,9 @@ const jackets = [
       "Comletely unstructured jacket, 3 buttons, single breasted, 2 patched pockets, 1 pocket barchetta style, half lined, double stitching, sleeves manica camicia, 2 vents. Solid Green in a refined blend of wool and linen entirely hand cut and sawn by our master tailors. A versatile jacket ideal to wear either for work or leisure time ensuring comfort and praticality without compromising the elegance.",
     price: 1200,
     price2: 1390,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUTX35_S19MA29_V31_01_1600x.jpg?v=1624369209",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUTX35_S19MA29_V31_02_1600x.jpg?v=1624369209",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUTX35_S19MA29_V31_03_1600x.jpg?v=1624369209",
+    image: "/assets/products/jackets/1453453656_1.jpg",
+    image2: "/assets/products/jackets/1453453656_2.jpg",
+    image3: "/assets/products/jackets/1453453656_3.jpg",
   },
   {
     id: 2345345123,
@@ -30,12 +27,9 @@ const jackets = [
       "Single-breasted jacket with 3 buttons, 2 patch pockets, 1 small boat pocket, half lining, double stitching, shirt sleeves, side slits. Light blue background with bluette check with a refined blend of wool, silk and linen fibers, entirely cut and sewn by hand by our master tailors. It is a versatile jacket ideal for creating a leisure look while ensuring comfort and practicality without compromising on elegance.",
     price: 1500,
     price2: 1640,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_2_S22MA03_B11_01_1600x.jpg?v=1643390057",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_2_S22MA03_B11_02_1000x.jpg?v=1643390058",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_2_S22MA03_B11_03_1600x.jpg?v=1643390057",
+    image: "/assets/products/jackets/2345345123_1.jpg",
+    image2: "/assets/products/jackets/2345345123_2.jpg",
+    image3: "/assets/products/jackets/2345345123_3.jpg",
   },
   {
     id: 3634526452,
@@ -49,12 +43,9 @@ const jackets = [
       "Jacket 3 buttons, single breasted, ticket pocket, 2 straight pockets with flaps, 1 travel pocket and 1 pocket barchetta style. Half lined, double stitching, sleeves manica camicia, 2 vents. Brown with blue check in a refined blend of wool, cashmere, silk and linen entirely hand cut and sawn by our master tailors. A versatile jacket ideal to wear either for work or leisure time ensuring comfort and praticality without compromising the elegance.",
     price: 1220,
     price2: 1420,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS32_S19MA04_M21_01_1600x.jpg?v=1624368774",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS32_S19MA04_M21_02_1000x.jpg?v=1624368774",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS32_S19MA04_M21_03_1000x.jpg?v=1624368774",
+    image: "/assets/products/jackets/3634526452_1.jpg",
+    image2: "/assets/products/jackets/3634526452_2.jpg",
+    image3: "/assets/products/jackets/3634526452_3.jpg",
   },
   {
     id: 25642563454,
@@ -68,12 +59,9 @@ const jackets = [
       "Jacket 3 buttons, single breasted, 2 patched pockets, 1 pocket barchetta style, half lined, double stitching, sleeves manica camicia, 2 vents. Light blue Prince de Galles in a refined blend of cashmere, silk and linen entirely hand cut and sawn by our master tailors. A versatile jacket ideal to wear either for work or leisure time ensuring comfort and praticality without compromising the elegance.",
     price: 1600,
     price2: 2100,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S10MA54_A21_01_1600x.jpg?v=1624368811",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S10MA54_A21_02_1000x.jpg?v=1624368811",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S10MA54_A21_03_1000x.jpg?v=1624368811",
+    image: "/assets/products/jackets/25642563454_1.jpg",
+    image2: "/assets/products/jackets/25642563454_2.jpg",
+    image3: "/assets/products/jackets/25642563454_3.jpg",
   },
   {
     id: 567245254,
@@ -87,12 +75,9 @@ const jackets = [
       "Jacket 3 buttons, single breasted, 2 patched pockets, 1 pocket barchetta style, half lined, double stitching, sleeves manica camicia, 2 vents. Fantasy beige Prince de Galles in a refined blend of cashmere, silk and linen entirely hand cut and sawn by our master tailors. A versatile jacket ideal to wear either for work or leisure time ensuring comfort and praticality without compromising the elegance.",
     price: 900,
     price2: 1240,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S10MA54_N11_01_1600x.jpg?v=1624368848",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S10MA54_N11_02_1000x.jpg?v=1624368848",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S10MA54_N11_03_1000x.jpg?v=1624368848",
+    image: "/assets/products/jackets/567245254_1.jpg",
+    image2: "/assets/products/jackets/567245254_2.jpg",
+    image3: "/assets/products/jackets/567245254_3.jpg",
   },
   {
     id: 632645646,
@@ -106,12 +91,9 @@ const jackets = [
       "Jacket 3 buttons, single breasted, 2 patched pockets, 1 pocket barchetta style, half lined, double stitching, sleeves manica camicia, 2 vents. Powder blue with a blue check in a refined blend of cashmere, silk and linen entirely hand cut and sawn by our master tailors. A versatile jacket ideal to wear either for work or leisure time ensuring comfort and praticality without compromising the elegance.",
     price: 2400,
     price2: 2900,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S14MA39_A12_01_1600x.jpg?v=1624368884",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S14MA39_A12_02_1000x.jpg?v=1624368884",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S14MA39_A12_03_1600x.jpg?v=1624368884",
+    image: "/assets/products/jackets/632645646_1.jpg",
+    image2: "/assets/products/jackets/632645646_2.jpg",
+    image3: "/assets/products/jackets/632645646_3.jpg",
   },
   {
     id: 2356245623527,
@@ -125,12 +107,9 @@ const jackets = [
       "Jacket 3 buttons, single breasted, 2 patched pockets, 1 pocket barchetta style, half lined, double stitching, sleeves manica camicia, 2 vents. Solid Brown in a refined blend of wool, silk and linen entirely hand cut and sawn by our master tailors. A versatile jacket ideal to wear either for work or leisure time ensuring comfort and praticality without compromising the elegance.",
     price: 3200,
     price2: 3990,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S17MA07_M21_01_1600x.jpg?v=1624368954",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S17MA07_M21_02_1600x.jpg?v=1624368954",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S17MA07_M21_03_1000x.jpg?v=1624368954",
+    image: "/assets/products/jackets/2356245623527_1.jpg",
+    image2: "/assets/products/jackets/2356245623527_2.jpg",
+    image3: "/assets/products/jackets/2356245623527_3.jpg",
   },
   {
     id: 862456245144,
@@ -144,12 +123,9 @@ const jackets = [
       "Jacket 3 buttons, single breasted, 2 patched pockets, 1 pocket barchetta style, half lined, double stitching, sleeves manica camicia, 2 vents. Beige with green check in a refined blend of cashmere and silk entirely hand cut and sawn by our master tailors. A versatile jacket ideal to wear either for work or leisure time ensuring comfort and praticality without compromising the elegance.",
     price: 2240,
     price2: 2890,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S16MA19_N12_01_1600x.jpg?v=1624368920",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S16MA19_N12_02_1000x.jpg?v=1624368920",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S16MA19_N12_03_1000x.jpg?v=1624368920",
+    image: "/assets/products/jackets/862456245144_1.jpg",
+    image2: "/assets/products/jackets/862456245144_2.jpg",
+    image3: "/assets/products/jackets/862456245144_3.jpg",
   },
   {
     id: 97459323,
@@ -163,12 +139,9 @@ const jackets = [
       "Jacket 3 buttons, single breasted, 2 patched pockets, 1 pocket barchetta style, half lined, double stitching, sleeves manica camicia, 2 vents. Sky blue with bluette checks in a refined blend of wool, silk and linen entirely hand cut and sawn by our master tailors. A versatile jacket ideal to wear either for work or leisure time ensuring comfort and praticality without compromising the elegance.",
     price: 1235,
     price2: 1500,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S19MA38_V11_01_1600x.jpg?v=1624369028",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S19MA38_V11_02_1000x.jpg?v=1624369028",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S19MA38_V11_03_1000x.jpg?v=1624369028",
+    image: "/assets/products/jackets/97459323_1.jpg",
+    image2: "/assets/products/jackets/97459323_2.jpg",
+    image3: "/assets/products/jackets/97459323_3.jpg",
   },
   {
     id: 12346427340,
@@ -182,12 +155,9 @@ const jackets = [
       "Single-breasted jacket with 3 buttons, 2 patch pockets, 1 half-lined boat pocket, double stitching, shirt sleeves, side slits. Solid beige color, entirely cut and sewn by hand by our master tailors. It is a versatile jacket ideal for creating a look for both work and leisure, ensuring comfort and practicality without compromising on elegance.",
     price: 1225,
     price2: 1400,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S18WA34_N11_01_1600x.jpg?v=1624368991",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S18WA34_N11_02_1000x.jpg?v=1624368991",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/GUS35_S18WA34_N11_03_1000x.jpg?v=1624368991",
+    image: "/assets/products/jackets/97459323_1.jpg",
+    image2: "/assets/products/jackets/97459323_2.jpg",
+    image3: "/assets/products/jackets/97459323_3.jpg",
   },
 ];
 

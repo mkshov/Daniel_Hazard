@@ -5,53 +5,56 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Autumn = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const autumn = [
     {
       image:
-        "https://i.shgcdn.com/9579307a-db02-4418-afc8-6786508d967b/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      text: "A new masterpiece, essential in the wardrobe of any contemporary connoisseur of timeless elegance: a suit characterised by an unlined jacket with three buttons, two patch pockets, and unpleated trousers with a waist drawstring. Cut and sewn exclusively by hand from an exclusive Cesare Attolini textile, in 52% linen, 41% wool, and 7% silk.",
+        "https://i.shgcdn.com/00bd526d-975f-4048-a505-2a16ebb14475/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+      text_it:
+        "Un capolavoro assoluto, essenziale nel guardaroba di ogni conoscitore di eleganza senza tempo: un abito doppiopetto con sei bottoni e due tasche a taglio, e un pantalone con due pieghe. Cucito a mano in un tessuto molto morbido e pieno con un esclusivo design Daniel Hazard, 93% lana e cashmere S’170.",
+      text_en:
+        "An absolute masterpiece, essential in the wardrobe of any connoisseur of timeless elegance: a double-breasted suit with six buttons and two slash pockets, and trousers with two pleats. Sewn by hand in a very soft, fulled fabric with an exclusive Daniel Hazard design, 93% wool and S’170 cashmere.",
     },
     {
       image:
-        "https://i.shgcdn.com/9dbc0ee9-1ee1-4f79-89e7-33efec811d29/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ab. Repudiandae, nobis. Consectetur, consequatur eaque impedit ipsam recusandae quos. Modi!",
+        "https://i.shgcdn.com/79d745ec-0ea7-41aa-b46d-ca4c109f8201/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+      text_it:
+        "Un capolavoro assoluto, imprescindibile nel guardaroba di ogni conoscitore di un'eleganza senza tempo: un abito a tre bottoni con due tasche a taglio, e un pantalone con due pieghe. Cucito a mano in un tessuto molto morbido e pieno con un esclusivo design Daniel Hazard, 93% lana e cashmere S’170.",
+      text_en:
+        "An absolute masterpiece, essential in the wardrobe of any connoisseur of timeless elegance: a three-button suit featuring two slash pockets, and trousers with two pleats. Sewn by hand in a very soft, fulled fabric with an exclusive Daniel Hazard design, 93% wool and S’170 cashmere.",
     },
     {
       image:
-        "https://i.shgcdn.com/015dd1b9-4646-452b-ad2a-27a59a126590/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci autem nesciunt reiciendis rerum praesentium dolor provident laborum. Quae officiis eveniet error similique cumque culpa aliquam omnis sint, eum est!",
+        "https://i.shgcdn.com/d3d3bf30-79eb-4b4a-bfbd-dcdd7d50a98e/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+      text_it:
+        "Un capolavoro assoluto, indispensabile nel guardaroba di ogni conoscitore di eleganza senza tempo: una giacca a tre bottoni con due tasche applicate e una tasca a barchetta, interamente destrutturata. Cucito a mano in un filo di cashmere 100% maglieria, molto morbido al tatto, con un esclusivo design a scacchi, perfetto sia per giacche foderate che sfoderate.",
+      text_en:
+        "An absolute masterpiece, essential in the wardrobe of any connoisseur of timeless elegance: a three-button jacket with two patch pockets and a barchetta pocket, entirely deconstructed. Sewn by hand in a 100% knitwear cashmere thread, very soft to the touch, with an exclusive checkered design, perfect for both lined and unlined jackets.",
     },
     {
       image:
-        "https://i.shgcdn.com/4ea2c6d8-8d25-4bae-a6de-d9666439bf4e/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      text: "An absolute masterpiece, essential in the wardrobe of any connoisseur of timeless elegance, suitable for particularly humid climates: an unlined suit with three buttons and trousers with two pleats, fabric with Prince of Wales pattern, 71% wool, 15% silk, and 14% linen.",
+        "https://i.shgcdn.com/a8b5ab65-a5b0-4792-a809-fdcf758817c8/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+      text_it:
+        "Da un modello esclusivo disegnato da Daniel Hazard, una giacca a tre bottoni con tasche per biglietti e patta. Cucito a mano in un filo di cashmere 100% maglieria, molto morbido al tatto, con un esclusivo design a scacchi, perfetto sia per giacche foderate che sfoderate.",
+      text_en:
+        "From an exclusive model designed by Daniel Hazard, a three-button jacket with ticket pockets and flaps. Sewn by hand in a 100% knitwear cashmere thread, very soft to the touch, with an exclusive checkered design, perfect for both lined and unlined jackets.",
     },
     {
       image:
-        "https://i.shgcdn.com/3b3f3633-f56a-4e8c-812a-9cf84d4e077d/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      text: "An exceptional, unlined jacket with three buttons and two patch pockets, based on an exclusive model designed and created by Cesare Attolini. Sewn entirely by hand, extremely soft to the touch and comfortable to wear, in 70% cashmere, 17% silk, and 13% linen.",
+        "https://i.shgcdn.com/ef30c794-1134-46f9-9368-e70d3fea68e3/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+      text_it:
+        "Un capolavoro assoluto, indispensabile nel guardaroba di ogni conoscitore di un'eleganza senza tempo: un abito a tre bottoni con due tasche e un pantalone con due pieghe. Cucito a mano in un tessuto molto morbido e pieno con un esclusivo design Daniel Hazard, 93% lana e cashmere S’170.",
+      text_en:
+        "An absolute masterpiece, essential in the wardrobe of any connoisseur of timeless elegance: a three-button suit featuring two pockets, and trousers with two pleats. Sewn by hand in a very soft, fulled fabric with an exclusive Daniel Hazard design, 93% wool and S’170 cashmere.",
     },
     {
       image:
-        "https://i.shgcdn.com/aa638f34-9a5f-4641-92e2-19eabcaa75e8/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      text: "Cesare Attolini’s exclusive and timeless elegance is embodied in two informal garments. A long-sleeved crewneck sweater, characterised by an ultrafine springy thread in 85% cotton and 15% cashmere. Paired with a pair of white trousers with two pleats, in twill with a three-dimensional effect, in 70% cotton and 30% linen.",
-    },
-    {
-      image:
-        "https://i.shgcdn.com/b072dc43-a2f5-44a0-b3b8-5f5c336177e0/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam praesentium earum molestias corporis totam, eligendi delectus quae consequuntur eum accusantium fuga iusto vel at repudiandae consectetur ullam, et, laudantium odit.",
-    },
-    {
-      image:
-        "https://i.shgcdn.com/e472f309-3abc-47db-8b49-584ae839757f/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione mollitia quas eaque? Recusandae, voluptatem itaque ad dicta repellat nulla exercitationem fugiat? Nemo earum consequuntur reprehenderit a eaque voluptatem laboriosam minima, quibusdam facilis totam, cumque optio in nam itaque officiis!",
-    },
-    {
-      image:
-        "https://i.shgcdn.com/8698655c-5367-431f-b317-e7e4c20f5938/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      text: "Cesare Attolini’s exclusive and timeless elegance is embodied in two sporty garments.A bomber with a full frontal sipper, in water resistant technical fabric, with a contrasting knit cotton interior, made up of 51% polyamide, 42% polyester, and 7% elastane. Underneath, a short sleeved jersey, with contrasting edges, made from a 100% twisted cotton thread for a sensation of extreme coolness.",
+        "https://i.shgcdn.com/9bcb5915-d54c-4c4e-83d1-6ed9fbdf3f6a/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+      text_it:
+        "Un capolavoro assoluto, indispensabile nel guardaroba di ogni conoscitore di eleganza senza tempo: una giacca a tre bottoni con due tasche applicate e una tasca a barchetta. Cucito a mano in un filo di cashmere 100% maglieria, molto morbido al tatto, con un esclusivo design a scacchi, perfetto sia per giacche foderate che sfoderate.",
+      text_en:
+        "An absolute masterpiece, essential in the wardrobe of any connoisseur of timeless elegance: a three-button jacket with two patch pockets and a barchetta pocket. Sewn by hand in a 100% knitwear cashmere thread, very soft to the touch, with an exclusive checkered design, perfect for both lined and unlined jackets.",
     },
   ];
   return (
@@ -72,7 +75,7 @@ const Autumn = () => {
             <img style={{ width: "100%" }} src={item.image} alt="" />
             <div>
               <Typography variant="h6" sx={{ padding: "50px" }}>
-                {item.text}
+                {item[`text_${i18n.language}`]}
               </Typography>
             </div>
           </div>

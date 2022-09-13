@@ -30,7 +30,7 @@ const Details = (props) => {
   const { productDetails } = props;
   const { id } = useParams();
   const currentProduct = productDetails.find((item) => +item.id === +id);
-  // console.log("currentProduct: ", currentProduct);
+  console.log("currentProduct: ", currentProduct);
   const random = Math.floor(Math.random() * 999999);
 
   const { i18n, t } = useTranslation();
@@ -67,11 +67,14 @@ const Details = (props) => {
     <div className="product">
       <div className="product-container">
         <Slider className="product-slider" {...settings}>
-          {data.map((item) => (
-            <div key={random}>
-              <img className="product-slider-img" src={item} alt="" />
-            </div>
-          ))}
+          {data.map((item) => {
+            console.log("item: ", item);
+            return (
+              <div key={random}>
+                <img className="product-slider-img" src={item} alt="" />
+              </div>
+            );
+          })}
         </Slider>
 
         <div className="product-info">

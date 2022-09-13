@@ -11,12 +11,9 @@ const wedding = [
       "Double-breasted suit with 6 buttons, 2 patch pockets, 1 small boat pocket, half lining, double topstitching, shirt sleeves, side slits. Solid beige color with a refined blend of linen and wool fibers, entirely cut and sewn by hand by our master tailors. It is a versatile dress ideal for creating a not very formal look without compromising on elegance. 2 pleats trousers with buttons and waistband, side buckles, extended strap without belt loops, 1 front pocket and 2 back pockets.",
     price: 3100,
     price2: 3600,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS659-PUY3_S22MA41_N21_01_800x.jpg?v=1643358471",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS659-PUY3_S22MA41_N21_02_1600x.jpg?v=1643358472",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTS659-PUY3_S22MA41_N21_03_1600x.jpg?v=1643358471",
+    image: "/assets/products/everyday/256324324572_1.jpg",
+    image2: "/assets/products/everyday/256324324572_2.jpg",
+    image3: "/assets/products/everyday/256324324572_3.jpg",
   },
   {
     id: 335472454,
@@ -30,12 +27,9 @@ const wedding = [
       "Single-breasted tuxedo in 150'S wool 1 button peak lapel, 2 welt pockets, 1 small boat pocket, side slits, fully lined. Solid black, entirely cut and sewn by hand by our master tailors. Trousers without pleats with buttons and waistband, silk side bands, 1 front pocket and 2 back pockets.",
     price: 1220,
     price2: 1489,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUSS109-PUSZ3_MWA84_D31_01_800x.jpg?v=1632412570",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUSS109-PUSZ3_MWA84_D31_02_1600x.jpg?v=1632412569",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUSS109-PUSZ3_MWA84_D31_03_1000x.jpg?v=1632412569",
+    image: "/assets/products/everyday/335472454_1.jpg",
+    image2: "/assets/products/everyday/335472454_2.jpg",
+    image3: "/assets/products/everyday/335472454_3.jpg",
   },
   {
     id: 784276,
@@ -49,12 +43,9 @@ const wedding = [
       "Suit: Suit single breasted 3 buttons, 2 straight pockets with flaps, 1 pocket barchetta style, sleeves manica camicia, 2 vents, fully lined. Blue striped tone on tone hand cut and sawn by our master tailors. A refined suit in a light wool to wear for business or formal vents. Trouser: Trousers flat front with button's fly, 1 front pocket and 2 back pockets.",
     price: 1600,
     price2: 1955,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S17WA20_B31_01_800x.jpg?v=1624368457",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S17WA20_B31_02_1000x.jpg?v=1624368457",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S17WA20_B31_03_1000x.jpg?v=1624368457",
+    image: "/assets/products/everyday/784276_1.jpg",
+    image2: "/assets/products/everyday/784276_2.jpg",
+    image3: "/assets/products/everyday/784276_3.jpg",
   },
 
   {
@@ -69,12 +60,9 @@ const wedding = [
       "Suit: Suit single breasted 3 buttons, 2 straight pockets with flaps, 1 chest pocket barchetta style, sleeves manica camicia, 2 vents, fully lined. Solid royal blue entirely hand cut and sawn by our master tailors. A refined suit in wool to wear for business or formal events. Trouser: Trousers flat front with button's fly, 1 front pocket and 2 back pockets.",
     price: 2400,
     price2: 3550,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA26_B21_01_800x.jpg?v=1624368527",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA26_B21_02_1000x.jpg?v=1624368527",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S18WA26_B21_03_1000x.jpg?v=1624368527",
+    image: "/assets/products/everyday/334545268907656_1.jpg",
+    image2: "/assets/products/everyday/334545268907656_2.jpg",
+    image3: "/assets/products/everyday/334545268907656_3.jpg",
   },
   {
     id: 7897826765,
@@ -88,12 +76,9 @@ const wedding = [
       "Suit: Suit single breasted 3 buttons, 2 straight pockets with flaps, 1 pocket barchetta style, sleeves manica camicia, 2 vents, fully lined. Solid gray entirely hand cut and sewn by our master tailors. A refined suit in wool to wear for business or formal events. Trouser: Trousers flat front with button's fly, 1 front pocket and 2 back pockets. ",
     price: 3200,
     price2: 4590,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S19WA21_G19_01_800x.jpg?v=1624368564",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S19WA21_G19_02_1600x.jpg?v=1624368564",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_S19WA21_G19_03_1000x.jpg?v=1624368564",
+    image: "/assets/products/everyday/789786765_1.jpg",
+    image2: "/assets/products/everyday/789786765_2.jpg",
+    image3: "/assets/products/everyday/789786765_3.jpg",
   },
   {
     id: 2354675268,
@@ -108,12 +93,9 @@ const wedding = [
     price: 2240,
     price2: 2540,
     name: "a",
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX30_PUZ3_CAWWA02_B31_01_800x.jpg?v=1624368662",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX30_PUZ3_CAWWA02_B31_02_1600x.jpg?v=1624368662",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUTX30_PUZ3_CAWWA02_B31_03_1000x.jpg?v=1624368662",
+    image: "/assets/products/everyday/2354675268_1.jpg",
+    image2: "/assets/products/everyday/2354675268_2.jpg",
+    image3: "/assets/products/everyday/2354675268_3.jpg",
   },
   {
     id: 1072343526809,
@@ -127,12 +109,9 @@ const wedding = [
       "Suit: Suit single breasted 3 buttons, Navy pinstripe entirely handmade from our masters in Casalnuovo. Made of wool and cashmere perfect for business events. A timeless suit that represent our traditions. 2 straight pockets with flaps, 1 chest pocket 'boat style', sleeves shirt style, double vents. Trouser: Trousers flat front, zip flyer, 1 change pocket in front, 2 back pockets.",
     price: 1225,
     price2: 1460,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_A7MA16_B33_01_1600x.jpg?v=1624367496",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_A7MA16_B33_02_1000x.jpg?v=1624367496",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_A7MA16_B33_03_1000x.jpg?v=1624367496",
+    image: "/assets/products/everyday/1072343526809_1.jpg",
+    image2: "/assets/products/everyday/1072343526809_2.jpg",
+    image3: "/assets/products/everyday/1072343526809_3.jpg",
   },
   {
     id: 235356809,
@@ -146,12 +125,9 @@ const wedding = [
       "Suit: Suit single breasted 3 bottons, gray with royal blue checks, entirely hand made from our master tailors in Casalnuovo. Made of refined wool is perfect for the more sofisticated man. The design with checks make this an original suit. 2 straight pockets with flaps, 1 chest pocket 'boat style', sleeves shirt style, double vents. Trouser: Trousers flat front, zip flyer, 1 change pocket in front, 2 back pockets.",
     price: 1225,
     price2: 1460,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_A17WA63_G31_01_1600x.jpg?v=1624367729",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_A17WA63_G31_02_1000x.jpg?v=1624367729",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS30_PUZ3_A17WA63_G31_03_1000x.jpg?v=1624367729",
+    image: "/assets/products/everyday/235356809_1.jpg",
+    image2: "/assets/products/everyday/235356809_2.jpg",
+    image3: "/assets/products/everyday/235356809_3.jpg",
   },
   {
     id: 342674526809,
@@ -165,12 +141,9 @@ const wedding = [
       "Suit: Suit double breasted, 6 bottons peak lapel, solid brown, entirely hand made from our master tailors in Casalnuovo. Made of refined 150' wool gives a look perfect for special occasions or formal events. 2 straight pockets with flaps, 1 chest pocket 'boat style', sleeves shirt style, double vents. Trouser: Trousers 2 flaps with extended vent, side tabs and botton fly, 1 change pocket in front, 2 back pockets",
     price: 1225,
     price2: 1460,
-    image:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS609_PUY3_A20WA44_M31_01_1600x.jpg?v=1624367797",
-    image2:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS609_PUY3_A20WA44_M31_02_1000x.jpg?v=1624367797",
-    image3:
-      "https://cdn.shopify.com/s/files/1/0557/0350/3012/products/AUS609_PUY3_A20WA44_M31_03_1000x.jpg?v=1624367797",
+    image: "/assets/products/everyday/342674526809_1.jpg",
+    image2: "/assets/products/everyday/342674526809_2.jpg",
+    image3: "/assets/products/everyday/342674526809_3.jpg",
   },
 ];
 
