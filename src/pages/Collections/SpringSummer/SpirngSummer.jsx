@@ -23,10 +23,7 @@ const SpringSummer = () => {
           <Typography sx={{ textTransform: "uppercase" }} variant="h4">
             {t("springSummer")}
           </Typography>
-          <img
-            src="https://i.shgcdn.com/b1dfc452-0cb3-40a2-9fa1-4cfdcbfe5f13/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
-            alt=""
-          />
+          <img src="/assets/underline.jpg" alt="" />
         </div>
         <Typography
           id="sp-sm-mobile"
@@ -42,7 +39,7 @@ const SpringSummer = () => {
             >
               <img
                 className="product-img2"
-                src="https://i.shgcdn.com/aa74dc08-cbb6-43f2-aca2-c52dc8d57f98/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                src="/assets/collections/spring-category.jpg"
                 alt=""
               />
 
@@ -69,7 +66,7 @@ const SpringSummer = () => {
             >
               <img
                 className="product-img2"
-                src="https://i.shgcdn.com/d3d3bf30-79eb-4b4a-bfbd-dcdd7d50a98e/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                src="/assets/collections/summer-category.jpg"
                 alt=""
               />
               <div className="middle2">

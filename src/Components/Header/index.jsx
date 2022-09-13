@@ -115,7 +115,7 @@ export default function Header(props) {
               }}
               className={navImage}
               onMouseEnter={handleCloseShopMenu}
-              src="https://i.ibb.co/LhdTySj/1658673254367.png"
+              src="/assets/HomePage/header-logo.png"
               alt="logo"
             />
           </Box>
@@ -175,10 +175,7 @@ export default function Header(props) {
             </Box>
 
             <Box className="header-category-img">
-              <img
-                src="https://cdn.shopify.com/s/files/1/1383/8317/files/DSC8997-Edit_2000x.jpg?v=1646392533"
-                alt="suit-img"
-              />
+              <img src="/assets/HomePage/category-img.jpg" alt="suit-img" />
             </Box>
           </ul>
         </Collapse>

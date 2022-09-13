@@ -14,10 +14,7 @@ const AbotUs = () => {
       <section>
         <div className="about-us-header">
           <Typography variant="h4">{t("aboutUs0")}</Typography>
-          <img
-            src="https://i.shgcdn.com/b1dfc452-0cb3-40a2-9fa1-4cfdcbfe5f13/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
-            alt=""
-          />
+          <img src="/assets/underline.jpg" alt="" />
         </div>
 
         <Box className="img-txt-block2">
@@ -31,10 +28,7 @@ const AbotUs = () => {
           </Box>
 
           <Box>
-            <img
-              src="https://i.insider.com/53c7d58069bedd1337e10562?width=1061&format=jpeg"
-              alt=""
-            />
+            <img src="/assets/aboutus/1.jpg" alt="" />
           </Box>
           <Box className="img-txt-mobile2">
             <Typography>{t("ourStoryChild2")}</Typography>
@@ -44,10 +38,7 @@ const AbotUs = () => {
 
         <Box className="img-txt-block2">
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <img
-              src="https://i.insider.com/53c73c2669bedd0127f996b9?width=750&format=jpeg&auto=webp"
-              alt=""
-            />
+            <img src="/assets/aboutus/2.jpg" alt="" />
           </Box>
           <Box className="img-txt-inner2">
             <Typography variant="h4">{t("excellentQuality")}</Typography>
@@ -67,10 +58,7 @@ const AbotUs = () => {
         </div>
         <div className="section-2-container">
           <div className="section-2-blocks">
-            <img
-              src="https://i.ibb.co/V92Tqh3/photo-2022-08-14-20-22-19.jpg"
-              alt="suits"
-            />
+            <img src="/assets/aboutus/3.jpg" alt="suits" />
             <div className="section-2-inner1">
               <Typography variant="h4">01 /</Typography>
               <div className="section-2-inner2">
@@ -79,10 +67,7 @@ const AbotUs = () => {
             </div>
           </div>
           <div className="section-2-blocks">
-            <img
-              src="https://i.ibb.co/SrYC4Hm/photo-2022-08-14-20-22-37.jpg"
-              alt="suits"
-            />
+            <img src="/assets/aboutus/4.jpg" alt="suits" />
             <div className="section-2-inner1">
               <Typography variant="h4">02 /</Typography>
               <div className="section-2-inner2">
@@ -91,10 +76,7 @@ const AbotUs = () => {
             </div>
           </div>
           <div className="section-2-blocks">
-            <img
-              src="https://i.ibb.co/ZHKz912/photo-2022-08-14-20-23-25.jpg"
-              alt="suits"
-            />
+            <img src="/assets/aboutus/5.jpg" alt="suits" />
             <div className="section-2-inner1">
               <Typography variant="h4">03 /</Typography>
               <div className="section-2-inner2">

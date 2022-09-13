@@ -63,7 +63,7 @@ export default function TemporaryDrawer() {
                   >
                     <tbody>
                       <tr className="trhead">
-                        <td className="border-right">Euro Size</td>
+                        <td className="border-right">{t("euroSize")}</td>
                         <td className="border-right">
                           <div className="measure-wrap">
                             <span>A</span>
@@ -190,10 +190,7 @@ export default function TemporaryDrawer() {
 
                 <div className="measure-pic">
                   <div className="measure-pic0">
-                    <img
-                      src="https://i.ibb.co/9gDkK6Z/Picsart-22-08-22-17-28-31-238.png"
-                      alt="size guide"
-                    />
+                    <img src="/assets/size-human.png" alt="size guide" />
                   </div>
                   <div className="measure-pic-guide">
                     <div className="measure-wrap">

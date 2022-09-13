@@ -8,7 +8,6 @@ import "./HomePage.css";
 import { useNavigate } from "react-router-dom";
 import { Slider } from "Components";
 
-import heritage from "assets/homepage/heritage.jpg";
 import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
@@ -55,10 +54,7 @@ const HomePage = () => {
       <Slider>
         <Box>
           <Box className="slide-1">
-            <img
-              alt="Background"
-              src="https://i.ibb.co/9bqj0SD/Picsart-22-07-20-13-44-44-292.jpg"
-            />
+            <img alt="Background" src="/assets/HomePage/img1.jpg" />
             <Box className="slide-1-overlay">
               <Box
                 data-aos="fade-center"
@@ -90,16 +86,13 @@ const HomePage = () => {
         </Box>
         <Box>
           <Box className="slide-2">
-            <img
-              alt="Background-2"
-              src="https://i.ibb.co/7gRVh4S/Picsart-22-07-20-13-56-52-904.jpg"
-            />
+            <img alt="Background-2" src="/assets/HomePage/img2.jpg" />
             <Box className="slide-2-overlay">
               <Box className="slide-2-inner">
                 <Typography variant="h3">{t("newCollection")}</Typography>
-                <Typography variant="h5">{t("autumnWinter")}</Typography>
+                <Typography variant="h5">{t("springSummer")}</Typography>
                 <Button
-                  onClick={() => navigate(`/collections-autumn-winter-2022-23`)}
+                  onClick={() => navigate(`/collections-spring-summer-2022`)}
                   className="main-button"
                   variant="outlined"
                   color="inherit"
@@ -140,8 +133,8 @@ const HomePage = () => {
           <Box className="img-wrapper">
             <img
               className="inner-img"
-              src="https://cdn.shopify.com/s/files/1/1383/8317/products/halfcanvasstripedsuit_3_800x.jpg?v=1646212605"
-              alt=""
+              src="/assets/HomePage/inner-img_1.jpg"
+              alt="inner-img"
             />
             <div className="middle">
               <Button className="main-button">{t("discoverMore")}</Button>
@@ -150,8 +143,8 @@ const HomePage = () => {
           <Box className="img-wrapper">
             <img
               className="inner-img"
-              src="https://cdn.shopify.com/s/files/1/1383/8317/products/beigesuit_9_800x.jpg?v=1614944367"
-              alt=""
+              src="/assets/HomePage/inner-img_2.jpg"
+              alt="inner-img"
             />
             <div
               className="middle"
@@ -163,8 +156,8 @@ const HomePage = () => {
           <Box className="img-wrapper">
             <img
               className="inner-img"
-              src="https://cdn.shopify.com/s/files/1/1383/8317/products/madetoorderbespokegreysuit_piniparma_800x.jpg?v=1614766914"
-              alt=""
+              src="/assets/HomePage/inner-img_3.jpg"
+              alt="inner-img"
             />
             <div className="middle">
               <Button className="main-button">{t("discoverMore")}</Button>
@@ -185,10 +178,7 @@ const HomePage = () => {
           </Box>
 
           <Box>
-            <img
-              src="https://canvas-static.suitopia.com/website/img/startpage/startpage-conscious-garments.8de1e36dbe50.jpeg"
-              alt=""
-            />
+            <img src="/assets/HomePage/img3.jpg" alt="" />
           </Box>
           <Box className="img-txt-mobile">
             <Typography>{t("excellentQualityChild1")}</Typography>
@@ -198,10 +188,7 @@ const HomePage = () => {
 
         <Box className="img-txt-block1">
           <Box>
-            <img
-              src="https://canvas-static.suitopia.com/website/img/startpage/startpage-perfect-fit-guarantee.3bf14753a328.jpg"
-              alt=""
-            />
+            <img src="/assets/HomePage/img4.jpg" alt="" />
           </Box>
           <Box className="img-txt-inner">
             <Typography variant="h4">{t("newModels")}</Typography>
@@ -214,28 +201,28 @@ const HomePage = () => {
             <div className="slide-padding">
               <img
                 width="100%"
-                src="https://cdn.suitsupply.com/image/upload/ar_10:22,b_rgb:efefef,bo_300px_solid_rgb:efefef,c_pad,g_north,w_2600/b_rgb:efefef,c_lfill,g_north,dpr_1,h_1728,w_1440,f_auto,q_auto,fl_progressive/products/suits/default/Summer/CMP47_1.jpg"
+                src="/assets/HomePage/carousel-img_1.jpg"
                 alt=""
               />
             </div>
             <div className="slide-padding">
               <img
                 width="100%"
-                src="https://cdn.suitsupply.com/image/upload/ar_10:22,b_rgb:efefef,bo_300px_solid_rgb:efefef,c_pad,g_north,w_2600/b_rgb:efefef,c_lfill,g_north,dpr_1,h_1728,w_1440,f_auto,q_auto,fl_progressive/products/Suits/default/P6383_1.jpg"
+                src="/assets/HomePage/carousel-img_2.jpg"
                 alt=""
               />
             </div>
             <div className="slide-padding">
               <img
                 width="100%"
-                src="https://cdn.suitsupply.com/image/upload/ar_10:22,b_rgb:efefef,bo_300px_solid_rgb:efefef,c_pad,g_north,w_2600/b_rgb:efefef,c_lfill,g_north,dpr_1,h_1728,w_1440,f_auto,q_auto,fl_progressive/products/suits/default/Winter/P6133_1.jpg"
+                src="/assets/HomePage/carousel-img_3.jpg"
                 alt=""
               />
             </div>
             <div className="slide-padding">
               <img
                 width="100%"
-                src="https://cdn.suitsupply.com/image/upload/ar_10:22,b_rgb:efefef,bo_300px_solid_rgb:efefef,c_pad,g_north,w_2600/b_rgb:efefef,c_lfill,g_north,dpr_1,h_1728,w_1440,f_auto,q_auto,fl_progressive/products/suits/default/Winter/P6159_1.jpg"
+                src="/assets/HomePage/carousel-img_4.jpg"
                 alt=""
               />
             </div>
@@ -243,7 +230,7 @@ const HomePage = () => {
             <div className="slide-padding">
               <img
                 width="100%"
-                src="https://cdn.suitsupply.com/image/upload/ar_10:22,b_rgb:efefef,bo_300px_solid_rgb:efefef,c_pad,g_north,w_2600/b_rgb:efefef,c_lfill,g_north,dpr_1,h_1728,w_1440,f_auto,q_auto,fl_progressive/products/Suits/default/C6666-S2_1.jpg"
+                src="/assets/HomePage/carousel-img_5.jpg"
                 alt=""
               />
             </div>
@@ -275,7 +262,7 @@ const HomePage = () => {
                 data-aos-offset="200"
                 data-aos-duration="500"
               >
-                <img src={heritage} alt="" />
+                <img src="/assets/HomePage/heritage.jpg" alt="" />
               </Box>
             </Box>
           </Box>
@@ -330,7 +317,7 @@ const HomePage = () => {
           >
             <img
               style={{ width: "111px", height: "111px", marginBottom: "30px" }}
-              src="	https://cdn.shopify.com/s/files/1/0261/4765/1638/files/Group561_small.png?v=1648817217"
+              src="/assets/HomePage/img5.jpg"
               alt=""
             />
             <Box>
@@ -355,7 +342,7 @@ const HomePage = () => {
           >
             <img
               style={{ width: "111px", height: "111px", marginBottom: "30px" }}
-              src="//cdn.shopify.com/s/files/1/0261/4765/1638/files/Group563_small_d7c935cc-bfc4-4f5a-858c-258044903d03_small.webp?v=1652186680"
+              src="/assets/HomePage/img6.jpg"
               alt=""
             />
             <Box>
@@ -376,7 +363,7 @@ const HomePage = () => {
           >
             <img
               style={{ width: "130px", height: "111px", marginBottom: "30px" }}
-              src="	https://cdn.shopify.com/s/files/1/0261/4765/1638/files/image10_small.png?v=1648817335"
+              src="/assets/HomePage/img7.jpg"
               alt=""
             />
             <Box>

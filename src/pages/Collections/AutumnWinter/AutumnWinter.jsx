@@ -21,10 +21,7 @@ const AutumnWinter = () => {
       <div>
         <div className="sp-sm-txt">
           <Typography variant="h4">{t("autumnWinter")}</Typography>
-          <img
-            src="https://i.shgcdn.com/b1dfc452-0cb3-40a2-9fa1-4cfdcbfe5f13/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
-            alt=""
-          />
+          <img src="/assets/underline.jpg" alt="" />
         </div>
         <Typography
           id="sp-sm-mobile"
@@ -42,7 +39,7 @@ const AutumnWinter = () => {
             >
               <img
                 className="product-img2"
-                src="https://i.shgcdn.com/014d510f-2811-4920-bf05-ef9fa3d70662/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                src="/assets/collections/autumn-category.jpg"
                 alt=""
               />
 
@@ -71,7 +68,7 @@ const AutumnWinter = () => {
             >
               <img
                 className="product-img2"
-                src="https://i.shgcdn.com/174d7582-8d0c-4581-a277-6dd3b0fd9743/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                src="/assets/collections/winter-category.jpg"
                 alt=""
               />
               <div className="middle2">

@@ -124,10 +124,7 @@ const ContactsUs = () => {
           </div>
         </form>
         <div className="contacts-form-img">
-          <img
-            src="https://i.shgcdn.com/a0445f7a-b90f-487e-b8cc-d8e2bd91dfd4/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
-            alt=""
-          />
+          <img src="/assets/aboutus/contactsUs_2.jpg" alt="" />
         </div>
       </div>
     </div>
