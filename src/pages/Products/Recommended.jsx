@@ -31,7 +31,11 @@ const Products = () => {
       />
       <div className="recommended-container">
         {recommended.map((item) => (
-          <div key={item.id} className="recommended-block">
+          <div
+            key={item.id}
+            onClick={() => navigate(`/${item.route}/${item.route2}/${item.id}`)}
+            className="recommended-block"
+          >
             <div className="product-wrapper">
               <img className="product-img" src={item.image} alt={item.title} />
               <div className="middle">

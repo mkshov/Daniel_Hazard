@@ -136,7 +136,7 @@ const HomePage = () => {
               src="/assets/HomePage/inner-img_1.jpg"
               alt="inner-img"
             />
-            <div className="middle">
+            <div className="middle" onClick={() => navigate("/suits/everyday")}>
               <Button className="main-button">{t("discoverMore")}</Button>
             </div>
           </Box>
@@ -159,7 +159,7 @@ const HomePage = () => {
               src="/assets/HomePage/inner-img_3.jpg"
               alt="inner-img"
             />
-            <div className="middle">
+            <div className="middle" onClick={() => navigate("/suits/everyday")}>
               <Button className="main-button">{t("discoverMore")}</Button>
             </div>
           </Box>

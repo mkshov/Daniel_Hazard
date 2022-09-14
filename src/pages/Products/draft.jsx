@@ -43,14 +43,13 @@ const Draft = (props) => {
       </Tabs>
       <div className="card-container">
         {products.map((item) => (
-          <div className="card" key={item.id}>
+          <div
+            onClick={handleLinkDetails(item.id)}
+            className="card"
+            key={item.id}
+          >
             <div className="product-wrapper">
-              <img
-                className="product-img"
-                onClick={handleLinkDetails(item.id)}
-                src={item.image}
-                alt=""
-              />
+              <img className="product-img" src={item.image} alt="" />
               <div className="middle">
                 <Button
                   onClick={handleLinkDetails(item.id)}
