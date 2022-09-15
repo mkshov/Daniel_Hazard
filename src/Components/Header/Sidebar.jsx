@@ -9,8 +9,29 @@ import ListItemText from "@mui/material/ListItemText";
 import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import { List, ListItemButton } from "@mui/material";
+import { List, ListItemButton, styled } from "@mui/material";
 import { useTranslation } from "react-i18next";
+
+const MyListItem = styled(ListItemButton)`
+  padding: 0.7rem 2rem;
+  border-bottom: solid rgba(40, 40, 40, 0.1) 1px;
+  span {
+    font-weight: bold;
+  }
+  &:hover {
+    background-color: #c1a575;
+  }
+`;
+const MyListItemCollapse = styled(ListItemButton)`
+  background-color: #8080801c;
+  border-bottom: solid rgba(40, 40, 40, 0.1) 1px;
+  &:hover {
+    background-color: #c1a575;
+  }
+`;
+const MyListItemText = styled(ListItemText)`
+  padding-left: 30px;
+`;
 
 const Sidebar = (props) => {
   const { t } = useTranslation();
@@ -43,107 +64,107 @@ const Sidebar = (props) => {
         <div className={open ? "sidebar sidebar--open" : "sidebar"}>
           <div className="sidebar-container">
             <List>
-              <ListItemButton onClick={handleClick2}>
+              <MyListItem
+                sx={{
+                  padding: "0.7rem 2rem",
+                  borderBottom: "solid rgba(40, 40, 40, 0.1) 1px",
+                }}
+                onClick={handleClick2}
+              >
                 <ListItemText primary={t("clothing")} />
                 {openList2 ? <ExpandLess /> : <ExpandMore />}
-              </ListItemButton>
+              </MyListItem>
               <Collapse in={openList2} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton
+                  <MyListItemCollapse
                     onClick={() => {
                       toggleSidebar();
                       navigate("/clothing/jackets");
                     }}
-                    sx={{ pl: 4 }}
                   >
-                    <ListItemText primary={t("jackets")} />
-                  </ListItemButton>
+                    <MyListItemText primary={t("jackets")} />
+                  </MyListItemCollapse>
                 </List>
                 <List component="div" disablePadding>
-                  <ListItemButton
+                  <MyListItemCollapse
                     onClick={() => {
                       toggleSidebar();
                       navigate("/clothing/trousers");
                     }}
-                    sx={{ pl: 4 }}
                   >
-                    <ListItemText primary={t("trousers")} />
-                  </ListItemButton>
+                    <MyListItemText primary={t("trousers")} />
+                  </MyListItemCollapse>
                 </List>
               </Collapse>
-              <ListItemButton onClick={handleClick3}>
+              <MyListItem onClick={handleClick3}>
                 <ListItemText primary={t("collections")} />
                 {openList3 ? <ExpandLess /> : <ExpandMore />}
-              </ListItemButton>
+              </MyListItem>
               <Collapse in={openList3} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton
+                  <MyListItemCollapse
                     onClick={() => {
                       toggleSidebar();
                       navigate("/collections-spring-summer-2022");
                     }}
-                    sx={{ pl: 4 }}
                   >
-                    <ListItemText primary={t("springSummer")} />
-                  </ListItemButton>
+                    <MyListItemText primary={t("springSummer")} />
+                  </MyListItemCollapse>
                 </List>
                 <List component="div" disablePadding>
-                  <ListItemButton
+                  <MyListItemCollapse
                     onClick={() => {
                       toggleSidebar();
                       navigate("/collections-autumn-winter-2022-23");
                     }}
-                    sx={{ pl: 4 }}
                   >
-                    <ListItemText primary={t("autumnWinter")} />
-                  </ListItemButton>
+                    <MyListItemText primary={t("autumnWinter")} />
+                  </MyListItemCollapse>
                 </List>
               </Collapse>
-              <ListItemButton
+              <MyListItem
                 onClick={() => {
                   toggleSidebar();
                   navigate("/about-us");
                 }}
               >
                 <ListItemText primary={t("aboutUs")} />
-              </ListItemButton>
-              <ListItemButton onClick={handleClick}>
+              </MyListItem>
+              <MyListItem onClick={handleClick}>
                 <ListItemText primary={t("suits")} />
                 {/* <Typography variant="h5">CATEGORY</Typography> */}
                 {openList1 ? <ExpandLess /> : <ExpandMore />}
-              </ListItemButton>
+              </MyListItem>
               <Collapse in={openList1} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton
+                  <MyListItemCollapse
                     onClick={() => {
                       toggleSidebar();
                       navigate("/suits/everyday");
                     }}
-                    sx={{ pl: 4 }}
                   >
-                    <ListItemText primary={t("everyday")} />
-                  </ListItemButton>
+                    <MyListItemText primary={t("everyday")} />
+                  </MyListItemCollapse>
                 </List>
                 <List component="div" disablePadding>
-                  <ListItemButton
+                  <MyListItemCollapse
                     onClick={() => {
                       toggleSidebar();
                       navigate("/suits/wedding");
                     }}
-                    sx={{ pl: 4 }}
                   >
-                    <ListItemText primary={t("wedding")} />
-                  </ListItemButton>
+                    <MyListItemText primary={t("wedding")} />
+                  </MyListItemCollapse>
                 </List>
               </Collapse>
-              <ListItemButton
+              <MyListItem
                 onClick={() => {
                   toggleSidebar();
                   navigate("/contacts-us");
                 }}
               >
                 <ListItemText primary={t("contactsUs")} />
-              </ListItemButton>
+              </MyListItem>
             </List>
           </div>
         </div>

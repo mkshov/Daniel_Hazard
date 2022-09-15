@@ -138,7 +138,7 @@ export default function Header(props) {
           <div className="border2"></div>
           <Box
             onClick={handleLangChange}
-            sx={{ width: "50px", display: "flex", justifyContent: "center" }}
+            sx={{ width: "55px", display: "flex", justifyContent: "center" }}
           >
             <Typography
               sx={{

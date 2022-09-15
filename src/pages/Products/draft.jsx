@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Button, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Button, Tab, Tabs, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
+
 import SearchIcon from "@mui/icons-material/Search";
 
 import "./Products.css";
 import { useTranslation } from "react-i18next";
+
+const ProductCard = styled(Box)`
+  margin: 30px;
+  width: 500px;
+  transition: 0.7s;
+`;
 
 const Draft = (props) => {
   const { t } = useTranslation();
@@ -37,17 +45,19 @@ const Draft = (props) => {
 
   return (
     <div>
-      <Tabs value={sortPrice} onChange={handleChange} centered>
-        <Tab label={t("lowToHigh")} value="asc" />
-        <Tab label={t("highToLow")} value="desc" />
+      <Tabs
+        value={sortPrice}
+        onChange={handleChange}
+        centered
+        textColor="secondary"
+        indicatorColor="secondary"
+      >
+        <Tab sx={{ fontWeight: "bold" }} label={t("lowToHigh")} value="asc" />
+        <Tab sx={{ fontWeight: "bold" }} label={t("highToLow")} value="desc" />
       </Tabs>
       <div className="card-container">
         {products.map((item) => (
-          <div
-            onClick={handleLinkDetails(item.id)}
-            className="card"
-            key={item.id}
-          >
+          <ProductCard onClick={handleLinkDetails(item.id)} key={item.id}>
             <div className="product-wrapper">
               <img className="product-img" src={item.image} alt="" />
               <div className="middle">
@@ -66,7 +76,7 @@ const Draft = (props) => {
                 €{item.price}
               </Typography>
             </div>
-          </div>
+          </ProductCard>
         ))}
       </div>
     </div>

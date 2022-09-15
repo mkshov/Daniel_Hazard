@@ -75,6 +75,11 @@ const ContactsUs = () => {
               color="secondary"
               variant="outlined"
               placeholder={t("contactsUsText5")}
+              InputProps={{
+                style: {
+                  fontSize: "25px",
+                },
+              }}
             />
             <Typography sx={{ marginTop: "20px" }} variant="h6">
               Email
@@ -86,6 +91,11 @@ const ContactsUs = () => {
               variant="outlined"
               placeholder="Email"
               type="email"
+              InputProps={{
+                style: {
+                  fontSize: "25px",
+                },
+              }}
             />
             <Typography sx={{ marginTop: "20px" }} variant="h6">
               {t("contactsUsText6")}

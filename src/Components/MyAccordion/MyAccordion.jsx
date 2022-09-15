@@ -3,11 +3,24 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  styled,
   Typography,
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { useTranslation } from "react-i18next";
+
+const CustomAccordion = styled(Accordion)`
+  border: none;
+  box-shadow: none;
+  border-top: 1px solid #8080804a;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  &:last-child {
+    border-top: none;
+    border-bottom: 1px solid #8080804a;
+  }
+`;
 
 const MyAccordion = () => {
   const { t } = useTranslation();
@@ -23,7 +36,8 @@ const MyAccordion = () => {
 
   return (
     <div>
-      <Accordion
+      <CustomAccordion
+        className="my-accordion"
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
@@ -42,8 +56,9 @@ const MyAccordion = () => {
             <li>{t("detailsSizeFitChild4")}</li>
           </ul>
         </AccordionDetails>
-      </Accordion>
-      <Accordion
+      </CustomAccordion>
+      <CustomAccordion
+        className="my-accordion"
         expanded={expanded2 === "panel1"}
         onChange={handleChange2("panel1")}
       >
@@ -61,7 +76,7 @@ const MyAccordion = () => {
             <li>{t("detailsMaterialCareChild3")}</li>
           </ul>
         </AccordionDetails>
-      </Accordion>
+      </CustomAccordion>
     </div>
   );
 };

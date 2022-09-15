@@ -25,10 +25,7 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: #c1a575;
 }
-.css-hyum1k-MuiToolbar-root {
-  padding-right: 20px !important;
-  padding-left: 20px !important;
-}
+
 /* tegs */
 a {
   color: black !important;
@@ -132,10 +129,6 @@ li {
   z-index: 3;
 } */
 
-.css-1cs2cxq-MuiInputBase-root-MuiOutlinedInput-root {
-  font-size: 24px !important;
-}
-
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
   display: flex;
@@ -158,49 +151,9 @@ li {
 .slick-next::before {
   display: none;
 }
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-  font-size: 25px !important;
-}
-.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
-  color: #c1a575 !important;
-}
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {
-  display: none;
-}
-.css-h4y409-MuiList-root {
-  padding: 0 !important;
-}
-.MuiListItemText-primary {
-  font-weight: bold !important;
-}
-.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
-  padding: 0.7rem 2rem !important;
-  border-bottom: solid rgba(40, 40, 40, 0.1) 1px !important;
-}
-.css-13eg511-MuiButtonBase-root-MuiListItemButton-root {
-  background-color: #80808026 !important;
-  border-bottom: solid rgba(40, 40, 40, 0.1) 1px !important;
-  padding-left: 60px !important;
-}
-.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root:hover {
-  text-decoration: none;
-  background-color: #c1a575 !important;
-}
-.css-13eg511-MuiButtonBase-root-MuiListItemButton-root:hover {
-  text-decoration: none;
-  background-color: #c1a575 !important;
-}
-
-/* item navigation */
-.css-1sr0y0p-MuiButtonBase-root-MuiTab-root.Mui-selected {
-  color: black !important;
-}
-.css-1aquho2-MuiTabs-indicator {
-  background-color: #c1a575 !important;
-}
 
 /* accordion */
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+/* .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
   border-top: 1px solid #8080804a;
 }
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type {
@@ -217,7 +170,7 @@ li {
 }
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
   box-shadow: none !important;
-}
+} */
 
 @media all and (max-width: 830px) {
   .slick-arrow.slick-prev,

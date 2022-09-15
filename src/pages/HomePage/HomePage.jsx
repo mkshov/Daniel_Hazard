@@ -10,6 +10,8 @@ import { Slider } from "Components";
 
 import { useTranslation } from "react-i18next";
 
+// import Icon1 from "../../img5.jpg";
+
 const HomePage = () => {
   useEffect(() => {
     AOS.init();
@@ -342,7 +344,7 @@ const HomePage = () => {
           >
             <img
               style={{ width: "111px", height: "111px", marginBottom: "30px" }}
-              src="/assets/HomePage/img6.jpg"
+              src="/assets/HomePage/img6.svg"
               alt=""
             />
             <Box>
