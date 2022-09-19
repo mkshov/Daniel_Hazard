@@ -31,7 +31,7 @@ const HomePage = () => {
     slidesToShow: 3,
     speed: 500,
     arrows: true,
-    // autoplaySpeed: 6000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,

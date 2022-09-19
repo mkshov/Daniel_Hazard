@@ -8,6 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import "./Products.css";
 import { useTranslation } from "react-i18next";
+import { MyModal } from "Components";
 
 const ProductCard = styled(Box)`
   margin: 30px;
@@ -79,6 +80,20 @@ const Draft = (props) => {
           </ProductCard>
         ))}
       </div>
+      <Box
+        sx={{
+          marginTop: "40px",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Box sx={{ textAlign: "center" }}>
+          <Typography variant="h5" color="secondary">
+            Contact us for more information on our costumes
+          </Typography>
+          <MyModal />
+        </Box>
+      </Box>
     </div>
   );
 };

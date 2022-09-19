@@ -65,7 +65,7 @@ const ContactsUs = () => {
           <Typography variant="h5">{t("contactsUsText3")} </Typography>
           <Typography variant="h5">{t("contactsUsText4")}</Typography>
           <div className="contacts-form-inputs-inner">
-            <Typography sx={{ marginTop: "40px" }} variant="h6">
+            <Typography sx={{ marginTop: "30px" }} variant="h6">
               {t("contactsUsText5")}
             </Typography>
             <TextField
@@ -115,7 +115,7 @@ const ContactsUs = () => {
                 variant="outlined"
                 severity="success"
               >
-                {t("aboutUsAlert")}
+                {t("contactsUsAlert")}
               </Alert>
             )}
             <LoadingButton

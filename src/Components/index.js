@@ -6,3 +6,4 @@ export { default as Slider } from "./Slider/Slider";
 export { default as MyAccordion } from "./MyAccordion/MyAccordion";
 export { default as ProductInfo } from "./ProductInfo/ProductInfo";
 export { default as Drawer } from "./Drawer/Drawer";
+export { default as MyModal } from "./Modal/MyModal";

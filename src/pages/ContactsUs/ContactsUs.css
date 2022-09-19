@@ -8,6 +8,7 @@
 .contacts {
   width: 100%;
   display: flex;
+  margin-bottom: -100px;
   justify-content: center;
 }
 .contacts-container {
@@ -77,7 +78,6 @@
   }
   .contacts-form-inputs {
     width: 90%;
-    margin-top: -100px;
   }
 }
 @media all and (max-width: 1060px) {
@@ -103,5 +103,12 @@
   }
   .contacts-blocks h6 {
     font-size: 15px;
+  }
+  .contacts-form-inputs h4 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  .contacts-form-inputs h5 {
+    font-size: 1.2rem;
   }
 }
