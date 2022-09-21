@@ -13,12 +13,7 @@ import { useTranslation } from "react-i18next";
 // import Icon1 from "../../img5.jpg";
 
 const HomePage = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
   const navigate = useNavigate();
-
   const { t } = useTranslation();
 
   const settings = {
@@ -51,6 +46,15 @@ const HomePage = () => {
     ],
   };
 
+  const handleClickNavigate = (path) => () => {
+    navigate(path);
+  };
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <Box>
       <Slider>
@@ -76,7 +80,9 @@ const HomePage = () => {
                 <Button
                   data-aos="fade-right"
                   className="main-button"
-                  onClick={() => navigate(`/collections-spring-summer-2022`)}
+                  onClick={handleClickNavigate(
+                    "/collections-spring-summer-2022"
+                  )}
                   variant="outlined"
                   color="inherit"
                 >
@@ -94,7 +100,9 @@ const HomePage = () => {
                 <Typography variant="h3">{t("newCollection")}</Typography>
                 <Typography variant="h5">{t("springSummer")}</Typography>
                 <Button
-                  onClick={() => navigate(`/collections-spring-summer-2022`)}
+                  onClick={handleClickNavigate(
+                    "/collections-spring-summer-2022"
+                  )}
                   className="main-button"
                   variant="outlined"
                   color="inherit"
@@ -115,7 +123,7 @@ const HomePage = () => {
             <Typography variant="h4">{t("styleFrames")}</Typography>
             <Button
               className="main-button"
-              onClick={() => navigate(`/collections-spring-summer-2022`)}
+              onClick={handleClickNavigate("/collections-spring-summer-2022")}
               variant="outlined"
               color="inherit"
             >
@@ -138,7 +146,10 @@ const HomePage = () => {
               src="/assets/HomePage/inner-img_1.jpg"
               alt="inner-img"
             />
-            <div className="middle" onClick={() => navigate("/suits/everyday")}>
+            <div
+              className="middle"
+              onClick={handleClickNavigate("/suits/everyday")}
+            >
               <Button className="main-button">{t("discoverMore")}</Button>
             </div>
           </Box>
@@ -150,7 +161,7 @@ const HomePage = () => {
             />
             <div
               className="middle"
-              onClick={() => navigate("/suits/everyday/256324324572")}
+              onClick={handleClickNavigate("/suits/everyday/256324324572")}
             >
               <Button className="main-button">{t("discoverMore")}</Button>
             </div>
@@ -161,7 +172,10 @@ const HomePage = () => {
               src="/assets/HomePage/inner-img_3.jpg"
               alt="inner-img"
             />
-            <div className="middle" onClick={() => navigate("/suits/everyday")}>
+            <div
+              className="middle"
+              onClick={handleClickNavigate("/suits/everyday")}
+            >
               <Button className="main-button">{t("discoverMore")}</Button>
             </div>
           </Box>
@@ -250,7 +264,7 @@ const HomePage = () => {
                 <Typography variant="h6">{t("ourStoryChild1")}</Typography>
               </Box>
             </Box>
-            <Box className="history-img" style={{ overflowX: "hidden" }}>
+            <Box className="history-img">
               <Box
                 data-aos="fade-left"
                 data-aos-offset="200"
@@ -284,7 +298,7 @@ const HomePage = () => {
                 <Typography variant="h4">Daniel Hazard</Typography>
                 <Typography variant="h6">{t("ourStoryChild2")}</Typography>
                 <Button
-                  onClick={() => navigate("/about-us")}
+                  onClick={handleClickNavigate("about-us")}
                   className="button-black"
                 >
                   {t("discoverMore")}
@@ -310,7 +324,7 @@ const HomePage = () => {
         </Box> */}
 
         {/* info us start */}
-        <Box className="info-us" style={{ overflowX: "hidden" }}>
+        <Box className="info-us">
           <Box
             data-aos="fade-left"
             data-aos-offset="200"
@@ -318,32 +332,24 @@ const HomePage = () => {
             className="info-us-blocks"
           >
             <img
-              style={{ width: "111px", height: "111px", marginBottom: "30px" }}
+              className="info-usImg1"
               src="/assets/HomePage/img5.jpg"
               alt=""
             />
             <Box>
-              <Typography
-                style={{
-                  color: "#c1a575",
-                  fontWeight: "300",
-                  fontSize: "30px",
-                }}
-                variant="h4"
-              >
+              <Typography className="h4-txt1" variant="h4">
                 {t("overSuitsInStock")}
               </Typography>
             </Box>
           </Box>
           <Box
-            // style={{ overflowX: "hidden" }}
             data-aos="zoom-in"
             data-aos-offset="200"
             data-aos-duration="500"
             className="info-us-blocks"
           >
             <img
-              style={{ width: "111px", height: "111px", marginBottom: "30px" }}
+              className="info-usImg1"
               src="/assets/HomePage/img6.svg"
               alt=""
             />
@@ -357,14 +363,13 @@ const HomePage = () => {
             </Box>
           </Box>
           <Box
-            // style={{ overflowX: "hidden" }}
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-duration="500"
             className="info-us-blocks"
           >
             <img
-              style={{ width: "130px", height: "111px", marginBottom: "30px" }}
+              className="info-usImg1"
               src="/assets/HomePage/img7.jpg"
               alt=""
             />

@@ -76,6 +76,10 @@
   backface-visibility: hidden;
 }
 
+.img100 {
+  width: 100%;
+}
+
 @media all and (max-width: 1500px) {
   .sp-sm-container {
     flex-direction: column;

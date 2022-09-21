@@ -9,13 +9,9 @@ import { useTranslation } from "react-i18next";
 const SpringSummer = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  // const [clickCount, setClickCount] = useState(0);
-  // function changeCount() {
-  //   setClickCount(clickCount + 1);
-  //   if (clickCount >= 1) {
-  //     navigate("/collections-spring-summer-2022/spring");
-  //   }
-  // }
+  const handleClickNavigate = (path) => () => {
+    navigate(path);
+  };
   return (
     <div className="spring-summer">
       <div>
@@ -35,7 +31,9 @@ const SpringSummer = () => {
         <div className="sp-sm-container">
           <div className="product-wrapper2 sp-sm-inner">
             <CardActionArea
-              onClick={() => navigate("/collections-spring-summer-2022/spring")}
+              onClick={handleClickNavigate(
+                "/collections-spring-summer-2022/spring"
+              )}
             >
               <img
                 className="product-img2"
@@ -62,7 +60,9 @@ const SpringSummer = () => {
           </Typography>
           <div className="product-wrapper2 sp-sm-inner">
             <CardActionArea
-              onClick={() => navigate("/collections-spring-summer-2022/summer")}
+              onClick={handleClickNavigate(
+                "/collections-spring-summer-2022/summer"
+              )}
             >
               <img
                 className="product-img2"

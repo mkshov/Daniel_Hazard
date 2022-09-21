@@ -14,10 +14,8 @@ import "./Header.css";
 import { Sidebar } from "Components";
 
 import { useTranslation } from "react-i18next";
-// import { useScroll } from "./ScrollHook";
 
 export default function Header(props) {
-  // const { scrollDirection } = useScroll();
   const { i18n } = useTranslation();
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -87,6 +85,15 @@ export default function Header(props) {
     navigate(path);
   };
 
+  const handleDraft = () => {
+    toggleSidebar();
+    handleCloseShopMenu();
+  };
+  const handleDraft2 = () => {
+    navigate("/");
+    handleCloseSidebar();
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }} onMouseLeave={handleCloseShopMenu}>
       <AppBar
@@ -96,23 +103,14 @@ export default function Header(props) {
       // })}
       >
         <Toolbar className={navHeight}>
-          <Box
-            className="hamburger"
-            onClick={() => {
-              toggleSidebar();
-              handleCloseShopMenu();
-            }}
-          >
+          <Box className="hamburger" onClick={handleDraft}>
             <Hamburger toggled={openSidebar} direction="right" size={30} />
             <div className="border1"></div>
           </Box>
 
           <Box className="header-logo">
             <img
-              onClick={() => {
-                navigate("/");
-                handleCloseSidebar();
-              }}
+              onClick={handleDraft2}
               className={navImage}
               onMouseEnter={handleCloseShopMenu}
               src="/assets/HomePage/header-logo.png"

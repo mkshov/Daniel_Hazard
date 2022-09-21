@@ -1,12 +1,15 @@
 import React from "react";
 
-import { Button, Typography } from "@mui/material";
+import { Button, Typography, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Spring = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  function handleClickNavigate() {
+    navigate("/collections-spring-summer-2022/summer");
+  }
   const spring = [
     {
       image: "/assets/collections/img11.jpg",
@@ -54,20 +57,17 @@ const Spring = () => {
       </div>
       <div>
         {spring.map((item) => (
-          <div key={item.image} style={{ textAlign: "center" }}>
-            <img style={{ width: "100%" }} src={item.image} alt="" />
+          <Box key={item.image} sx={{ textAlign: "center" }}>
+            <img className="img100" src={item.image} alt="" />
             <div>
               <Typography variant="h6" sx={{ padding: "50px" }}>
                 {item[`text_${i18n.language}`]}
               </Typography>
             </div>
-          </div>
+          </Box>
         ))}
         <div className="d-flex-j-content-c">
-          <Button
-            onClick={() => navigate("/collections-spring-summer-2022/summer")}
-            className="main-button"
-          >
+          <Button onClick={handleClickNavigate} className="main-button">
             {t("summer")}
           </Button>
         </div>

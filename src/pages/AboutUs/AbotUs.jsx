@@ -87,15 +87,6 @@ const AbotUs = () => {
         </div>
       </section>
       <section></section>
-      {/* <section>
-        <div>
-          <img
-            style={{ width: "100%" }}
-            src="https://i.ibb.co/5vyqRKW/banner.jpg"
-            alt=""
-          />
-        </div>
-      </section> */}
     </div>
   );
 };

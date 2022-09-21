@@ -271,6 +271,7 @@
 }
 .history-img {
   width: 70%;
+  overflow-x: hidden;
 }
 .history-img img {
   width: 100%;
@@ -317,12 +318,23 @@ h3 {
   padding: 50px;
   flex-wrap: wrap;
   text-align: center;
+  overflow-x: hidden;
 }
 .info-us-blocks {
   width: 320px;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.info-usImg1 {
+  width: 111px;
+  height: 111px;
+  margin-bottom: 30px;
+}
+.h4-txt1 {
+  color: #c1a575;
+  font-weight: 300;
+  font-size: 30px;
 }
 
 /* Info us End */

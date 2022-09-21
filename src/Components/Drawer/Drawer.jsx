@@ -2,7 +2,7 @@ import * as React from "react";
 import "./Drawer.css";
 
 import Drawer from "@mui/material/Drawer";
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 export default function TemporaryDrawer() {
@@ -27,7 +27,7 @@ export default function TemporaryDrawer() {
   };
 
   const list = (anchor) => (
-    <div style={{ width: "100%" }}>
+    <Box sx={{ width: "100%" }}>
       <div className="sg-ctn0">
         <div className="return_dialog_bg"></div>
         <div className="sg-ctn1">
@@ -49,17 +49,16 @@ export default function TemporaryDrawer() {
               <div className="sg-title">{t("sizeGuide")}</div>
               <div className="sg-close iconfont">&#xe655;</div>
               <div className="sg-table-wrap">
-                <div
-                  style={{
+                <Box
+                  sx={{
                     maxWidth: "-webkit-fill-available",
                     overflowX: "auto",
                   }}
                 >
                   <table
-                    className="sg-table j-cm-table"
+                    className="sg-table j-cm-table table1"
                     cellSpacing="0"
                     cellPadding="0"
-                    style={{ maxWidth: 350 }}
                   >
                     <tbody>
                       <tr className="trhead">
@@ -184,7 +183,7 @@ export default function TemporaryDrawer() {
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </Box>
 
                 <p id="goods_dash_tip" className="sg-tip"></p>
 
@@ -241,7 +240,7 @@ export default function TemporaryDrawer() {
           </div>
         </div>
       </div>
-    </div>
+    </Box>
   );
 
   return (

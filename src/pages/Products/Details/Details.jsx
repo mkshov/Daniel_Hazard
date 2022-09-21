@@ -50,14 +50,7 @@ const Details = (props) => {
     customPaging: function (i) {
       return (
         <div>
-          <img
-            src={data[i]}
-            alt=""
-            style={{
-              width: "100px",
-              objectFit: "cover",
-            }}
-          />
+          <img src={data[i]} alt="" className="details-carousel" />
         </div>
       );
     },

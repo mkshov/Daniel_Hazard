@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 // import clsx from "clsx";
 
 import "./Header.css";
-// import { useScroll } from "./ScrollHook";
 
 import ListItemText from "@mui/material/ListItemText";
 import Collapse from "@mui/material/Collapse";
@@ -38,7 +37,6 @@ const Sidebar = (props) => {
 
   const navigate = useNavigate();
   const { open, toggleSidebar } = props;
-  // const { scrollDirection } = useScroll();
   const [openList1, setOpenList1] = useState(false);
   const [openList2, setOpenList2] = useState(false);
   const [openList3, setOpenList3] = useState(false);
@@ -51,6 +49,10 @@ const Sidebar = (props) => {
   };
   const handleClick3 = () => {
     setOpenList3(!openList3);
+  };
+  const handleClickNavigate = (path) => () => {
+    toggleSidebar();
+    navigate(path);
   };
 
   return (
@@ -77,20 +79,14 @@ const Sidebar = (props) => {
               <Collapse in={openList2} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   <MyListItemCollapse
-                    onClick={() => {
-                      toggleSidebar();
-                      navigate("/clothing/jackets");
-                    }}
+                    onClick={handleClickNavigate("/clothing/jackets")}
                   >
                     <MyListItemText primary={t("jackets")} />
                   </MyListItemCollapse>
                 </List>
                 <List component="div" disablePadding>
                   <MyListItemCollapse
-                    onClick={() => {
-                      toggleSidebar();
-                      navigate("/clothing/trousers");
-                    }}
+                    onClick={handleClickNavigate("/clothing/trousers")}
                   >
                     <MyListItemText primary={t("trousers")} />
                   </MyListItemCollapse>
@@ -103,31 +99,24 @@ const Sidebar = (props) => {
               <Collapse in={openList3} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   <MyListItemCollapse
-                    onClick={() => {
-                      toggleSidebar();
-                      navigate("/collections-spring-summer-2022");
-                    }}
+                    onClick={handleClickNavigate(
+                      "/collections-spring-summer-2022"
+                    )}
                   >
                     <MyListItemText primary={t("springSummer")} />
                   </MyListItemCollapse>
                 </List>
                 <List component="div" disablePadding>
                   <MyListItemCollapse
-                    onClick={() => {
-                      toggleSidebar();
-                      navigate("/collections-autumn-winter-2022-23");
-                    }}
+                    onClick={handleClickNavigate(
+                      "/collections-autumn-winter-2022-23"
+                    )}
                   >
                     <MyListItemText primary={t("autumnWinter")} />
                   </MyListItemCollapse>
                 </List>
               </Collapse>
-              <MyListItem
-                onClick={() => {
-                  toggleSidebar();
-                  navigate("/about-us");
-                }}
-              >
+              <MyListItem onClick={handleClickNavigate("/about-us")}>
                 <ListItemText primary={t("aboutUs")} />
               </MyListItem>
               <MyListItem onClick={handleClick}>
@@ -138,31 +127,20 @@ const Sidebar = (props) => {
               <Collapse in={openList1} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   <MyListItemCollapse
-                    onClick={() => {
-                      toggleSidebar();
-                      navigate("/suits/everyday");
-                    }}
+                    onClick={handleClickNavigate("/suits/everyday")}
                   >
                     <MyListItemText primary={t("everyday")} />
                   </MyListItemCollapse>
                 </List>
                 <List component="div" disablePadding>
                   <MyListItemCollapse
-                    onClick={() => {
-                      toggleSidebar();
-                      navigate("/suits/wedding");
-                    }}
+                    onClick={handleClickNavigate("/suits/wedding")}
                   >
                     <MyListItemText primary={t("wedding")} />
                   </MyListItemCollapse>
                 </List>
               </Collapse>
-              <MyListItem
-                onClick={() => {
-                  toggleSidebar();
-                  navigate("/contacts-us");
-                }}
-              >
+              <MyListItem onClick={handleClickNavigate("/contacts-us")}>
                 <ListItemText primary={t("contactsUs")} />
               </MyListItem>
             </List>

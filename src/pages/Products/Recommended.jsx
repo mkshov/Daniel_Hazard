@@ -21,6 +21,11 @@ const Products = () => {
 
     return [arr1[random1], arr2[random2], arr3[random3]];
   }
+
+  const handleClickNavigate = (route) => (e) => {
+    navigate(route);
+  };
+
   const recommended = randomArray(products, jackets, trousers);
   return (
     <div className="recommended">
@@ -33,16 +38,18 @@ const Products = () => {
         {recommended.map((item) => (
           <div
             key={item.id}
-            onClick={() => navigate(`/${item.route}/${item.route2}/${item.id}`)}
+            onClick={handleClickNavigate(
+              `/${item.route}/${item.route2}/${item.id}`
+            )}
             className="recommended-block"
           >
             <div className="product-wrapper">
               <img className="product-img" src={item.image} alt={item.title} />
               <div className="middle">
                 <Button
-                  onClick={() =>
-                    navigate(`/${item.route}/${item.route2}/${item.id}`)
-                  }
+                  onClick={handleClickNavigate(
+                    `/${item.route}/${item.route2}/${item.id}`
+                  )}
                   className="main-button"
                 >
                   {t("discoverMore")}
