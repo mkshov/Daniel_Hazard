@@ -96,12 +96,7 @@ export default function Header(props) {
 
   return (
     <Box sx={{ flexGrow: 1 }} onMouseLeave={handleCloseShopMenu}>
-      <AppBar
-      // className={clsx("header-active", {
-      //   // eslint-disable-next-line
-      //   ["header-hidden"]: scrollDirection === "down",
-      // })}
-      >
+      <AppBar>
         <Toolbar className={navHeight}>
           <Box className="hamburger" onClick={handleDraft}>
             <Hamburger toggled={openSidebar} direction="right" size={30} />
@@ -178,7 +173,13 @@ export default function Header(props) {
           </ul>
         </Collapse>
       </AppBar>
-      {<Sidebar open={openSidebar} toggleSidebar={toggleSidebar} />}
+      {
+        <Sidebar
+          navHeight={navHeight}
+          open={openSidebar}
+          toggleSidebar={toggleSidebar}
+        />
+      }
     </Box>
   );
 }

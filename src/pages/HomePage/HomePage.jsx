@@ -10,8 +10,6 @@ import { Slider } from "Components";
 
 import { useTranslation } from "react-i18next";
 
-// import Icon1 from "../../img5.jpg";
-
 const HomePage = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();

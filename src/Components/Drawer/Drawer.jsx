@@ -2,7 +2,7 @@ import * as React from "react";
 import "./Drawer.css";
 
 import Drawer from "@mui/material/Drawer";
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 export default function TemporaryDrawer() {
@@ -247,17 +247,13 @@ export default function TemporaryDrawer() {
     <div className="mt-20">
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Typography
-            sx={{
-              textDecoration: "underline",
-              fontWeight: "bold",
-              cursor: "pointer",
-              display: "inline",
-            }}
+          <Button
+            sx={{ fontWeight: "bold" }}
             onClick={toggleDrawer(anchor, true)}
+            className="main-button"
           >
             {t("sizeChart")}
-          </Typography>
+          </Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

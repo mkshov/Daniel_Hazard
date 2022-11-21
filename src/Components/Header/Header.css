@@ -98,6 +98,9 @@
 .sidebar-container {
   margin-top: 42px;
 }
+.navHeight {
+  margin-top: 29px;
+}
 
 .backdrop {
   position: fixed;
@@ -182,5 +185,10 @@
 @media all and (max-width: 450px) {
   .sidebar {
     width: 100%;
+  }
+}
+@media all and (max-width: 348px) {
+  .image-active {
+    width: 170px !important;
   }
 }

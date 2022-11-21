@@ -36,7 +36,9 @@ const Sidebar = (props) => {
   const { t } = useTranslation();
 
   const navigate = useNavigate();
-  const { open, toggleSidebar } = props;
+  const { open, toggleSidebar, navHeight } = props;
+  console.log("navHeight: ", navHeight);
+  navHeight === "header" ? console.log(" active") : console.log("not active");
   const [openList1, setOpenList1] = useState(false);
   const [openList2, setOpenList2] = useState(false);
   const [openList3, setOpenList3] = useState(false);
@@ -57,14 +59,13 @@ const Sidebar = (props) => {
 
   return (
     <>
-      <div
-      // className={clsx("header-active", {
-      //   // eslint-disable-next-line
-      //   ["header-hidden"]: scrollDirection === "down",
-      // })}
-      >
+      <div>
         <div className={open ? "sidebar sidebar--open" : "sidebar"}>
-          <div className="sidebar-container">
+          <div
+            className={
+              navHeight === "header" ? "navHeight" : "sidebar-container"
+            }
+          >
             <List>
               <MyListItem
                 sx={{
